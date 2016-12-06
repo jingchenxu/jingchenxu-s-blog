@@ -7,3 +7,7 @@
 import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
 ```
 - 如果不习惯英文的话，可以找一个中文的插件安装一下；
+
+### 推荐插件
+
+> Emmet[学习地址](http://blog.wpjam.com/m/emmet-grammar/)
