@@ -7,4 +7,6 @@
 * [react的渲染机制](react的渲染机制.md)
 * [常用命令合集](常用命令合集.md)
 * [react全家桶历险记](react全家桶历险记.md)
+* [ES6学习笔记](es6学习笔记.md)
+    * [const {xxxxx} = test](const-xxxxx--test.md)
 
