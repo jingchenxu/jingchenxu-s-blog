@@ -6,4 +6,5 @@
 * [sublime前端开发环境配置](sublime前端开发环境配置.md)
 * [react的渲染机制](react的渲染机制.md)
 * [常用命令合集](常用命令合集.md)
+* [react全家桶历险记](react全家桶历险记.md)
 
