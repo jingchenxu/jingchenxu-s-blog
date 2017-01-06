@@ -102,3 +102,19 @@ G:\nestle\react-reactRouter-redux-bootstrap>
 
 创建完成之后，可以通过编辑器直接打开该文件夹，我添加了``/node_modules/``,则项目的代码在上传 时候则会自动的忽略该文件夹。
 
+### 一个未完待续的坑
+
+电脑的系统重装之后，我的``node``环境也遇到了一系列的问题，其中最严重的是：
+
+```shell
+$ npm install
+/e/Program Files/nodejs/npm: line 34:   756 Illegal instruction     "$NODE_EXE"  "$NPM_CLI_JS" "$@"
+
+```
+
+就是这样的一个问题一直没能解决，最近尝试了一下下面的方法，暂时缓解了，但是不知道能不能彻底解决这样的问题：
+
+```shell
+npm config set unsafe-perm true
+```
+
