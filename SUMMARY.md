@@ -10,4 +10,5 @@
 * [ES6学习笔记](es6学习笔记.md)
     * [const {xxxxx} = test](const-xxxxx--test.md)
     * [import的威力](import的威力.md)
+* [flex布局](flex布局.md)
 
