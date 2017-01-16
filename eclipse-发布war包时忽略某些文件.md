@@ -6,4 +6,4 @@
 
 右击项目名称 MyProject=>Properties=>Resource=>Add Filter..
 
-![此处显示的是如何设置的图片](img/img/QQ截图20170116175227.png)
+![此处显示的是如何设置的图片](/img/img/QQ截图20170116175227.png)
