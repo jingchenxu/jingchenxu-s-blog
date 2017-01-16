@@ -11,4 +11,6 @@
     * [const {xxxxx} = test](const-xxxxx--test.md)
     * [import的威力](import的威力.md)
 * [flex布局](flex布局.md)
+    * [flex-direction](flex-direction.md)
+* [Linux 命令](linux-命令.md)
 
