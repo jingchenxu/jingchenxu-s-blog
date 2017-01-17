@@ -18,4 +18,5 @@
     * [eclipse 发布war包时忽略某些文件](eclipse-发布war包时忽略某些文件.md)
 * [navicat 使用手册](navicat-使用手册.md)
     * [如果你想将数据库表导出为excel](如果你想将数据库表导出为excel.md)
+    * [数据库同步](数据库同步.md)
 
