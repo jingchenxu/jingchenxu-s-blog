@@ -20,4 +20,5 @@
     * [如果你想将数据库表导出为excel](如果你想将数据库表导出为excel.md)
     * [数据库同步](数据库同步.md)
 * [webpack学习笔记](webpack学习笔记.md)
+* [.babelrc是什么](babelrc是什么.md)
 
