@@ -21,4 +21,6 @@
     * [数据库同步](数据库同步.md)
 * [webpack学习笔记](webpack学习笔记.md)
 * [.babelrc是什么](babelrc是什么.md)
+* [git](git.md)
+    * [如何生成ssh key](如何生成ssh-key.md)
 
