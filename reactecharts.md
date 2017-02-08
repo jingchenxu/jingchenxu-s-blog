@@ -111,4 +111,4 @@ export default EchartsTest;
 
 需要安装echarts、echarts-for-react npm包；
 
-其中需要注意的是：关于地图
+其中需要注意的是：关于地图各个区块移入时才会显示，可以使用模板来显示数据。
