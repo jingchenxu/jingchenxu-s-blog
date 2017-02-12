@@ -28,4 +28,6 @@
 * react-native学习笔记
   * [react-native 与 react的区别](react-native-react.md)
 * [chrome使用技巧](chrome.md)
+* [react-router](react-router.md)
+  * react-router中的 hashHistory browserHistory createMemoryHistory
 
