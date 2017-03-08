@@ -25,7 +25,7 @@
   * [如何生成ssh key](如何生成ssh-key.md)
 * Echarts
   * [在react中使用echarts](reactecharts.md)
-* react-native学习笔记
+* [react-native学习笔记](react-native.md)
   * [react-native 与 react的区别](react-native-react.md)
 * [chrome使用技巧](chrome.md)
 * [react-router](react-router.md)
