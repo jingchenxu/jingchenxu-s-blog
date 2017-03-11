@@ -33,4 +33,5 @@
 * [react组件的三种写法](react.md)
 * [react实现listView组件](reactlistview.md)
 * [webpack 跨域调试](webpack.md)
+* [redux 调试工具使用](redux-diao-shi-gong-ju-shi-yong.md)
 
