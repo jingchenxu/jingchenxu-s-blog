@@ -17,3 +17,4 @@ let { stat, exists, readFile } = require('fs');
 let _fs = require('fs');
 let stat = _fs.stat, exists = _fs.exists, readfile = _fs.readfile;
 ```
+结构赋值提供了更为便捷的从对象取值的方式；
