@@ -1,6 +1,6 @@
 ## vs-code 使用记录
 
-> 个人据地vs-code是win平台下个人觉得比较好的一个文本编辑器，所以打算记录下我在其使用过程中的一些心得，[vs-code地址](https://code.visualstudio.com/)，使用的原因主要是颜值好，功能好（插件多）。
+> 个人据地vs-code是win平台下个人觉得比较好的一个文本编辑器，所以打算记录下我在其使用过程中的一些心得，[vs-code地址](https://code.visualstudio.com/)，使用的原因主要是颜值好，功能好（插件多），原生支持markdown预览。
 
 ### 简介
 
@@ -30,5 +30,12 @@ vscode配置目录为：文件->首选项->设置->settings.json
 }
 ````
 
+以上看起来配置还是很方便的，vscode官方支持中文汉化，每个配置项的上面都会有配置注解，看起来很方便。
+
 ### 常用插件
+- [Express](https://marketplace.visualstudio.com/items?itemName=Compulim.vscode-express)(静态文件服务器，在开发静态页的时候比较有用。)
+- [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)(写html是会有代码提示)
+- [file-icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)(会根据不同的后缀名显示不同的文件图标)
+
+
 
