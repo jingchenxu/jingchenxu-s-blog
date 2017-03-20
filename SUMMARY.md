@@ -34,4 +34,5 @@
 * [react实现listView组件](reactlistview.md)
 * [webpack 跨域调试](webpack.md)
 * [redux 调试工具使用](redux-diao-shi-gong-ju-shi-yong.md)
+* [vs-code 使用记录](vs-code-shi-yong-ji-lu.md)
 
