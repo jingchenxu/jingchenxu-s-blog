@@ -14,7 +14,7 @@
   * [flex-direction](flex-direction.md)
 * [Linux 命令](linux-命令.md)
 * [eclipse 使用手册](eclipse-使用手册.md)
-  * [设置tomcat的启动时长](设置tomcat的启动时长.md)
+  * [tomcat使用问题](设置tomcat的启动时长.md)
   * [eclipse 发布war包时忽略某些文件](eclipse-发布war包时忽略某些文件.md)
 * [navicat 使用手册](navicat-使用手册.md)
   * [如果你想将数据库表导出为excel](如果你想将数据库表导出为excel.md)
