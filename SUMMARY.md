@@ -10,6 +10,7 @@
 * [ES6学习笔记](es6学习笔记.md)
   * [const {xxxxx} = test](const-xxxxx--test.md)
   * [import的威力](import的威力.md)
+  * [Promise 什么鬼](promise-shi-yao-gui.md)
 * [flex布局](flex布局.md)
   * [flex-direction](flex-direction.md)
 * [Linux 命令](linux-命令.md)
