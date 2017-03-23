@@ -6,4 +6,42 @@
 
 你需要：右上角 系统设置->显示->将屏幕分辨率调整到最大。
 
-[](./img/Ubuntu/2017-03-22 19-01-21屏幕截图.png)
+![](./img/Ubuntu/2017-03-22 19-01-21屏幕截图.png)
+
+以上工作完成后，在虚拟机顶部的工具栏中选择查看->立即适应客户机，则屏幕的尺寸则会随着主机的大小改变而改变。
+
+2、设置系统文字为中文
+
+你需要： 右上角 systemsetting->languagesupport->addordeletelanguage
+
+点击该按钮后如下图：
+
+![](img/Ubuntu/2017-03-22 19-09-43屏幕截图.png)
+
+选择对应的语言并下载，最后在语言的设置页通过鼠标拖动，将中文简体拖动到第一行，确认保存后，系统语言则设置为了中文。
+
+3、配置node开发环境
+
+node 的配置请参考文档1，通过nvm安装node是比较好的选择，不同版本的node之间的切换非常的方便，更好的使用nvm可使用nvm的help命令，该文虽然很久就已经写了，但是在2017-03-23在Ubuntu16.04的环境下实验是没有问题的。
+
+4、Java开发环境的配置
+
+Java开发环境的配置请参考文档2，其中需要注意的是你可能需要安装一下vim软件，如果你没有安装过的话，你可执行一下vim命令，如果没有安装该软件，则会提示安装该软件的命令，按照该命令安装即可。
+
+其中几个可能会用到的vim命令如下：
+
+打开文件： ````vim [filename]````
+
+
+
+
+
+
+
+### 参考文档
+
+[1][ubuntu下nvm,node以及npm的安装与使用](http://blog.csdn.net/minchina91/article/details/40260263)
+[2][Ubuntu 16.04配置Java开发环境](http://www.cnblogs.com/deitymon/p/5926619.html)
+[3][Ubuntu下安装MySQL及简单操作](http://www.linuxidc.com/Linux/2016-07/133128.htm)
+[4][ 解决Navicat无法连接到MySQL的问题](http://blog.csdn.net/mtbaby/article/details/56836986)
+[5][ MySQL添加用户、删除用户与授权](http://www.cnblogs.com/wanghetao/p/3806888.html)
