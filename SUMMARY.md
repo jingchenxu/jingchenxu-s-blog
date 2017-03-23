@@ -36,4 +36,5 @@
 * [webpack 跨域调试](webpack.md)
 * [redux 调试工具使用](redux-diao-shi-gong-ju-shi-yong.md)
 * [vs-code 使用记录](vs-code-shi-yong-ji-lu.md)
+* [Ubuntu 服务器环境准备](ubuntu-fu-wu-qi-huan-jing-zhun-bei.md)
 
