@@ -38,4 +38,5 @@
 * [vs-code 使用记录](vs-code-shi-yong-ji-lu.md)
 * [Ubuntu 服务器环境准备](ubuntu-fu-wu-qi-huan-jing-zhun-bei.md)
 * [input 文件传输](input-wen-jian-chuan-shu.md)
+* [npm 命令合集](npm-ming-ling-he-ji.md)
 
