@@ -18,8 +18,8 @@ Server Tomcat v7.0 Server at localhost was unable to start within 45 seconds. If
 
 频繁的重启tomcat有时会导致出现这样的错误，面对这样的问题有3种解决办法：
 
-1、重启电脑（网管式）
-2、通过netstat -abn 找到端口究竟被那个进程占用，并干掉该进程 （学霸式）
-3、在进程管理里面找到javaw 进程，直接干掉  （经验式）
+1、重启电脑（网管式）<br/>
+2、通过netstat -abn 找到端口究竟被那个进程占用，并干掉该进程 （学霸式）<br/>
+3、在进程管理里面找到javaw 进程，直接干掉  （经验式）<br/>
 4、其实在3的基础上可以判断，出现该问题的原因是tomcat崩溃的进程还占据着这些端口，我们可以通过运行tomcat的关闭脚本来强制关闭进程，如果你的开发环境是win，则在tomcat->bin->shutdown.bat,双击运行脚本关闭，如果是ubuntu的话，我觉得一个写代码如此有逼格的人，也不用我多说了。
 
