@@ -63,13 +63,9 @@ alert(object.getNameFunc()());  //The Window
 
 ### 纯函数
 
-纯-百度的第一个释义是这样的：
+首先纯函数又是什么？
 
-```⑴专一不杂：纯粹，纯然，单纯，纯金，纯铜，纯正，纯净，纯熟，纯度。```<br/>
-
-那么纯函数又是什么？
-
-1、 不触碰外部的变量：
+1、 不触碰外部的变量，下面代码中的z不被add所接触及修改：
 
 ```javascript
 var z = 10;
@@ -77,6 +73,27 @@ function add(x,y) {
     return x+y;
 }
 ```
+
+2、 固定的输入对应固定的输出，如果你的输入值是相同的，那么无论你输入多少次，只要是相同的输入值，那么输出值都应该是不变的。
+
+3、 在纯函数的内部没有除了输入的变量以外的变量，所以在纯函数的内部像for循环这样的是不能用的，for循环中申明的循环用的变量，就是输入的变量以外的变量，那么在函数式编程中是如何实现循环的呢？答案是递归，下面抄一段别人的代码：
+
+```javascript
+//A:simple loop cinstruct
+var add = 0;
+for (var i = 1; i <= 10; i++)
+  acc += i;
+console.log(acc);//prints 55
+//B:without loop construct or variables (recursion)
+function sumRange(start, end, add) {
+  if (start > end)
+    return acc;
+  return sumRange(start + 1, end, acc + start)
+}
+console.log(sumRange(1, 10, 0));//prints 55
+```
+
+A方案是我们正常通过for进行循环，而B方案中循环则是通过递归调用进行的对于sumRange这个函数来说其每次调用的时候来说输入的值是固定的，那么其输出就是固定的。（通过结果推到出的过程，理解没透彻。）
 
 ### 参考文档
 
