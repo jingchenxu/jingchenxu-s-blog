@@ -97,5 +97,6 @@ A方案是我们正常通过for进行循环，而B方案中循环则是通过递
 
 ### 参考文档
 
-[1][我眼中的 JavaScript 函数式编程](https://zhuanlan.zhihu.com/p/25985501)
-[2][javascript深入理解js闭包](http://www.jb51.net/article/24101.htm)
+[1][我眼中的 JavaScript 函数式编程](https://zhuanlan.zhihu.com/p/25985501)<br/>
+[2][javascript深入理解js闭包](http://www.jb51.net/article/24101.htm)<br/>
+[3][函数式编程术语解析](http://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651222593&idx=1&sn=3f5cdab6505f7b4108a2ef5fba47b8bd&scene=21#wechat_redirect)
