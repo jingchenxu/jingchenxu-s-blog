@@ -42,7 +42,6 @@ vscode配置目录为：文件->首选项->设置->settings.json
 ### 快捷键介绍
 
 ctrl+shift+o:查看当前文件中所有的方法和对象；
-
 alt+shift+a:取消或添加代码块注释；
 
 ### 参考文档
