@@ -63,3 +63,4 @@
 【3】[Class基本语法](http://es6.ruanyifeng.com/#docs/class)
 【4】[]()
 【5】[面向对象中构造函数,原型对象和实例的关系图](http://www.cnblogs.com/yuluo2016/p/5894698.html)<br/>
+【】[小记ES5和ES6的类](https://zhuanlan.zhihu.com/p/26070788)
