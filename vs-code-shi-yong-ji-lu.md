@@ -38,6 +38,7 @@ vscode配置目录为：文件->首选项->设置->settings.json
 - [Express](https://marketplace.visualstudio.com/items?itemName=Compulim.vscode-express)(静态文件服务器，在开发静态页的时候比较有用。)
 - [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)(写html是会有代码提示)
 - [file-icons](https://marketplace.visualstudio.com/items?itemName=file-icons.file-icons)(会根据不同的后缀名显示不同的文件图标)
+- [vscode-refresh-html](https://marketplace.visualstudio.com/items?itemName=bajdzis.vscode-refresh-html)(静态页自动刷新)
 
 ### 快捷键介绍
 
