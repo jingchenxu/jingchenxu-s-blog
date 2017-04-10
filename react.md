@@ -2,6 +2,8 @@
 
 ### 第一种写法
 
+> 该写法在react16.0.0中已不支持，如果想继续使用这种写法，可以引入单独的reac-creact-class npm包。
+
 ```javascript
 module.exports = React.createClass({
     displayName: 'Assistant',
