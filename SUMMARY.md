@@ -45,4 +45,6 @@
 * [图片惰性加载](tu-pian-duo-xing-jia-zai.md)
 * [MySQL 笔记](mysql-bi-ji.md)
 * [css Tips](css-tips.md)
+* [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
+* [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 
