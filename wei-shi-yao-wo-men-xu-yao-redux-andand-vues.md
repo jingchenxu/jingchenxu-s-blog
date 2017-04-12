@@ -12,3 +12,10 @@
 ![](http://vuex.vuejs.org/zh-cn/images/vuex.png)
 
 ![](http://www.ruanyifeng.com/blogimg/asset/2016/bg2016091802.jpg)
+
+从两者的流程图可以看出，两者有很多相似的地方：
+
+action  =  store
+mutations  =  reducers
+
+他们都有一个用于调和数据的方法。
