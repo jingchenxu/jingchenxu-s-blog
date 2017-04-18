@@ -12,4 +12,12 @@
 
 4、代码格式化工具安装：
 ```python -m pip install autopep8```
+
+5、scrapy 安装完成后，
+
+6、常用的命令：
+
+项目运行命令：```scrapy crawl foxebook```
+
+抓取结果生成json: ```scrapy crawl foxebook -o items.json```
  
