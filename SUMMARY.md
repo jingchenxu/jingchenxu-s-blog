@@ -49,4 +49,5 @@
 * [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 * [为什么我们需要 redux && vues](wei-shi-yao-wo-men-xu-yao-redux-andand-vues.md)
 * [express 踩坑指南](express-cai-keng-zhi-nan.md)
+* [Windows 下scrapy 环境搭建小记](windows-xia-scrapy-huan-jing-da-jian-xiao-ji.md)
 
