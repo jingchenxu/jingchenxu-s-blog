@@ -6,3 +6,31 @@
 
 首先看一下其的目录结构:
 ![](./img/mobx/mobx1.png)
+
+其中app,jsx中的代码：
+
+```javascript
+import React, { Component } from 'react';
+import { observer } from 'mobx-react';
+import DevTools from 'mobx-react-devtools';
+
+@observer
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <button onClick={this.onReset}>
+          Seconds passed: {this.props.appState.timer}
+        </button>
+        <DevTools />
+      </div>
+    );
+  }
+
+  onReset = () => {
+    this.props.appState.resetTimer();
+  }
+};
+
+export default App;
+```
