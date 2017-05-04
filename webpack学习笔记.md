@@ -18,3 +18,23 @@ npm install babel-preset-es2015 --save-dev
 }
 ````
 
+
+### 常见问题
+
+在webpack1.6.3后的版本中webpack如果将热加载的打包文件和webpack-dev-server.js的地址配置为ip地址的话，是会出现如下问题的：
+
+```“Invalid Host Header” in When running React App
+```
+
+这是后需要修改webpack的配置文件：
+
+```
+devServer: {
+    historyApiFallback: true,
+    disableHostCheck: true,
+    hot: true,
+    inline: true,
+    stats: { colors: true },
+    proxy: {
+```
+
