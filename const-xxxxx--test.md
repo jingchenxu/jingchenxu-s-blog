@@ -18,3 +18,11 @@ let _fs = require('fs');
 let stat = _fs.stat, exists = _fs.exists, readfile = _fs.readfile;
 ```
 结构赋值提供了更为便捷的从对象取值的方式；
+
+同时解构赋值还可以作为函数的参数传入，更为方便：
+
+```javascript
+functionname function({param1, param2,param3}) {
+    //TODO
+}
+```
