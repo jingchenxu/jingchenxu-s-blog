@@ -18,5 +18,5 @@
 
 选择你要调试的项目（主要一下你的生产环境的代码，需要和你本机eclipse中的代码保持一致），有机选择 Debug As,选择 Debug Configurations :
 
-![](./img/eclipse/debug.png)
+![](/img/eclipse/debug.png)
 
