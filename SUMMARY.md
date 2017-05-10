@@ -17,6 +17,7 @@
   * [tomcat使用问题](设置tomcat的启动时长.md)
   * [eclipse 发布war包时忽略某些文件](eclipse-发布war包时忽略某些文件.md)
   * [eclipse 使用不同版本JDK进行编译](eclipse-shi-yong-bu-tong-ban-ben-jdk-jin-xing-bian-yi.md)
+  * [eclipse 远程调试](eclipse-yuan-cheng-diao-shi.md)
 * [flex布局](flex布局.md)
   * [flex-direction](flex-direction.md)
 * [navicat 使用手册](navicat-使用手册.md)
