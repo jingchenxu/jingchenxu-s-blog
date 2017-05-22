@@ -37,7 +37,6 @@
 * [chrome使用技巧](chrome.md)
 * [react-router](react-router.md)
   * [react-router中的 hashHistory browserHistory createMemoryHistory](react-router/react-routerzhong-de-hashhistory-browserhistory-creatememoryhistory.md)
-* [react组件的三种写法](react.md)
 * [react实现listView组件](reactlistview.md)
 * [webpack 跨域调试](webpack.md)
 * [redux 调试工具使用](redux-diao-shi-gong-ju-shi-yong.md)
