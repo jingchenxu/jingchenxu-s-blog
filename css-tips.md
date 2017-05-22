@@ -9,5 +9,10 @@ vertical-align,图片后的文字如需上下垂直居中，在图片标签中�
 
 ![bottom](/img/css-tips/active.gif)
 
+### 如何使图片在div中局中
+
+
+### 如何是div中的div sbsoulte 定位且靠右对其
+
 
 
