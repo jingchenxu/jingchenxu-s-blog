@@ -59,4 +59,5 @@
 * [响应式布局](xiang-ying-shi-bu-ju.md)
 * [我们简单的说说javascript](wo-men-jian-dan-de-shuo-suo-javascript.md)
 * [javascript基础知识文章合集](javascriptji-chu-zhi-shi-wen-zhang-he-ji.md)
+* [react 组件的三种写法](react-zu-jian-de-san-zhong-xie-fa.md)
 
