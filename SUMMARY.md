@@ -60,4 +60,5 @@
 * [我们简单的说说javascript](wo-men-jian-dan-de-shuo-suo-javascript.md)
 * [javascript基础知识文章合集](javascriptji-chu-zhi-shi-wen-zhang-he-ji.md)
 * [react 组件的三种写法](react-zu-jian-de-san-zhong-xie-fa.md)
+* [VUE 学习笔记](vue-xue-xi-bi-ji.md)
 
