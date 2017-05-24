@@ -17,10 +17,69 @@ v-if and v-show 在学习VUE的过程中发现了VUE本身提供了较多的v的
 ### 动手撸个VUE组件吧
 
 工作中的项目主要使用的是react，关于组件，我认为有以下几点比较重要：
+
 1、父组件向子组件传值；
 2、子组件向父组件通信；
 3、组件自身方法及状态维护；
-那么我们就围绕以上三点开始撸一个VUE组件，
+
+那么我们就围绕以上三点开始撸一个VUE组件，父组件向子组件的传值和react有点类似，都是通过标签的属性进行承载传递的，```<jcxu-goodItem :prdname="test" :prdunit="test3" @child="test1"></jcxu-goodItem>```通过bind命令进行绑定，在组件内部可进行对父组件传递的值得校验，我就直接贴代码了。
+
+```javascript
+<template>
+  <div class="good-container">
+    <span>show message!</span>
+    <span>{{prdname}}</span>
+    <span>这个是来自data的数据{{_data.prdname}}</span>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'jcxu-goodItem',
+    props: {
+      prdname: String,
+      prdunit: String,
+      prdprice: Number,
+      isShowAction: Boolean,
+      imgurl: String,
+      skuname: String
+    },
+    data () {
+      return {
+        prdname: this.prdname + '12'
+      }
+    },
+    mounted () {
+      this.$emit('child', 'hehe')
+      console.log(this, this._data)
+    },
+    methods: {
+      sub () {
+        console.log('点击了减号')
+      },
+      add () {
+        console.log('点击了加号')
+      }
+    }
+  }
+</script>
+
+<style scoped>
+.good-container {
+  width: 100%;
+  height: 2rem;;
+  padding: 0.2rem;
+  background-color: red;
+}
+</style>
+
+```
+
+```javascript
+<jcxu-goodItem :prdname="test" :prdunit="test3" @child="test1"></jcxu-goodItem>
+```
+
+通过在组件上绑定方法，可在组件内部通过：this.$emit进行触发，该函数有俩个参数，第一个参数为回调函数的名称，第二个为向回调函数传递的参数，总体看来还是很方便的，组件传入值得校验，子组件通过回调向父组件通信，稍微有点困惑的props 和 data，与react都比较相似，但是在使用上又更加的方便，唯一比较遗憾的就是父组件向子组件传递时 VUE没有对象的自展开，其他都挺好。
 
 
 
