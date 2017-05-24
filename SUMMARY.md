@@ -48,7 +48,6 @@
 * [图片惰性加载](tu-pian-duo-xing-jia-zai.md)
 * [MySQL 笔记](mysql-bi-ji.md)
 * [css Tips](css-tips.md)
-* [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
 * [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 * [为什么我们需要 redux && vues](wei-shi-yao-wo-men-xu-yao-redux-andand-vues.md)
 * [express 踩坑指南](express-cai-keng-zhi-nan.md)
@@ -61,4 +60,5 @@
 * [javascript基础知识文章合集](javascriptji-chu-zhi-shi-wen-zhang-he-ji.md)
 * [react 组件的三种写法](react-zu-jian-de-san-zhong-xie-fa.md)
 * [VUE 学习笔记](vue-xue-xi-bi-ji.md)
+* [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
 
