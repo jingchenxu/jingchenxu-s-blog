@@ -9,3 +9,15 @@ sudo rm -f sample.txt
 ```linux
 sudo rm sample.txt sample1.txt sample2.txt position
 ```
+
+#### 查找端口占用进程
+
+```shell
+netstat -nlp|grep 8080
+```
+
+#### 强制杀死占用端口进程
+
+```shell
+kill -9 27738
+````
