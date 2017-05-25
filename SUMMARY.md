@@ -62,4 +62,5 @@
 * [react 组件的三种写法](react-zu-jian-de-san-zhong-xie-fa.md)
 * [VUE 学习笔记](vue-xue-xi-bi-ji.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
+* [vim](vim.md)
 
