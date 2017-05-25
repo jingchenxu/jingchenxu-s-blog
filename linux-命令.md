@@ -21,3 +21,9 @@ netstat -nlp|grep 8080
 ```shell
 kill -9 27738
 ````
+
+### 安装nvm
+
+```shell
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+```
