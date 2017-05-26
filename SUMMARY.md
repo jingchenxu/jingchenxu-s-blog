@@ -20,6 +20,7 @@
   * [eclipse 使用不同版本JDK进行编译](eclipse-shi-yong-bu-tong-ban-ben-jdk-jin-xing-bian-yi.md)
   * [eclipse 远程调试](eclipse-yuan-cheng-diao-shi.md)
   * [tomcat 开启gzip](tomcat-kai-qi-gzip.md)
+  * [eclipse 项目配置问题](eclipse-xiang-mu-pei-zhi-wen-ti.md)
 * [flex布局](flex布局.md)
   * [flex-direction](flex-direction.md)
 * [navicat 使用手册](navicat-使用手册.md)
