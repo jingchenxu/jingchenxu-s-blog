@@ -64,4 +64,6 @@
 * [VUE 学习笔记](vue-xue-xi-bi-ji.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
 * [vim](vim.md)
+* [mybatis](mybatis.md)
+  * [关联对象mapper.xml的写法](mybatis/guan-lian-dui-xiang-mapper-xml-de-xie-fa.md)
 
