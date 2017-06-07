@@ -32,28 +32,19 @@ mybatis支持将数据库查询结果映射为一个resultmap，通过resultmap�
 	</select>
 ```
 
-在某些情况下如果出现一对多的情况要怎么办呢？实际的情况比如说是一对多的情况，这个时候就要用到
+在某些情况下如果出现一对多的情况要怎么办呢？实际的情况中比如说是订单，在订单中会有商品列表需要到商品表中去查询，如果在代码中使用for循环的方式调用数据库，相信我速度会很慢，还会被说。
 
 ```xml
+<!--主表结果通过resultMap返回-->
 	<resultMap id="conDetailResultMap" type="com.lflweb.entity.mar.MarMemConDetail">
 	    <result column="conid" property="conid" jdbcType="VARCHAR"/>
-	    <result column="productiondate" property="productiondate" javaType="java.util.Date"/>
-	    <result column="memid" property="memid" jdbcType="VARCHAR"/>
 	    <result column="deliverstatus" property="deliverstatus" jdbcType="VARCHAR"/>
 	    <association property="address" javaType="com.lflweb.entity.ctm.CtmAddress">
 	        <id column="addressid" property="addressid" jdbcType="VARCHAR"/>
 			<result column="addcontact" property="addcontact" jdbcType="VARCHAR"/>
 			<result column="addmobile" property="addmobile" jdbcType="VARCHAR"/>
-			<result column="contactsex" property="contactsex" jdbcType="VARCHAR"/>
-			<result column="addprov" property="addprov" jdbcType="VARCHAR"/>
-			<result column="addcity" property="addcity" jdbcType="VARCHAR"/>
-			<result column="addcounty" property="addcounty" jdbcType="VARCHAR"/>
-			<result column="adddetail" property="adddetail" jdbcType="VARCHAR"/>
-			<result column="addtype" property="addtype" jdbcType="VARCHAR"/>
-			<result column="isdefault" property="isdefault" jdbcType="BOOLEAN"/>
-			<result column="addstatus" property="addstatus" jdbcType="VARCHAR"/>
-			<result column="custid" property="custid" jdbcType="VARCHAR"/>
 	    </association>
+	<!--这部分对应的是javabean中的List<javabean>,它也需要对应一个存储过程或是SQL语句-->
 	    <collection property="memconList" select="GetMemDetails" column="conid" ofType="com.lflweb.entity.mar.MarMemDetail">
 	    </collection>
 	</resultMap>
@@ -61,13 +52,9 @@ mybatis支持将数据库查询结果映射为一个resultmap，通过resultmap�
 	<resultMap id="conDetailsResultMap" type="com.lflweb.entity.mar.MarMemDetail">
 	    <result column="traceid" property="traceid"/>
 	    <result column="skuid" property="skuid"/>
-	    <result column="prdspec" property="prdspec"/>
-	    <result column="prdunit" property="prdunit"/>
-	    <result column="count" property="count"/>
-	    <result column="skuname" property="skuname"/>
 	</resultMap>
 	
-	<!-- 宅配卡配送信息查询(t_mar_mem_Detail) -->
+	<!-- 订单主表存储过程 -->
 	<select id="GetMemDetail" resultMap="conDetailResultMap" statementType="CALLABLE" parameterType="com.lflweb.entity.mar.MarMemConDetail">
 		{call
 		P_Get_XjcMarConDetail(
@@ -75,7 +62,7 @@ mybatis支持将数据库查询结果映射为一个resultmap，通过resultmap�
 		)}
 	</select>
 	
-	<!-- 宅配卡配送信息查询(t_mar_mem_Detail) -->
+	<!-- 订单商品SQL语句 -->
 	<select id="GetMemDetails" resultMap="conDetailsResultMap" parameterType="String">
 		select a.*,b.* from t_mar_mem_detail a LEFT JOIN t_prd_sku b on a.skuid=b.skuid where traceid = #{conid}
 	</select>
