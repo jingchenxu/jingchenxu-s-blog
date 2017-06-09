@@ -61,6 +61,12 @@ net stop mysql
 CREATE USER 'username'@'host' IDENTIFIED BY 'password'; 
 ```
 
+*数据库授权*
+
+```sql
+GRANT ALL ON *.* TO 'pig'@'%'; 
+```
+
 >如果创建不了试试```FLUSH PRIVILEGES```
 
 
