@@ -41,6 +41,8 @@ SHOW TABLES
 
 [安装教程](http://www.cnblogs.com/tongy0/p/6739188.html)
 
+>需要注意的是
+
 *启动命令*
 
 ```sql
