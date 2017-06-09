@@ -55,6 +55,14 @@ net start mysql
 net stop mysql
 ```
 
+*创建用户*
+
+```sql
+CREATE USER 'username'@'host' IDENTIFIED BY 'password'; 
+```
+
+>如果创建不了试试```FLUSH PRIVILEGES```
+
 
 
 
