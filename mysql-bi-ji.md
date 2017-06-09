@@ -39,9 +39,19 @@ SHOW TABLES
 
 ## win10 下安装解压版mysql
 
-![安装教程](http://www.cnblogs.com/tongy0/p/6739188.html)
+[安装教程](http://www.cnblogs.com/tongy0/p/6739188.html)
 
+*启动命令*
 
+```sql
+net start mysql
+```
+
+*关闭命令*
+
+```sql
+net stop mysql
+```
 
 
 
