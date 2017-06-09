@@ -67,4 +67,5 @@
 * [mybatis](mybatis.md)
   * [关联对象mapper.xml的写法](mybatis/guan-lian-dui-xiang-mapper-xml-de-xie-fa.md)
 * [springBoot学习笔记](springbootxue-xi-bi-ji.md)
+  * [创建数据库表](springbootxue-xi-bi-ji/chuang-jian-shu-ju-ku-biao.md)
 
