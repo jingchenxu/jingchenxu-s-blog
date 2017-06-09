@@ -37,6 +37,10 @@ USE foxebook
 SHOW TABLES
 ```
 
+## win10 下安装解压版mysql
+
+![安装教程](http://www.cnblogs.com/tongy0/p/6739188.html)
+
 
 
 
