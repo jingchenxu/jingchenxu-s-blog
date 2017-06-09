@@ -41,7 +41,7 @@ SHOW TABLES
 
 [安装教程](http://www.cnblogs.com/tongy0/p/6739188.html)
 
->需要注意的是
+>需要注意的是原来的修改root密码的命令，目前mysql-5.7.18不支持在命令行中修改密码，对于window端可以通过my.ini文件进行修改。
 
 *启动命令*
 
