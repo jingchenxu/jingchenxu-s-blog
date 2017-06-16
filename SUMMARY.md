@@ -70,4 +70,5 @@
   * [创建数据库表](springbootxue-xi-bi-ji/chuang-jian-shu-ju-ku-biao.md)
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
+* [项目管理](xiang-mu-guan-li.md)
 
