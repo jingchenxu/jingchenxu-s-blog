@@ -16,3 +16,6 @@ git push
 git reset --hard 此处为gitlog中的hash字符串
 ````
 
+- 第一条
+
+
