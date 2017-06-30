@@ -32,6 +32,7 @@
   * [如何生成ssh key](如何生成ssh-key.md)
   * [gitlab部署域名到期](gitlabbu-shu-yu-ming-dao-qi.md)
   * [git 修改ssh 为 http](git-xiu-gai-ssh-wei-http.md)
+  * [git救命有三宝](gitjiu-ming-you-san-bao.md)
 * [Echarts](echarts.md)
   * [在react中使用echarts](reactecharts.md)
 * [react-native学习笔记](react-native.md)
@@ -73,4 +74,7 @@
 * [项目管理](xiang-mu-guan-li.md)
 * [前端工具整合](qian-duan-gong-ju-zheng-he.md)
 * [bootstrap](bootstrap.md)
+* [springMVC工作记录](springmvcgong-zuo-ji-lu.md)
+  * [关于cookie的问题](springmvcgong-zuo-ji-lu/guan-yu-cookie-de-wen-ti.md)
+  * 关于java调用http请求的问题
 
