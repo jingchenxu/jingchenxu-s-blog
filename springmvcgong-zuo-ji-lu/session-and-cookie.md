@@ -16,4 +16,4 @@ session也存在一些问题，session在做负载均衡的时候处理起来比
 
 - 总结
 
-session 与 cookie都是为了保存状态，方便访问，减少不必要的数据库操作，session 和 cookie 基本都可以
+session 与 cookie都是为了保存状态，方便访问，减少不必要的数据库操作，session 和 cookie 基本都可以全局访问，使用方便。
