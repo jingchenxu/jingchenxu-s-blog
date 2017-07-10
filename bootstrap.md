@@ -2,9 +2,9 @@
 
 在bootstrap的使用中modal是常使用的一个组件，如果是简单的弹出，使用非常的方便：
 
-````html
+```html
  data-toggle="modal" data-target="#myModal"
-````
+```
 
 data-toggle：表示触发的组件类型；
 
