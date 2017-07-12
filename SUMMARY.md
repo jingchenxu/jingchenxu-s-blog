@@ -78,4 +78,6 @@
   * [关于cookie的问题](springmvcgong-zuo-ji-lu/guan-yu-cookie-de-wen-ti.md)
   * [关于java调用http请求的问题](springmvcgong-zuo-ji-lu/guan-yu-java-diao-yong-http-qing-qiu-de-wen-ti.md)
   * [session & cookie](springmvcgong-zuo-ji-lu/session-and-cookie.md)
+* [python](python.md)
+  * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
 
