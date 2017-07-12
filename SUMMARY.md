@@ -50,6 +50,7 @@
 * [函数式编程](han-shu-shi-bian-cheng.md)
 * [图片惰性加载](tu-pian-duo-xing-jia-zai.md)
 * [MySQL 笔记](mysql-bi-ji.md)
+  * [MySQL 维护](mysql-bi-ji/mysql-wei-hu.md)
 * [css Tips](css-tips.md)
 * [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 * [为什么我们需要 redux && vues](wei-shi-yao-wo-men-xu-yao-redux-andand-vues.md)
