@@ -27,3 +27,9 @@ kill -9 27738
 ```shell
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
 ```
+
+### 给文件夹下的所有文件赋予权限
+
+```shell
+chmod 777 * -R
+```
