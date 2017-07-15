@@ -21,6 +21,7 @@
   * [eclipse 远程调试](eclipse-yuan-cheng-diao-shi.md)
   * [tomcat 开启gzip](tomcat-kai-qi-gzip.md)
   * [eclipse 项目配置问题](eclipse-xiang-mu-pei-zhi-wen-ti.md)
+  * [tomcat 使用指定版本JDK运行](tomcat-shi-yong-zhi-ding-ban-ben-jdk-yun-xing.md)
 * [flex布局](flex布局.md)
   * [flex-direction](flex-direction.md)
 * [navicat 使用手册](navicat-使用手册.md)
@@ -81,4 +82,6 @@
   * [session & cookie](springmvcgong-zuo-ji-lu/session-and-cookie.md)
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
+* [nginx](nginx.md)
+  * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
 
