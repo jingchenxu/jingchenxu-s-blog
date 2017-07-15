@@ -82,5 +82,5 @@
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
 * [nginx](nginx.md)
-  * nginx 屏蔽tomcat端口号
+  * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
 
