@@ -41,5 +41,12 @@ chmod 777 * -R
 chmod 777 filename
 ```
 
+- 修改文件所属组
+
+```shell
+sudo chown username *
+sudo chgrp username *
+```
+
 
 
