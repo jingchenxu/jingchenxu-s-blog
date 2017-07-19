@@ -37,6 +37,12 @@ USE foxebook
 SHOW TABLES
 ```
 
+*批量修改存储过程创建者*
+
+```sql
+update mysql.proc set DEFINER='usename@%' WHERE NAME='proc_name@%' AND db='mydb';
+```
+
 ## win10 下安装解压版mysql
 
 [安装教程](http://www.cnblogs.com/tongy0/p/6739188.html)
