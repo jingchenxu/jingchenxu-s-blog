@@ -48,5 +48,11 @@ sudo chown username *
 sudo chgrp username *
 ```
 
+- 删除文件夹
+
+```shell
+rm -rf /file/file
+```
+
 
 

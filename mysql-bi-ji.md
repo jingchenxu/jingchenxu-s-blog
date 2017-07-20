@@ -79,6 +79,10 @@ GRANT ALL ON *.* TO 'pig'@'%';
 
 [安装教程](http://www.cnblogs.com/notester/p/5130713.html)
 
+update user set password=password('lfl20170720') where user='lflweb';
+
+FLUSH PRIVILEGES;
+
 
 
 
