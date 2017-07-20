@@ -22,4 +22,4 @@ CATALINA_OPTS="-Xdebug  -Xrunjdwp:transport=dt_socket,address=9988,server=y,susp
 
 ![](/img/eclipse/debug.png)
 
-接下来的事情就和在本地调试代码是一样的啦！
+接下来的事情就和在本地调试代码是一样的啦！退出时点击中断即可。
