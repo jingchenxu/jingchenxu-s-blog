@@ -10,7 +10,9 @@
 
 我就只介绍一种，因为一般远程调试都是为了生产环境进行调试，所以介绍一下在生产环境常用的方式，首先要如果你的生产换进如果是Linux是话，那么需要修改 tomcat>bin>catalina.sh 文件，需要在文件内容的正文开始添加一段代码，注意是正文开始：
 
-```  JAVA_OPTS="$JAVA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9988"```
+```
+CATALINA_OPTS="-Xdebug  -Xrunjdwp:transport=dt_socket,address=9988,server=y,suspend=n"
+```
 
 注意一下，这里的9988就是你接下来要远程调试所用的端口，选个你喜欢的吧！
 
