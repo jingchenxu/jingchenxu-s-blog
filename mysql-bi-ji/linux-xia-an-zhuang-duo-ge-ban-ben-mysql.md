@@ -15,5 +15,9 @@ ps -ef|grep mysql
 ```
 找到对应的进程后通过kill命令关闭MySQL
 
+```shell
+/usr/local/mysql5.6/bin/mysqld_safe --defaults-file=./my.cnf --user=mysql &
+```
+
 
 
