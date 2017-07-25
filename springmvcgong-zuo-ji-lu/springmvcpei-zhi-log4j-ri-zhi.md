@@ -65,7 +65,7 @@ log4j.appender.login.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss} [ %t:%r
 * 注意事项
 
 1、配置文件在eclipse当中通过默认设置显示时，中文会以转义字符串的方式显示，你需要在eclipse当中进行设置：Window-&gt;Preference-&gt;
-![log4j](/img/springMVC/log4j.jpg)
+![log4j](/img/springMVC/log4j.png)
 
 
 
