@@ -66,6 +66,11 @@ log4j.appender.login.layout.ConversionPattern = %-d{yyyy-MM-dd HH:mm:ss} [ %t:%r
 
 1、配置文件在eclipse当中通过默认设置显示时，中文会以转义字符串的方式显示，你需要在eclipse当中进行设置：Window-&gt;Preference-&gt;
 ![log4j](/img/springMVC/log4j.png)
+按照此图进行配置则可正常显示中文。
+
+2、考虑到很多人是在Windows下进行开发，但是系统是在Linux环境下部署的，如何设置日志文件的存放目录呢？如图所示，只需要按照示例中的地址写法即可，在Windows环境下，则会默认以代码所在盘为根目录。
+
+3、需要注意在Linux环境下，你的日志文件写入的文件夹是否有权限写入。
 
 
 
