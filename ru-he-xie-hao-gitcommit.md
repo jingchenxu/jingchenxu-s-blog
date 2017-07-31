@@ -40,4 +40,7 @@ npm i -g cz-conventional-changelog
 echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 ````
 
-以上 
+以上三步设置完成后，只需要git cz即可
+
+![gitcommit](/img/git/gitcommit.gif)
+
