@@ -1,6 +1,6 @@
 ## 如何写好gitcommit
 
-- 添加git commit模板
+- 添加git commit模板``
 
 首先我们需要创建一个git commit的模板，创建完成后，将该模板配置到git当中，然后在每次键入git commit命令的时候，会自动的调用该模板，根据实际的情况修改该模板中的内容，最后进行提交。
 
