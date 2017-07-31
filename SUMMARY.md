@@ -22,6 +22,7 @@
   * [tomcat 开启gzip](tomcat-kai-qi-gzip.md)
   * [eclipse 项目配置问题](eclipse-xiang-mu-pei-zhi-wen-ti.md)
   * [tomcat 使用指定版本JDK运行](tomcat-shi-yong-zhi-ding-ban-ben-jdk-yun-xing.md)
+  * [项目部署后的权限不足问题](xiang-mu-bu-shu-hou-de-quan-xian-bu-zu-wen-ti.md)
 * [flex布局](flex布局.md)
   * [flex-direction](flex-direction.md)
 * [navicat 使用手册](navicat-使用手册.md)
