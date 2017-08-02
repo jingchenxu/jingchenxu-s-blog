@@ -6,5 +6,13 @@
 
 首先我们在eclipse的插件市场找找到这个插件：spring Tools插件，安装完成后就可以新建一个springboot项目
 
-![](./img/springboot/springboot1.gif)
+![](/img/springboot/springboot1.gif)
 
+可以看到这边的项目生成实际还是通过http://start.spring.io 来实现的。
+
+- 通过intellij生成一个springboot项目
+
+最近发现intelij无比的强大，遂开始积极的使用，首先我们先生成一个项目，我们会选择一个项目最基本web，这里是集成了springMVC的，此外还有数据库驱动，数据库持久化工具mybatis。
+
+
+![](/img/springboot/springboot2.gif)
