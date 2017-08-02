@@ -84,6 +84,7 @@
   * [session & cookie](springmvcgong-zuo-ji-lu/session-and-cookie.md)
   * [springMVC配置log4j日志](springmvcgong-zuo-ji-lu/springmvcpei-zhi-log4j-ri-zhi.md)
   * [java多线程](springmvcgong-zuo-ji-lu/javaduo-xian-cheng.md)
+  * [spring中的AOP](springmvcgong-zuo-ji-lu/springzhong-de-aop.md)
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
 * [nginx](nginx.md)
