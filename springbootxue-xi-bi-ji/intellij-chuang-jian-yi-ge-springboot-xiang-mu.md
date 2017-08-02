@@ -6,5 +6,5 @@
 
 首先我们在eclipse的插件市场找找到这个插件：spring Tools插件，安装完成后就可以新建一个springboot项目
 
-![](./img/springboot/springboot.gif)
+![](./img/springboot/springboot1.gif)
 
