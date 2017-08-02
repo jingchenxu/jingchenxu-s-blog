@@ -10,7 +10,9 @@ CREATE TABLE `user` (
   `userName` varchar(25) DEFAULT NULL COMMENT '用户姓名',
   `userAvator` varchar(100) DEFAULT NULL COMMENT '用户头像',
   PRIMARY KEY (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT '用户基础信息表';
 ```
+
+> 对于表中自动增长的主键应该使用整型；创建表的时候将备注信息写上。
 
 
