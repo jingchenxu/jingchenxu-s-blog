@@ -31,4 +31,18 @@
 	</build>
 ````
 
-> 
+> 以上配置完成后，maven会自动下载所有的jar包，但是如果你的网络抽风导致下载失败，在intellij中会出现如下的提示```Failed to read artifact descriptor for xxx:jar ``` 这是由于你的jar包下载失败导致的，这个时候我的解决方案就是到.mvn文件夹中找到对应的jar包，在对应的文件夹中你会看大未下载完成的文件，你需要做的就是删除此文件夹，然后重新下载。
+
+- 在application.properties文件中配置
+
+主要的关于spring-boot-devtools配置文件如下：
+
+````properties
+## spring dev-tool配置
+
+#spring.devtools.livereload.enabled=true
+spring.devtools.restart.enabled=true
+spring.devtools.restart.exclude=static
+spring.thymeleaf.cache=false
+spring.devtools.restart.additional-paths=src/main/java
+````
