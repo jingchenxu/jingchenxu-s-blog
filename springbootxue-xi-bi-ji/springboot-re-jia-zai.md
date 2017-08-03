@@ -46,3 +46,11 @@ spring.devtools.restart.exclude=static
 spring.thymeleaf.cache=false
 spring.devtools.restart.additional-paths=src/main/java
 ````
+
+- 设置intellij
+
+你以为以上的工作做完就就结束了么，没有，如果你使用的是intelij,你还需要另外的配置。
+
+首先File->Settings->Build,Execution,Deployment->Compiler
+
+[intellij配置](/img/springboot/springboot2.png)
