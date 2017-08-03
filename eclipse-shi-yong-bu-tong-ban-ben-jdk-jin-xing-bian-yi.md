@@ -5,3 +5,5 @@
 eclipse本身是可以设置不同的项目使用不同版本的JDK进行编译,具体设置如下：
 右击需要编译的项目->Properties->Java Compiler->调节Compiler compliance level 选择对应的版本即可。
 
+此外eclipse也可指定另外的jre版本。
+
