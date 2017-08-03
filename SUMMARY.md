@@ -74,6 +74,7 @@
 * [springBoot学习笔记](springbootxue-xi-bi-ji.md)
   * [创建数据库表](springbootxue-xi-bi-ji/chuang-jian-shu-ju-ku-biao.md)
   * [intellij 创建一个springboot项目](springbootxue-xi-bi-ji/intellij-chuang-jian-yi-ge-springboot-xiang-mu.md)
+  * [springboot 热加载](springbootxue-xi-bi-ji/springboot-re-jia-zai.md)
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
 * [项目管理](xiang-mu-guan-li.md)
