@@ -53,4 +53,11 @@ spring.devtools.restart.additional-paths=src/main/java
 
 首先File->Settings->Build,Execution,Deployment->Compiler
 
-[intellij配置](/img/springboot/springboot2.png)
+![intellij配置](/img/springboot/springboot2.png)
+
+此外还需要以下的配置
+
+按下Ctrl+Shift+Alt+/ 组合键，选择Registry选项，后勾选下图所示的选项：
+
+![设置立即编译](/img/springboot/springboot3.png)
+
