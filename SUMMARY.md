@@ -24,6 +24,7 @@
   * [tomcat 使用指定版本JDK运行](tomcat-shi-yong-zhi-ding-ban-ben-jdk-yun-xing.md)
   * [项目部署后的权限不足问题](xiang-mu-bu-shu-hou-de-quan-xian-bu-zu-wen-ti.md)
   * [项目导入后jar包找不到的问题](xiang-mu-dao-ru-jar-bao-zhao-bu-dao-de-wen-ti.md)
+  * [eclipse 及 intelij 插件合集](eclipse-ji-intelij-cha-jian-he-ji.md)
 * [flex布局](flex布局.md)
   * [flex-direction](flex-direction.md)
 * [navicat 使用手册](navicat-使用手册.md)
