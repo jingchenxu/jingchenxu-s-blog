@@ -93,4 +93,5 @@
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
 * [nginx](nginx.md)
   * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
+* [关于电商平台的设计](guan-yu-dian-shang-ping-tai-de-she-ji.md)
 
