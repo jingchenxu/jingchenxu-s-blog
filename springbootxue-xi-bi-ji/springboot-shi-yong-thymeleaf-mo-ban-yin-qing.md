@@ -21,3 +21,22 @@ spring.thymeleaf.suffix=.html
 spring.thymeleaf.mode=HTML5
 spring.thymeleaf.content-type=text/html  
 ````
+
+- 添加一个简单的html模板
+
+````html
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>hello world</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="starter-template">
+        <h1>Spring MVC / Thymeleaf / Bootstrap</h1>
+        <p class="lead" th:text="${greeting}">(greeting)</p>
+        <p>The current time is <span th:text="${currentTime}">(time)</span></p>
+      </div>
+    </div>
+  </body>
+</html>
+````
