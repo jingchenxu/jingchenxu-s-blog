@@ -12,7 +12,7 @@
 
 - 配置application文件properties
 
-````xml
+````properties
 # 禁用thymeleaf缓存
 spring.thymeleaf.cache=false
 # 其他配置
