@@ -94,4 +94,8 @@
 * [nginx](nginx.md)
   * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
 * [关于电商平台的设计](guan-yu-dian-shang-ping-tai-de-she-ji.md)
+* [个人开发环境配置说明](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming.md)
+  * [windows](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/windows.md)
+  * [ubuntu](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/ubuntu.md)
+  * [macos](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/macos.md)
 
