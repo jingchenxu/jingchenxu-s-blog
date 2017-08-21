@@ -70,6 +70,7 @@
 * [react 组件的三种写法](react-zu-jian-de-san-zhong-xie-fa.md)
 * [VUE 学习笔记](vue-xue-xi-bi-ji.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
+  * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
 * [mybatis](mybatis.md)
   * [关联对象mapper.xml的写法](mybatis/guan-lian-dui-xiang-mapper-xml-de-xie-fa.md)
