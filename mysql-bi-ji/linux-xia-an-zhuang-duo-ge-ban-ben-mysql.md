@@ -19,5 +19,7 @@ ps -ef|grep mysql
 /usr/local/mysql5.6/bin/mysqld_safe --defaults-file=./my.cnf --user=mysql &
 ```
 
+> 注意上面的shell脚本中./my.cnf 是这么写的，也就意味着你必须在my.cnf文件所在的文件夹的目录下执行此命令，当然你可以在这里写绝对路径， it's up to you.
+
 
 
