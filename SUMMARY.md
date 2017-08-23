@@ -100,5 +100,4 @@
   * [windows](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/windows.md)
   * [ubuntu](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/ubuntu.md)
   * [macos](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/macos.md)
-* [java对象序列化](dui-xiang-xu-lie-hua.md)
 
