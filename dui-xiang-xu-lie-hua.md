@@ -72,3 +72,53 @@ public class Person implements Serializable {
 
 }
 ````
+
+将对象序列化
+
+````java
+package droolscours;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class TestSerial {
+	// 可能会抛出IO异常
+	public static void main(String[] args) throws IOException {
+		// 在同一个包下类可以直接使用
+		Person person = new Person(1234, "xu", null);
+		System.out.println("Person Serial" + person);
+		FileOutputStream fos = new FileOutputStream("Person.txt");
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		oos.writeObject(person);
+		oos.flush();
+		oos.close();
+		System.out.println("=================over----------");
+	}
+}
+````
+
+将对象反序列化
+
+````java
+package droolscours;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+public class TestDeserial {
+	
+    public static void main(String[] args) throws IOException, ClassNotFoundException
+    {
+        Person person;
+ 
+        FileInputStream fis = new FileInputStream("Person.txt");
+        ObjectInputStream ois = new ObjectInputStream(fis);
+        person = (Person) ois.readObject();
+        ois.close();
+        System.out.println("Person Deserial" + person.getName());
+    }
+}
+
+````
