@@ -44,4 +44,6 @@ public String getIpAddr(HttpServletRequest request) {
 
 如果后台是java的话，可以采用此方法获取到正式的发出原始请求的ip,为什么这么说，因为要是做了多级反向代理怎么办（套路深），这个时候会在X-Forwarded-For 中出现多个ip地址，谁是我们想要的，他就是第一个非unknown的有效IP字符串。
 
+注意在微信的其它支付方式，如web、微信浏览器调用，应该是没有此问题的，虽然也有spbill_create_ip字段，但是微信那边好像是没有校验的，只有微信h5支付会出现此问题。
+
 ~完
