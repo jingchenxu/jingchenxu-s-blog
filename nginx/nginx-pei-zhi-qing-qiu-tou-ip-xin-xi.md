@@ -27,29 +27,21 @@ proxy_pass http://localhost:8080;
 }  
 ````
 ````java
-    public String getIpAddr(HttpServletRequest request) {
-
+public String getIpAddr(HttpServletRequest request) {
     	String ip = request.getHeader("x-forwarded-for");
-
     	if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-
     	ip = request.getHeader("Proxy-Client-IP");
-
     	}
-
     	if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-
     	ip = request.getHeader("WL-Proxy-Client-IP");
-
     	}
-
     	if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-
     	ip = request.getRemoteAddr();
-
     	}
-
     	return ip;
-
-    	}
+}
 ````
+
+如果后台是java的话，可以采用此方法获取到正式的发出原始请求的ip,为什么这么说，因为要是做了多级反向代理怎么办（套路深），这个时候会在X-Forwarded-For 中出现多个ip地址，谁是我们想要的，他就是第一个非unknown的有效IP字符串。
+
+~完
