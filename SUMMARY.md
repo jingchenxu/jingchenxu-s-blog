@@ -30,6 +30,7 @@
 * [navicat 使用手册](navicat-使用手册.md)
   * [如果你想将数据库表导出为excel](如果你想将数据库表导出为excel.md)
   * [数据库同步](数据库同步.md)
+  * [MySQL批量杀死数据库连接进程](mysqlpi-liang-sha-si-shu-ju-ku-lian-jie-jin-cheng.md)
 * [webpack学习笔记](webpack学习笔记.md)
 * [.babelrc是什么](babelrc是什么.md)
 * [git](git.md)
