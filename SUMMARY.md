@@ -57,6 +57,7 @@
 * [图片惰性加载](tu-pian-duo-xing-jia-zai.md)
 * [MySQL 笔记](mysql-bi-ji.md)
   * [Linux 下安装多个版本MySQL](mysql-bi-ji/linux-xia-an-zhuang-duo-ge-ban-ben-mysql.md)
+  * [MySQL 存储过程的写法](mysql-bi-ji/mysql-cun-chu-guo-cheng-de-xie-fa.md)
 * [css Tips](css-tips.md)
 * [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 * [为什么我们需要 redux && vues](wei-shi-yao-wo-men-xu-yao-redux-andand-vues.md)
