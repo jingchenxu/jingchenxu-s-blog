@@ -58,3 +58,24 @@ BEGIN
 
 END;
 ````
+
+- sql 语句拼接
+
+> 动态的生成sql语句进行查询等操作
+
+````sql
+BEGIN
+		set @Sql = 'SELECT * from t_ctm_address a where 1=1';
+
+		if (_search is not null) and (_search != '')
+		then
+			set @Sql = concat(@Sql,' and ',_search);
+		end if;
+
+		
+		prepare stmt from @Sql;  
+        execute stmt;  
+        DEALLOCATE PREPARE stmt; 	
+	
+END
+````
