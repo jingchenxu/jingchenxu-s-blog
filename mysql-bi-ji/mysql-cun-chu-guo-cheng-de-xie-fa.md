@@ -41,3 +41,20 @@ END
 
 > 可将对于同一张表的不同类型的操作写在同一个存储过程当中，通过传入不同的参数来执行。
 
+````sql
+CREATE DEFINER = `skip-grants user`@`skip-grants host` PROCEDURE `NewProc`(IN `actiontype` varchar(2), IN `orderid` varchar(20))
+BEGIN
+	#Routine body goes here...
+  SET @testid = 'OR201705150002435080';
+  SET @testid0 = 'OR201705150014935141';
+  SET @casetype = `actiontype`;
+  CASE `actiontype`
+       WHEN '01' THEN
+       SELECT * FROM t_ord_base a WHERE a.orderid=@testid;
+
+       WHEN '02' THEN
+       SELECT * FROM t_ord_base a WHERE a.orderid=@testid0;
+  END CASE;
+
+END;
+````
