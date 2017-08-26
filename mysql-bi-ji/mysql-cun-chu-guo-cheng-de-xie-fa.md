@@ -21,3 +21,18 @@ BEGIN
 
 END
 ````
+
+- 存储过程中的局部变量
+
+> 计算查询结果的条数，作为局部变量用于下一步的判断或计算之类
+
+````sql
+BEGIN
+  # 通过set进行赋值
+  SET @testid = 'OR201705150002435080';
+  # SELECT 也可以进行赋值，并且会在结果集中显示，赋值的默认值为NULL
+  SELECT @result, @test :=23, @test1, @testid;
+	SELECT COUNT(*) INTO @result from t_ord_base a WHERE a.orderid=@testid;
+
+END
+````
