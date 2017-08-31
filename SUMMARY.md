@@ -108,4 +108,6 @@
 * [Linux配置相关](linuxpei-zhi-xiang-guan.md)
   * [开启Linux的root远程登录](linuxpei-zhi-xiang-guan/kai-qi-linux-de-root-yuan-cheng-deng-lu.md)
   * [Linux 配置多个tomcat](linuxpei-zhi-xiang-guan/linux-pei-zhi-duo-ge-tomcat.md)
+* [Drools 7.2.0](drools-720.md)
+  * [让我们认识drools](drools-720/rang-wo-men-ren-shi-drools.md)
 
