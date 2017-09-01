@@ -14,3 +14,9 @@
 
 ![图片](/img/Drools/Drools2.png)
 
+接下来通过new来创建一个项目
+
+![图片](/img/Drools/Drools3.png)
+
+
+
