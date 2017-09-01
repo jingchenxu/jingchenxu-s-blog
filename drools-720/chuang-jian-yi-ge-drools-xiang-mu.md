@@ -10,3 +10,7 @@
 
 ![图片](/img/Drools/Drools1.png)
 
+通过eclipse的插件安装机制进行安装，安装界面如下
+
+![图片](/img/Drools/Drools2.png)
+
