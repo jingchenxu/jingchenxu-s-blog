@@ -18,6 +18,11 @@
 ![图片](/img/Drools/class.png)
 如图图中的JUnit 4library是会被添加到最终发布的war包的WEB-INF的lib文件夹中的。
 
+- 出现中文乱码怎么办
+
+Drools运行时的编码使用的是系统的默认编码，所以需要注意你的系统的默认编码是什么，此外还需要注意你的文件编码是什么，一般最好设置你所有的编码格式为UTF-8，网上搜一下，Drools中文乱码的原因，我找了一下大概还要一种可能没有涉及到，那就是eclipse的工作空间的编码格式，如下图：
+![图片](/img/Drools/Drools6.png)
+
 - 备注
 
 Drools各版本下载地址：![Drools下载地址](http://download.jboss.org/drools/release/)
