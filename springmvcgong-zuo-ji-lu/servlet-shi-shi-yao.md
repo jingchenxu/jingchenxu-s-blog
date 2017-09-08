@@ -33,6 +33,73 @@ java框架的使用，让我们离底层的实现原理越来越远，如果是�
 
 目前在一些代码中仍然会看到这样的代码，并没有使用框架而是使用实现servlet类来实现接口功能，那我们就来看一下，具体如何实现：
 
+````java
+package testhttpservlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HelloServlet extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	 public void doGet(HttpServletRequest request,
+	  HttpServletResponse response)throws IOException,ServletException{
+	  //请求http://localhost:8080/DroolsTest/hello？clientName=me 访问
+	  String clientName=request.getParameter("clientName");
+	  if(clientName!=null)
+	   clientName=new String(clientName.getBytes("ISO-8859-1"),"GB2312");
+	  else
+	   clientName="我的朋友";
+
+	  //第四步：生成HTTP响应结果
+	  PrintWriter out;
+	  String title="HelloServlet";
+	  String heading1="HelloServlet的doGet方法的输出：";
+	  //set content type
+	  response.setContentType("text/html;charset=UTF-8");
+	  //write html page
+	  out=response.getWriter();
+	  out.print("<HTML><HEAD><TITLE>"+title+"</TITLE>");
+	  out.print("</HEAD><BODY>");
+	  out.print(heading1);
+	  out.println("<h1><p>"+clientName+":您好</h1>");
+	  out.print("</BODY></HTML>");
+
+	  out.close();
+	 }
+}
+````
+
+web.xml配置如下
+
+````xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>DroolsTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+   <servlet-name>HelloServlet</servlet-name>
+   <servlet-class>testhttpservlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>HelloServlet</servlet-name>
+   <url-pattern>/hello</url-pattern>
+</servlet-mapping>
+</web-app>
+````
 
 - 参考
 
