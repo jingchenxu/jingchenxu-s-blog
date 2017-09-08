@@ -101,6 +101,9 @@ web.xml配置如下
 </web-app>
 ````
 
+- 其他
+
+Spring 对于客户端请求的处理本质其实也是servlet，spring通过DispatcherServlet来实现Servlet这个接口，在DispatcherServlet中添加了一些其他的方法，从而能更好、更方便的实现一个接口。
 
 相关代码可见[github](https://github.com/jingchenxu/drools-lesson)
 
