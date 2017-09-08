@@ -101,6 +101,8 @@ web.xml配置如下
 </web-app>
 ````
 
+相关代码可见[github](https://github.com/jingchenxu/drools-lesson)
+
 - 参考
 
 [HttpServlet详解](http://www.cnblogs.com/panjun-Donet/archive/2010/02/22/1671290.html)
