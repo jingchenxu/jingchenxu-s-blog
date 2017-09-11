@@ -101,6 +101,7 @@
 * [nginx](nginx.md)
   * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
   * [nginx 配置请求头ip信息](nginx/nginx-pei-zhi-qing-qiu-tou-ip-xin-xi.md)
+  * [spring、nginx、tomcat、redis负载均衡](nginx/springnginxtomcatredisfu-zai-jun-heng.md)
 * [关于电商平台的设计](guan-yu-dian-shang-ping-tai-de-she-ji.md)
 * [个人开发环境配置说明](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming.md)
   * [windows](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/windows.md)
