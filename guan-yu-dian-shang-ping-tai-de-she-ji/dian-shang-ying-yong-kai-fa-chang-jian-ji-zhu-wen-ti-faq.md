@@ -42,7 +42,110 @@ CREATE TABLE `t_log_client_error` (
 
 #### 客户端及服务端缓存
 
-首先说我们遇到的问题，在我做过的一个项目当中，
+首先说我们遇到的问题，在我做过的一个项目当中，首页加载会调用大量的接口，大概有4个接口的样子，但是首页的内容在大部分的情况下，内容是不会改变的，如果用户频繁的回到首页，那么后台就会频繁的调用到这四个接口，如果在服务器资源不是很富裕的情况下，这显然也是一种资源的浪费。
+
+解决的法案从大的方向上来说可以分为2种，一个是从客户端解决，还有一个是从服务端解决，先说客户端解决的思路，客户端解决，那就需要用到客户端的一些特性，在安卓端本身自带了sqllite这样的数据库，在浏览器端有cookie、localstorage、indexDB，我们可以将一些不会经常改变的数据缓存在客户端，而不需要每次都请求服务端。
+
+我在日常的开发中使用了fetch API，使用的是dva框架，在框架中已经集成了fetch的工具方法，我们看到其原先的代码是这样的：
+
+````javascript
+import fetch from 'dva/fetch';
+//返回的参数为response对象
+function parseJSON(response) {
+  return response.json();
+}
+
+function checkStatus(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return response;
+  }
+
+  const error = new Error(response.statusText);
+  error.response = response;
+  throw error;
+}
+export default function request(url, options) {
+  return fetch(url, options)
+    .then(checkStatus)
+    .then(parseJSON)
+    .then((data) => ({ data }))
+    .catch((err) => ({ err }));
+}
+````
+
+下面我们在请求中添加客户端缓存的功能：
+
+````javascript
+import fetch from 'dva/fetch';
+//返回的参数为response对象
+function parseJSON(response) {
+  return response.json();
+}
+
+function checkStatus(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return response;
+  }
+  // 这边可以调用一个借口调用报错的接口
+  const error = new Error(response.statusText);
+  error.response = response;
+  throw error;
+}
+
+const cachedrequest = (url, options) => {
+  let expiry = 1 * 60 // 默认 1 min
+  if (typeof options === 'number') {
+    expiry = options
+    options = undefined
+  } else if (typeof options === 'object') {
+    // 但愿你别设置为 0
+    expiry = options.seconds || expiry
+  }
+  // 将 URL 作为 localStorage 的 key
+  let cacheKey = url
+  let cached = localStorage.getItem(cacheKey)
+  let whenCached = localStorage.getItem(cacheKey + ':ts')
+  if (cached !== null && whenCached !== null) {
+    // 耶！ 它在 localStorage 中
+    // 尽管 'whenCached' 是字符串
+    // 但减号运算符会将其转换为数字
+    let age = (Date.now() - whenCached) / 1000
+    if (age < expiry) {
+      let response = new Response(new Blob([cached]))
+      return Promise.resolve(response).then(parseJSON).then((data) => ({data}))
+    } else {
+      // 清除旧值
+      localStorage.removeItem(cacheKey)
+      localStorage.removeItem(cacheKey + ':ts')
+    }
+  }
+  return fetch(url, options).then(response => {
+    // 仅在结果为 JSON 或其他非二进制数据情况下缓存结果
+    if (response.status === 200) {
+      let ct = response.headers.get('Content-Type')
+      if (ct && (ct.match(/application\/json/i) || ct.match(/text\//i))) {
+        // 当然，除了 .text()，也有 .json() 方法
+        // 不过结果最终还是会以字符串形式存在 sessionStorage 中
+        // 如果不克隆 response，在其返回时就会被使用
+        // 这里用这种方式，保持非入侵性
+        response.clone().text().then(content => {
+          localStorage.setItem(cacheKey, content)
+          localStorage.setItem(cacheKey+':ts', Date.now())
+        })
+      }
+    }
+    return Promise.resolve(response).then(parseJSON).then((data) => ({data}))
+  })
+}
+
+export default cachedrequest
+````
+
+上面这段代码的作用就在于，每次向服务端发送请求前，该方法会在浏览器的localstorage中查找在之前是否有该接口返回数据存在，如果有，则比较该结果有没有超过失效时间，如果没有超过失效时间，则直接取localstorage中的数据，超过失效时间则会向服务端请求该接口的内容，通过该方法实现了避免多次调用内容不会改变的接口。
+
+客户的思路大致就是这样的，接下来是服务端的缓存思路。
+
+
 
 11. 接口对接总结
 
