@@ -20,4 +20,62 @@ server localhost:8081;
 
 - redis存储session
 
-上一种方案最后的问题在于session是存储在内存当中的，另外一个tomcat无法获取当前tomcat的session，那我们就要解决这个问题，那就是将session放在一个俩个tomcat都可以访问的地方，
+上一种方案最后的问题在于session是存储在内存当中的，另外一个tomcat无法获取当前tomcat的session，那我们就要解决这个问题，那就是将session放在一个俩个tomcat都可以访问的地方，都可访问的地方是哪里呢，可以是一个文件，可以是一数据库，最重要的是2个tomcat都能够访问这个地方，这其实就是相当于重写，tomcat的session的写入和读出方法，原本是写入内存的，我们写入文件或数据库。
+
+我们暂且先不讨论如何使用写入文件来实现这个功能，网上比较通用的方式是写入redis，那最重要的一点，如何实现tomcat将session写入redis，和从redis读出。
+
+1. 安装redis
+
+先创建一个文件夹，文件夹最好不要中文的，然后进入到这个文件夹下开始操作，执行下面的命令：
+
+````shell
+$ wget http://download.redis.io/releases/redis-3.2.1.tar.gz
+$ tar xzf redis-3.2.1.tar.gz
+$ cd redis-3.2.1
+$ make
+````
+
+在以上命令执行完成后，我们需要启动redis，在执行完之前的命令的时候，我们应该是在解压目录下的：
+
+````shell
+root@ubuntu:/jinhetech/redis-3.2.1# ls
+00-RELEASENOTES  CONTRIBUTING  deps     Makefile   README.md   runtest          runtest-sentinel  src    utils
+BUGS             COPYING       INSTALL  MANIFESTO  redis.conf  runtest-cluster  sentinel.conf     tests
+````
+
+大致的我们可以看到在解压目录下的文件主要有这些，更多的文件是在src文件夹下，通过以下命令启动redis：
+
+````shell
+root@ubuntu:/jinhetech/redis-3.2.1# ./src/redis-server ./redis.conf
+````
+
+启动成功的场景是这样的，注意不要管理命令行窗口，因为这个命令不是后台运行的命令，如果你要继续进行操作，请启动另外的窗口：
+
+````shell
+12585:M 10 Sep 22:25:29.166 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.2.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 12585
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+12585:M 10 Sep 22:25:29.167 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+12585:M 10 Sep 22:25:29.167 # Server started, Redis version 3.2.1
+12585:M 10 Sep 22:25:29.167 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+12585:M 10 Sep 22:25:29.167 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+12585:M 10 Sep 22:25:29.167 * The server is now ready to accept connections on port 6379
+````
+2. 配置redis
+
