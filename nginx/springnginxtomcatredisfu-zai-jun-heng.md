@@ -79,3 +79,8 @@ root@ubuntu:/jinhetech/redis-3.2.1# ./src/redis-server ./redis.conf
 ````
 2. 配置redis
 
+我们为了实现session存储到redis的功能，主要设置的有2个地方，一个就是设置redis的访问密码，还有一个就是开启redis的运程访问。
+
+在解压的根目录下我们应该能找到redis.conf文件，编辑该文件，修改以上2个配置项，搜索文档中的bind 127.0.0.1 并注释掉；就算这个注释掉了也不意味着你就可以访问数据库了，你还需要禁用保护模式，搜索protected-mode yes,修改yes为no；最后设置一下密码，文档搜索requirepass foobared,设置requirepass 123456,以上配置完成后，记得用上面的命令将redis重启一下。
+
+
