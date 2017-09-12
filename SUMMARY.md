@@ -103,6 +103,7 @@
   * [nginx 配置请求头ip信息](nginx/nginx-pei-zhi-qing-qiu-tou-ip-xin-xi.md)
   * [spring、nginx、tomcat、redis负载均衡](nginx/springnginxtomcatredisfu-zai-jun-heng.md)
 * [关于电商平台的设计](guan-yu-dian-shang-ping-tai-de-she-ji.md)
+  * [电商应用开发常见技术问题FAQ](guan-yu-dian-shang-ping-tai-de-she-ji/dian-shang-ying-yong-kai-fa-chang-jian-ji-zhu-wen-ti-faq.md)
 * [个人开发环境配置说明](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming.md)
   * [windows](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/windows.md)
   * [ubuntu](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/ubuntu.md)
