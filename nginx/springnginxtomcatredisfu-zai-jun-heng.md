@@ -83,4 +83,26 @@ root@ubuntu:/jinhetech/redis-3.2.1# ./src/redis-server ./redis.conf
 
 在解压的根目录下我们应该能找到redis.conf文件，编辑该文件，修改以上2个配置项，搜索文档中的bind 127.0.0.1 并注释掉；就算这个注释掉了也不意味着你就可以访问数据库了，你还需要禁用保护模式，搜索protected-mode yes,修改yes为no；最后设置一下密码，文档搜索requirepass foobared,设置requirepass 123456,以上配置完成后，记得用上面的命令将redis重启一下。
 
+3. 配置tomcat
+
+接下来我们要实现的功能就是，tomcat的session读写目标为redis，而不是内存，我们会使用[tomcat-redis-session-manager](https://github.com/jcoleman/tomcat-redis-session-manager)这样的库来实现redis读写session，原本我们是需要，通过编译源码来获得实现此功能的jar包的，但是现在我们可以通过别人打好的jar包实现此功能（[下载地址](https://pan.baidu.com/s/1bokMOVH)），将里面的3个jar包放到tomcat的lib文件夹中，此外还需设置tomcat根目录下的/conf/context.xml文件，添加代码如下：
+
+````xml
+    <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />        
+    <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager" 
+        host="localhost"       
+        port="6379"                 
+        password="123456"            
+        database="0"                 
+        maxInactiveInterval="60" />
+````
+
+如果你正在部署你的项目，你可以将你的项目发布到tomcat当中，访问你的应用后，通过redis命令或是使用RedisDesktopManager客户端访问redis，查看session是否已被写入到redis数据库中，如果你只是想测试的话，你可以使用我的[测试项目](https://github.com/jingchenxu/drools-lesson)，我将会在该项目中添加一些示例。
+
+4. 对象序列化
+
+我们存储到session当中的数据可能并不都是java的基本数据类型，可能是一个java对象，那么对象如何存储到数据库当中呢！你可以搜索我的博客，查找java对象序列化相关的文章，tomcat-redis-session-manager支持将java对象序列化后存储到redis数据库，但是前提是我们的对象支持序列化，所以我们的类需要实现Serializable接口。
+
+
+
 
