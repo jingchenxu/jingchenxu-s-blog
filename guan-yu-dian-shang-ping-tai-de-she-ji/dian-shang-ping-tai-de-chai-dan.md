@@ -23,5 +23,14 @@
 
 - 拆单规则设计
 
-分析上面的拆单因素拆单的原因主要为商品的种类，
+分析上面的拆单因素拆单的原因主要为商品的种类，相同类型的商品必然是在一个订单当中的，先判断判断商品有哪些种类：
+
+桶： Boolean false
+套： Boolean false
+箱： Boolean false
+购买空桶： Boolean false
+抵押空桶： Boolean false
+
+if(抵押)
+
 
