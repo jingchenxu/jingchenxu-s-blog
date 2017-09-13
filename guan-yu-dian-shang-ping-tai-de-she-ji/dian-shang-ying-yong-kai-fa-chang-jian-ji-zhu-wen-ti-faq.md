@@ -32,9 +32,13 @@ CREATE TABLE `t_log_client_error` (
 
 4. 项目文件服务器处理
 
+[前后端分离情况下图片资源管理问题](/qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
+
 5. 规则引擎的使用
 
 6. 单页应用优化
+
+[tomcat 开启gzip](/tomcat-kai-qi-gzip.md)
 
 7. 多线程技术使用
 
