@@ -117,4 +117,5 @@
   * [让我们认识drools](drools-720/rang-wo-men-ren-shi-drools.md)
   * [创建一个Drools项目](drools-720/chuang-jian-yi-ge-drools-xiang-mu.md)
   * [spring 项目集成Drools6.5.0Final](drools-720/spring-xiang-mu-ji-cheng-drools6-5-0final.md)
+  * [开始使用Drools](drools-720/kai-shi-shi-yong-drools.md)
 
