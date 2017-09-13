@@ -28,6 +28,8 @@ CREATE TABLE `t_log_client_error` (
 
 3. 服务端热更新及负载均衡方案
 
+[spring、nginx、tomcat、redis负载均衡](/nginx/springnginxtomcatredisfu-zai-jun-heng.md)
+
 4. 项目文件服务器处理
 
 5. 规则引擎的使用
