@@ -175,3 +175,66 @@ public class KnowledgeSessionHelper {
 }
 ````
 
+- 使用示例
+
+````java
+package com.drools.connectors;
+
+import java.util.List;
+
+import org.kie.api.runtime.KieContainer;
+import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.StatelessKieSession;
+
+import com.drools.util.KnowledgeSessionHelper;
+import com.gpersist.entity.ReturnValue;
+import com.nestle.entity.act.InvoiceTrans;
+import com.nestle.entity.act.InvoiceTransdetail;
+import com.nestle.entity.ctm.CtmBase;
+import com.nestle.entity.ord.OrdBase;
+import com.nestle.entity.ord.OrdSubdetail;
+
+public class OrderChange {
+	
+	private String rulename = "";
+	public OrderChange(String name) {
+		rulename = name;
+	}
+	
+	StatelessKieSession sessionStateless = null;
+	KieSession sessionStatefull = null;
+	static KieContainer kieContainer;
+	
+    private OrderBase orderbase;
+    
+    private ReturnValue rtv;
+	
+	public OrderBase getOrderbase() {
+		return orderbase;
+	}
+
+	public void setOrderbase(OrderBase orderbase) {
+		this.orderbase = orderbase;
+	}
+
+	public ReturnValue getRtv() {
+		return rtv;
+	}
+
+	public void setRtv(ReturnValue rtv) {
+		this.rtv = rtv;
+	}
+
+	public void excute() {
+		kieContainer = KnowledgeSessionHelper.createRuleBase();
+		sessionStatefull = KnowledgeSessionHelper.getStatefulKnowledgeSession(kieContainer, rulename);
+		sessionStatefull.insert(orderbase);
+		sessionStatefull.insert(rtv);
+		int n = sessionStatefull.fireAllRules();
+		sessionStatefull.dispose();
+		System.out.println("共触发了"+n+"条规则");
+	}
+	
+	
+}
+````
