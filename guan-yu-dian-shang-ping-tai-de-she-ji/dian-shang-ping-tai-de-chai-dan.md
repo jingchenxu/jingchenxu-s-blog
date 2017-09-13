@@ -25,12 +25,52 @@
 
 分析上面的拆单因素拆单的原因主要为商品的种类，相同类型的商品必然是在一个订单当中的，先判断判断商品有哪些种类：
 
-桶： Boolean false
-套： Boolean false
-箱： Boolean false
-购买空桶： Boolean false
-抵押空桶： Boolean false
+支付方式
 
-if(抵押)
+paytype:01(微信支付)、02（支付宝支付）、03（现金支付）、04（水票支付）
+
+桶： Boolean false istong
+套： Boolean false istao
+箱： Boolean false isxiang
+购买空桶： Boolean false isgoumai
+抵押空桶： Boolean false isdiya
+
+按照分类分别组装5组商品数据
+
+桶： ArrayList [] tong
+套： ArrayList [] tao
+箱： ArrayList [] xiang
+购买空桶： ArrayList [] goumai
+抵押空桶： ArrayList [] diya
+
+拆单的情况有下面几种：
+
+1、(isdiya) 
+
+将抵押空桶进行拆分（现金支付）
+
+2、(istao)
+
+将水票拆为独立的订单（现金支付）
+
+3、(istong) && (istao)
+
+将桶装水拆为独立订单（水票支付）
+
+4、(isgoumai) && (istao)
+
+将购买的空桶拆为一个订单（现金支付）；将水票套餐拆为一个订单（现金支付）。
+
+5、(paytype == "水票支付") && (isgoumai)
+
+将购买的空桶拆为一个订单（现金支付）；将桶装水拆为一个订单（水票支付）。
+
+6、none
+
+不拆单
+
+
+
+
 
 
