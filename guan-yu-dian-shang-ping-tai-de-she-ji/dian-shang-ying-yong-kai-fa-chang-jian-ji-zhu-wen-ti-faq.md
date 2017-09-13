@@ -22,33 +22,35 @@ CREATE TABLE `t_log_client_error` (
 
 电商应用有时会使用社交账号，随着时代的发展，很多的社交账户的用户名使用的是emoji字符，MySQL旧版本是不支持emoji字符的，如果想要能够存储emoji字符，需要升级MySQL到5.5.3或更高的版本，字符集需要设置为utf8mb4
 
-2. 客户端技术选型
+#### 客户端技术选型
 
 电商应用往往会涉及到多客户端，最主要的几大客户端为：ios、android、web、wap,wap端还可能需要细分一个微信端，对于web端，
 
-3. 服务端热更新及负载均衡方案
+#### 服务端热更新及负载均衡方案
 
 [spring、nginx、tomcat、redis负载均衡](/nginx/springnginxtomcatredisfu-zai-jun-heng.md)
 
-4. 项目文件服务器处理
+#### 项目文件服务器处理
 
 [前后端分离情况下图片资源管理问题](/qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 
-5. 规则引擎的使用
+#### 规则引擎的使用
 
-6. 单页应用优化
+#### 单页应用优化
 
 [tomcat 开启gzip](/tomcat-kai-qi-gzip.md)
 
-7. 多线程技术使用
+#### 多线程技术使用
 
 [java多线程](/springmvcgong-zuo-ji-lu/javaduo-xian-cheng.md)
 
-8. 集成系统日志
+#### 集成系统日志
 
 [springMVC配置log4j日志](/springmvcgong-zuo-ji-lu/springmvcpei-zhi-log4j-ri-zhi.md)
 
-9. mybatis关联查询优化
+#### mybatis关联查询优化
+
+[关联对象mapper.xml的写法](mybatis/guan-lian-dui-xiang-mapper-xml-de-xie-fa.md)
 
 #### 客户端及服务端缓存
 
@@ -157,7 +159,7 @@ export default cachedrequest
 
 
 
-11. 绿富隆项目订单保存及拆单
+#### 绿富隆项目订单保存及拆单
 
 [电商平台的拆单保存及拆单](dian-shang-ping-tai-de-chai-dan.md)
 
