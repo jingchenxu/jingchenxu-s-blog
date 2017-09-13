@@ -238,3 +238,5 @@ public class OrderChange {
 	
 }
 ````
+
+示例可见[github](https://github.com/jingchenxu/drools-lesson)
