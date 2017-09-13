@@ -42,6 +42,8 @@ CREATE TABLE `t_log_client_error` (
 
 7. 多线程技术使用
 
+[java多线程](/springmvcgong-zuo-ji-lu/javaduo-xian-cheng.md)
+
 8. 集成系统日志
 
 9. mybatis关联查询优化
