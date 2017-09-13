@@ -18,3 +18,5 @@ rule "Your First Rule"
 
 end
 ````
+
+我们可以看到这样的几个关键字 rule、when、then、end
