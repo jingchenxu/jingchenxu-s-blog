@@ -46,6 +46,8 @@ CREATE TABLE `t_log_client_error` (
 
 8. 集成系统日志
 
+[springMVC配置log4j日志](/springmvcgong-zuo-ji-lu/springmvcpei-zhi-log4j-ri-zhi.md)
+
 9. mybatis关联查询优化
 
 #### 客户端及服务端缓存
