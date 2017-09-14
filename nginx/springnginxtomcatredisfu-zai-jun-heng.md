@@ -94,6 +94,8 @@ config get requirepass
 auth 123456
 ````
 
+此外在redis的配置文件中默认的redis模式台启动的，所以我们可以看到上面redis启动的提示，一旦我们关闭当前的命令窗口，那么该redis也就关闭了，所以我们需要将redis设置为后台运行，在redis的配置文件当中，我们找到daemonize 这个选项，设置为yes即可。
+
 3. 配置tomcat
 
 接下来我们要实现的功能就是，tomcat的session读写目标为redis，而不是内存，我们会使用[tomcat-redis-session-manager](https://github.com/jcoleman/tomcat-redis-session-manager)这样的库来实现redis读写session，原本我们是需要，通过编译源码来获得实现此功能的jar包的，但是现在我们可以通过别人打好的jar包实现此功能（[下载地址](https://pan.baidu.com/s/1bokMOVH)），将里面的3个jar包放到tomcat的lib文件夹中，此外还需设置tomcat根目录下的/conf/context.xml文件，添加代码如下：
