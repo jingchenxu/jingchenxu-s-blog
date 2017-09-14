@@ -119,4 +119,7 @@
   * [spring 项目集成Drools6.5.0Final](drools-720/spring-xiang-mu-ji-cheng-drools6-5-0final.md)
   * [开始使用Drools](drools-720/kai-shi-shi-yong-drools.md)
   * [drl 文件的一些语法](drools-720/drl-wen-jian-de-yi-xie-yu-fa.md)
+* [intelij 使用手册](intelij-shi-yong-shou-ce.md)
+  * [如何从eclipse迁移](intelij-shi-yong-shou-ce/ru-he-cong-eclipse-qian-yi.md)
+  * 一些常规的配置
 
