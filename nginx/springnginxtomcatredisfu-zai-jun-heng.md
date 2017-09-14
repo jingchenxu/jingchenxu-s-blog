@@ -83,6 +83,17 @@ root@ubuntu:/jinhetech/redis-3.2.1# ./src/redis-server ./redis.conf
 
 在解压的根目录下我们应该能找到redis.conf文件，编辑该文件，修改以上2个配置项，搜索文档中的bind 127.0.0.1 并注释掉；就算这个注释掉了也不意味着你就可以访问数据库了，你还需要禁用保护模式，搜索protected-mode yes,修改yes为no；最后设置一下密码，文档搜索requirepass foobared,设置requirepass 123456,以上配置完成后，记得用上面的命令将redis重启一下。
 
+需要注意的是，如果你是通过命令创建的密码，在redis重启之后是会失效的，防止密码失效的方法是在redis的配置文件redis.conf文件中配置密码：
+
+通过命令行配置代码如下：
+````shell
+./src/redis-cli
+config set requirepass 123456
+config get requirepass
+//此时你想要获取密码的时候回提示你先登录
+auth 123456
+````
+
 3. 配置tomcat
 
 接下来我们要实现的功能就是，tomcat的session读写目标为redis，而不是内存，我们会使用[tomcat-redis-session-manager](https://github.com/jcoleman/tomcat-redis-session-manager)这样的库来实现redis读写session，原本我们是需要，通过编译源码来获得实现此功能的jar包的，但是现在我们可以通过别人打好的jar包实现此功能（[下载地址](https://pan.baidu.com/s/1bokMOVH)），将里面的3个jar包放到tomcat的lib文件夹中，此外还需设置tomcat根目录下的/conf/context.xml文件，添加代码如下：
