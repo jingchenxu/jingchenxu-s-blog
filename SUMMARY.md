@@ -121,5 +121,5 @@
   * [drl 文件的一些语法](drools-720/drl-wen-jian-de-yi-xie-yu-fa.md)
 * [intelij 使用手册](intelij-shi-yong-shou-ce.md)
   * [如何从eclipse迁移](intelij-shi-yong-shou-ce/ru-he-cong-eclipse-qian-yi.md)
-  * 一些常规的配置
+  * [一些常规的配置](intelij-shi-yong-shou-ce/yi-xie-chang-gui-de-pei-zhi.md)
 

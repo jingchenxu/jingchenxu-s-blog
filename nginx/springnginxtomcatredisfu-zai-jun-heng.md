@@ -116,6 +116,10 @@ auth 123456
 
 我们存储到session当中的数据可能并不都是java的基本数据类型，可能是一个java对象，那么对象如何存储到数据库当中呢！你可以搜索我的博客，查找java对象序列化相关的文章，tomcat-redis-session-manager支持将java对象序列化后存储到redis数据库，但是前提是我们的对象支持序列化，所以我们的类需要实现Serializable接口。
 
+- 注意事项
+
+目前主要了解的服务端session共享的方式，主要可以分为2个思路，一个是共享session，一个是依赖session，共享session的存储独立于tomcat，而依赖session，则为tomcat有主从之分，从tomcat的session其实还是主tomcat的session，tomcat的集群配置应该就是采用这样的思路，可以[参考一下这个文章](http://blog.csdn.net/wlwlwlwl015/article/details/48160433)，但是这样可能出现的一个问题就是，一旦主tomcat挂了，其实session也就丢失了，其他诸如将session存储到数据库的方式，个人感觉本质上还是和redis的方式是一样的。
+
 
 
 
