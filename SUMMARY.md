@@ -72,6 +72,7 @@
 * [javascript基础知识文章合集](javascriptji-chu-zhi-shi-wen-zhang-he-ji.md)
 * [react 组件的三种写法](react-zu-jian-de-san-zhong-xie-fa.md)
 * [VUE 学习笔记](vue-xue-xi-bi-ji.md)
+  * [一个vue组件的基本属性](vue-xue-xi-bi-ji/yi-gevue-zu-jian-de-ji-ben-shu-xing.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
