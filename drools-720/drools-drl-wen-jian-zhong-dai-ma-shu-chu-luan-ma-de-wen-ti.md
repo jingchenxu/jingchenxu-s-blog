@@ -14,7 +14,7 @@
 
 -Dfile.encoding=UTF-8
 
-此外还需要在tomcat中配置一下，具体配置可见下图：
+此外还需要在tomcat中配置一下， 具体配置可见下图：
 
 ![eclipse](/img/Drools/drools12.png)
 
