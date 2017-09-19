@@ -30,4 +30,9 @@ docker rm <container id>
 docker rmi <image id>
 ````
 
+6、拉取官方镜像
+
+````shell
+docker pull mysql/mysql-server:latest
+````
 
