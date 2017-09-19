@@ -43,3 +43,5 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 以上三步设置完成后，只需要git cz即可
 
 ![gitcommit](/img/git/gitcommit.gif)
+
+一次偶然的机会发现，gitcz 这样的工具其实是利用了git commit的书写规范实现的，gitcommit的首行默认显示，会在commit日志流水中显示出来，但是换行写入的内容，不会显示在commit日志流水中显示出来，而是以小一号的字体显示出来的。
