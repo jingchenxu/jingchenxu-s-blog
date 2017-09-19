@@ -75,6 +75,8 @@ GRANT ALL ON *.* TO 'pig'@'%';
 
 > 如果创建不了试试`FLUSH PRIVILEGES`
 
+[mysql-创建用户并授权，设置允许远程连接](http://www.cnblogs.com/gpdm/p/6492449.html)
+
 ## linux 下安装多个版本MySQL
 
 [安装教程](http://www.cnblogs.com/notester/p/5130713.html)
