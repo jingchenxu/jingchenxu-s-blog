@@ -127,4 +127,5 @@
 * [Docker 学习记录](docker-xue-xi-ji-lu.md)
   * [认识docker](docker-xue-xi-ji-lu/ren-shi-docker.md)
   * [docker 常见命令](docker-xue-xi-ji-lu/docker-chang-jian-ming-ling.md)
+  * [docker 安装MySQL](docker-xue-xi-ji-lu/docker-an-zhuang-mysql.md)
 
