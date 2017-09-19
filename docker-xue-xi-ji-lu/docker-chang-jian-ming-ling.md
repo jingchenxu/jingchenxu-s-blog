@@ -42,3 +42,9 @@ docker pull mysql/mysql-server:latest
 docker run -dit busybox
 ````
 
+8、查看所有的容器
+
+````shell
+docker ps -a
+````
+
