@@ -36,3 +36,9 @@ docker rmi <image id>
 docker pull mysql/mysql-server:latest
 ````
 
+7、创建容器
+
+````shell
+docker run -dit busybox
+````
+
