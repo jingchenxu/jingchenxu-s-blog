@@ -49,3 +49,16 @@ mysql -uroot -p -h localhost
 ````sql
 create database basename default chatset utf8 collate utf8_general_ci;
 ````
+
+- 创建一个用户
+
+````sql
+create user "baseuser"@"%" identified by "password";
+````
+
+- 将创建的数据的所有权限赋予给数据库
+
+````sql
+grant all privileges on basename.* to "baseuser"@"%" identified by "password";
+flush privileges;
+````
