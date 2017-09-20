@@ -43,3 +43,9 @@ docker exec -it <container id> bash
 ````shell
 mysql -uroot -p -h localhost
 ````
+
+- 创建一个数据库
+
+````sql
+create database basename default chatset utf8 collate utf8_general_ci;
+````
