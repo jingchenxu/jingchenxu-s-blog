@@ -74,6 +74,7 @@
 * [VUE 学习笔记](vue-xue-xi-bi-ji.md)
   * [一个vue组件的基本属性](vue-xue-xi-bi-ji/yi-gevue-zu-jian-de-ji-ben-shu-xing.md)
   * [vue中的数据双向绑定](vue-xue-xi-bi-ji/vuezhong-de-shu-ju-shuang-xiang-bang-ding.md)
+  * [vue的v指令](vue-xue-xi-bi-ji/vuede-v-zhi-ling.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
