@@ -79,3 +79,28 @@ export default{
 </script>
 ````
 
+- v-on
+
+v-on指令主要用于dom事件的监听作用，vue与react都对原生的dom事件进行了封装。
+
+v-bind 的指令需指明，监听的事件类型，是点击事件（click）,还是change事件，具体代码如下：
+
+````html
+<template>
+  <div v-on:click="itemclick(item.name)" class="vbinditem">
+    {{item.name}}
+    <el-input v-on:change="itemchange()"></el-input>
+  </div>
+</template>
+````
+
+````js
+    methods: {
+      itemclick (name) {
+        console.log('被点击了' + name)
+      },
+      itemchange () {
+        console.log('see')
+      }
+    }
+````
