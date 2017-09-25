@@ -22,3 +22,4 @@ springboot: [https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/
 - [ ] java多线程编程
 - [ ] 翻译drools技术书籍
 - [ ] servlet
+- [ ] java8
