@@ -1,0 +1,3 @@
+## win10下docker切换虚拟磁盘存储位置
+
+自从开始使用了docker以后，发现自己的C盘越来越小了，估计也是默认的docker资源被安装到C盘了，docker在在Windows上使用的虚拟机为Hyper-V虚拟机，在启动docker的时候，docker会在Hyper-V当中创建一个虚拟机，该虚拟机会加载docker的虚拟硬盘，如果在默认目录下没有找到

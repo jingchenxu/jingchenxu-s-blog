@@ -131,6 +131,7 @@
   * [认识docker](docker-xue-xi-ji-lu/ren-shi-docker.md)
   * [docker 常见命令](docker-xue-xi-ji-lu/docker-chang-jian-ming-ling.md)
   * [docker 安装MySQL](docker-xue-xi-ji-lu/docker-an-zhuang-mysql.md)
+  * [win10下docker切换虚拟磁盘存储位置](docker-xue-xi-ji-lu/win10xia-docker-qie-huan-xu-ni-ci-pan-cun-chu-wei-zhi.md)
 * [在线支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti.md)
   * [微信支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti/wei-xin-zhi-fu-kai-fa-wen-ti.md)
 
