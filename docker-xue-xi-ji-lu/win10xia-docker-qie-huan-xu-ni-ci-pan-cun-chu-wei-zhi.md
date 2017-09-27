@@ -11,3 +11,5 @@ error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.32/images/jso
 ````
 
 该问题可能是因为你的cmd窗口不是已系统管理员的身份打开的。
+
+docker需要启用Windows的Hyper-V服务，但是启用了Hyper-V就不能用VMware，我+-+啊，我的vm起不来了。
