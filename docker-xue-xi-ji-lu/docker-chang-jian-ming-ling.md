@@ -54,3 +54,9 @@ docker ps -a
 docker attach <container id>
 ````
 
+10、后台启动容器，并可用bash访问容器
+
+````bash
+docker run -d -it <image -id>
+````
+
