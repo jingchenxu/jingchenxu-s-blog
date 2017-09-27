@@ -74,3 +74,17 @@ docker version
 docker info
 ````
 
+## docker 日志相关
+
+1、查看容器日志
+
+````bash
+docker logs <id/container_name>
+````
+
+2、实时查看容器日志
+
+````bash
+docker logs -f <id/container_name>
+````
+
