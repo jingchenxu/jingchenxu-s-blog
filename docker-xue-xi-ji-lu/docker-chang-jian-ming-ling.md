@@ -60,3 +60,17 @@ docker attach <container id>
 docker run -d -it <image -id>
 ````
 
+## docker 基础信息
+
+1、查看docker版本
+
+````bash
+docker version
+````
+
+2、查看docker系统信息
+
+````bash
+docker info
+````
+
