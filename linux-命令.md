@@ -54,5 +54,11 @@ sudo chgrp username *
 rm -rf /file/file
 ```
 
+- 查找指定的文件或名称
+
+````shell
+find ./ -name filename
+````
+
 
 
