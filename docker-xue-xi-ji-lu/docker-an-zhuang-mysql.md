@@ -47,7 +47,7 @@ mysql -uroot -p -h localhost
 - 创建一个数据库
 
 ````sql
-create database basename default chatset utf8 collate utf8_general_ci;
+create database basename default charset utf8 collate utf8_general_ci;
 ````
 
 - 创建一个用户
