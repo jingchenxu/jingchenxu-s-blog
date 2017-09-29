@@ -125,7 +125,7 @@ redis运行中遇到的问题：
 
 4. 对象序列化
 
-我们存储到session当中的数据可能并不都是java的基本数据类型，可能是一个java对象，那么对象如何存储到数据库当中呢！你可以搜索我的博客，查找java对象序列化相关的文章，tomcat-redis-session-manager支持将java对象序列化后存储到redis数据库，但是前提是我们的对象支持序列化，所以我们的类需要实现Serializable接口。
+我们存储到session当中的数据可能并不都是java的基本数据类型，可能是一个java对象，那么对象如何存储到数据库当中呢！你可以搜索我的博客，查找java对象序列化相关的文章，tomcat-redis-session-manager支持将java对象序列化后存储到redis数据库，但是前提是我们的对象支持序列化，所以我们的类需要实现Serializable接口。（一个java class类支持实现多个接口哦！）
 
 - 注意事项
 
