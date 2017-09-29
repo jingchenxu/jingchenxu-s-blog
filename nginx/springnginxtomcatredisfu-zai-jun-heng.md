@@ -29,7 +29,7 @@ server localhost:8081;
 先创建一个文件夹，文件夹最好不要中文的，然后进入到这个文件夹下开始操作，执行下面的命令：
 
 ````shell
-$ wget http://download.redis.io/releases/redis-3.2.1.tar.gz
+$ wget http://download.redis.io/releases/redis-stable.tar.gz
 $ tar xzf redis-3.2.1.tar.gz
 $ cd redis-3.2.1
 $ make
