@@ -14,5 +14,19 @@
 - intellj
 - eclipse
 
+**JDK多版本配置**
+
+````
+export JAVA_6_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+export JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home
+export JAVA_HOME=$JAVA_8_HOME
+
+alias jdk8='export JAVA_HOME=$JAVA_8_HOME'
+
+alias jdk7='export JAVA_HOME=$JAVA_7_HOME'
+
+alias jdk6='export JAVA_HOME=$JAVA_6_HOME'
+````
 
 
