@@ -99,6 +99,7 @@
   * [spring中的AOP](springmvcgong-zuo-ji-lu/springzhong-de-aop.md)
   * [后端重定向问题](springmvcgong-zuo-ji-lu/hou-duan-zhong-ding-xiang-wen-ti.md)
   * [servlet 是什么](springmvcgong-zuo-ji-lu/servlet-shi-shi-yao.md)
+  * [spring中的IOC](springmvcgong-zuo-ji-lu/springzhong-de-ioc.md)
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
 * [nginx](nginx.md)
