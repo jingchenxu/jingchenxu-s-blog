@@ -85,6 +85,7 @@
   * [intellij 创建一个springboot项目](springbootxue-xi-bi-ji/intellij-chuang-jian-yi-ge-springboot-xiang-mu.md)
   * [springboot 热加载](springbootxue-xi-bi-ji/springboot-re-jia-zai.md)
   * [springboot 使用 thymeleaf 模板引擎](springbootxue-xi-bi-ji/springboot-shi-yong-thymeleaf-mo-ban-yin-qing.md)
+  * [springboot 配置pom](springbootxue-xi-bi-ji/springboot-pei-zhi-pom.md)
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
 * [前端工具整合](qian-duan-gong-ju-zheng-he.md)
