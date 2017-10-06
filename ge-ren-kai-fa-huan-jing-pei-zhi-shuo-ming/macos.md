@@ -29,4 +29,10 @@ alias jdk7='export JAVA_HOME=$JAVA_7_HOME'
 alias jdk6='export JAVA_HOME=$JAVA_6_HOME'
 ````
 
+**将mysql命令添加到环境变量**
+
+````shell
+sudo vim .bash_profile
+export PATH="${PATH}:/usr/local/mysql/bin"
+````
 
