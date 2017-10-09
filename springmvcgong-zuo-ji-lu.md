@@ -1,5 +1,4 @@
-#
-# springMVC配置log4j日志
+## springMVC配置log4j日志
 
 > 开始写java有段时间了，主要使用的是spring + springMVC + Mybatis技术栈，如果是本地调试的话，在eclipse下还是很方便的，主要是服务器环境下出现的问题，很难排查，一般出了问题，自己很难定位到问题在哪里，这时候就需要使用到log4j,这个jar包来进行日志的记录。
 
