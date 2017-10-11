@@ -88,6 +88,7 @@
   * [springboot 使用 thymeleaf 模板引擎](springbootxue-xi-bi-ji/springboot-shi-yong-thymeleaf-mo-ban-yin-qing.md)
   * [springboot 配置pom](springbootxue-xi-bi-ji/springboot-pei-zhi-pom.md)
   * [springboot application.properties 配置说明](springbootxue-xi-bi-ji/springboot-applicationproperties-pei-zhi-shuo-ming.md)
+  * [springboot 集成 mybatis](springbootxue-xi-bi-ji/springboot-ji-cheng-mybatis.md)
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
 * [前端工具整合](qian-duan-gong-ju-zheng-he.md)
