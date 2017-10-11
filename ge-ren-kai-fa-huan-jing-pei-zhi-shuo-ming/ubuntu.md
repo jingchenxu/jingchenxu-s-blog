@@ -19,5 +19,5 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 * 常用软件
 
-tree、glances、[yu-writer](https://ivarptr.github.io/yu-writer.site/)
+tree、glances、[yu-writer](https://ivarptr.github.io/yu-writer.site/)、mycli
 
