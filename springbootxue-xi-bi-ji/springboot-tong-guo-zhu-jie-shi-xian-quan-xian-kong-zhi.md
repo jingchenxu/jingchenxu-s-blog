@@ -118,8 +118,31 @@ public class UserInterceptor implements HandlerInterceptor  {
         System.out.println("请求被执行完成！");
     }
 }
-
 ````
+
+注册该拦截器：
+
+````java
+package com.deepwater.daisy.configuration;
+
+import com.deepwater.daisy.interceptor.UserInterceptor;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+@Configuration
+public class InterceptorConfig extends WebMvcConfigurerAdapter {
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        //这里会对"/admin"的请求进行拦截
+        registry.addInterceptor(new UserInterceptor()).addPathPatterns("/admin");
+    }
+}
+````
+
+我们可以看到没有请求会交个一个handler来处理，这个handler是谁呢！他就是我们用@RequestMapping注解的方法啊！我们会通过反射，找到注解对象的属性，获取到的属性，就像是获取到了该handler的标签，我们知道了这些handler的权限信息，注解对于其作用的包、类、方法并没有产生影响，但是在拦截器中，通过判断注解信息，实现了不同的操作。
+
+本篇暂未赘述注解的相关定义，可以通过相关文章了解相关的定义。
 
 - 相关文章
 
