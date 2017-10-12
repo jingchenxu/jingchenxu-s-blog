@@ -10,7 +10,40 @@ springboot实现权限控制可以使用shiro,是的springboot可以帮我们完
 
 - 为什么我们需要注解？
 
-有没有发现注解和一个东西很像，xml配置文件，我们在使用springMVC这个框架的时候，常常会用到这样的一个注解@RequestMapping,这个组件有一个value属性，用于记录路由信息，
+有没有发现注解和一个东西很像，xml配置文件，我们在使用springMVC这个框架的时候，常常会用到这样的一个注解@RequestMapping,这个组件有一个value属性，用于记录路由信息，如果我们不适用springMVC这样的框架，如何实现一个servlet呢？可以参考下[servlet 是什么](springmvcgong-zuo-ji-lu/servlet-shi-shi-yao.md)
+，你会发现这里的这里的路由是通过XML来配置的，使用这种方式会有一些问题，比每次添加一个servlet都需要在XML文件当中配置一下，而如果使用注解，则只需要在controller处理方法的注解中添加一下，这里我们需要一个强耦合的配置方式。至于springMVC的@RequestMapping的实现方式可以参考下文档【7】。
+
+- 实现基于注解的权限控制
+
+创建权限注解
+
+````java
+package com.deepwater.daisy.annocation;
+
+import java.lang.annotation.*;
+// 该注解作用于方法
+@Target(ElementType.METHOD)
+// 该注解在代码运行时也是存在的
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface Access {
+
+    String[] value() default {};
+    String[] authorities() default {};
+    String[] roles() default {};
+}
+````
+
+创建一个controller：
+
+````java
+    @RequestMapping(value = "/admin")
+    // 通过注解配置该handler只能被拥有admin权限的人调用
+    @Access(authorities = {"admin"})
+    public String hello() {
+        return "Hello, admin";
+    }
+````
 
 - 相关文章
 
