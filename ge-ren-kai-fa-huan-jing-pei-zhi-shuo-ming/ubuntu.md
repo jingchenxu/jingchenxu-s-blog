@@ -21,3 +21,6 @@ export PATH=${JAVA_HOME}/bin:$PATH
 
 tree、glances、[yu-writer](https://ivarptr.github.io/yu-writer.site/)、mycli
 
+
+
+

@@ -36,3 +36,12 @@ sudo vim .bash_profile
 export PATH="${PATH}:/usr/local/mysql/bin"
 ````
 
+#### mac软件
+
+----
+
+- [MWeb for Mac](http://zh.mweb.im/index.html)一款看起来很不错的markdown软件
+
+
+
+
