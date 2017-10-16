@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [SPA中微信支付授权目录设置](spa中微信支付授权目录设置.md)
-* [javascript中的闭包](javascript中的闭包.md)
 * [sublime前端开发环境配置](sublime前端开发环境配置.md)
 * [react的渲染机制](react的渲染机制.md)
 * [常用命令合集](常用命令合集.md)
@@ -54,7 +53,6 @@
 * [Ubuntu 服务器环境准备](ubuntu-fu-wu-qi-huan-jing-zhun-bei.md)
 * [input 文件传输](input-wen-jian-chuan-shu.md)
 * [npm 命令合集](npm-ming-ling-he-ji.md)
-* [函数式编程](han-shu-shi-bian-cheng.md)
 * [图片惰性加载](tu-pian-duo-xing-jia-zai.md)
 * [MySQL 笔记](mysql-bi-ji.md)
   * [Linux 下安装多个版本MySQL](mysql-bi-ji/linux-xia-an-zhuang-duo-ge-ban-ben-mysql.md)
@@ -140,6 +138,10 @@
   * [docker安装redis](docker-xue-xi-ji-lu/dockeran-zhuang-redis.md)
 * [在线支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti.md)
   * [微信支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti/wei-xin-zhi-fu-kai-fa-wen-ti.md)
-* Maven
+* [Maven](maven.md)
   * [maven 简介](maven-jian-jie.md)
+* [javascript 基础](javascript-ji-chu.md)
+  * [javascript 构造函数与原型](javascript-gou-zao-han-shu-yu-yuan-xing.md)
+  * [函数式编程](han-shu-shi-bian-cheng.md)
+  * [javascript中的闭包](javascript中的闭包.md)
 
