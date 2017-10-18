@@ -146,4 +146,5 @@
   * [javascript中的闭包](javascript中的闭包.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
+  * [electron-vue](electron-vue.md)
 
