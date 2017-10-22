@@ -145,6 +145,7 @@
   * [函数式编程](han-shu-shi-bian-cheng.md)
   * [javascript中的闭包](javascript中的闭包.md)
   * [javascript 浅拷贝与深拷贝](javascript-qian-kao-bei-yu-shen-kao-bei.md)
+  * [javascript 的call和apply](javascript-de-call-he-apply.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)

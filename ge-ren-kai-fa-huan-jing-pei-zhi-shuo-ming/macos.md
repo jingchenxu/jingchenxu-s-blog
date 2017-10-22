@@ -42,6 +42,8 @@ export PATH="${PATH}:/usr/local/mysql/bin"
 
 - [MWeb for Mac](http://zh.mweb.im/index.html)一款看起来很不错的markdown软件
 
+- mycl 不错的命令端mysql命令补全工具
+
 
 
 
