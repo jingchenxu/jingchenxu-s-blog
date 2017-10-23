@@ -13,5 +13,15 @@
         console.log(test)
 ````
 
+![此处显示的是如何设置的图片](/img/javascript/arguments.png)
+
+![此处显示的是如何设置的图片](/img/javascript/array.png)
+
+
+
+
+
+
+
 
 
