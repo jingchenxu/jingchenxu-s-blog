@@ -122,6 +122,20 @@
 
 我们可以看到如果对象是通过构造函数生成的，那么每个对象都会在一个新的内存地址上创建，其中的testFu属相虽然内容相同，但是确实在不同的内存地址上创建的，这里我们可以声明全局的testFu方法解决此问题，这样可以保证俩个对象的该属性都是引用的同一个内存地址上的此方法。
 
+- 通过原型创建对象
+
+````javascript
+        function MakProto() {};
+        MakProto.prototype.name = 'name';
+        MakProto.prototype.start = 'start...';
+        MakProto.prototype.pause = 'pause...';
+        MakProto.prototype.number = 1;
+````
+
+通
+
+
+
 
 
 
