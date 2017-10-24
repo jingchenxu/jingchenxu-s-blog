@@ -154,6 +154,7 @@ function Mixin(name, start, end){
 }
  
 Mixin.prototype = {
+  // 我似乎看到了继承的影子
   constructor : Mixin,
   testFu : function(){
     alert(this.name);
