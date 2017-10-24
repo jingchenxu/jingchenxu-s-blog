@@ -147,9 +147,10 @@
   * [javascript中的闭包](javascript中的闭包.md)
   * [javascript 浅拷贝与深拷贝](javascript-qian-kao-bei-yu-shen-kao-bei.md)
   * [javascript 的call和apply](javascript-de-call-he-apply.md)
+  * [javascript 创建对象的几种方法](javascript-chuang-jian-dui-xiang-de-ji-zhong-fang-fa.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
-* javascript 设计模式
+* [javascript 设计模式](javascript-she-ji-mo-shi.md)
   * [模板模式](mo-ban-mo-shi.md)
 
