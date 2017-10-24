@@ -130,9 +130,19 @@
         MakProto.prototype.start = 'start...';
         MakProto.prototype.pause = 'pause...';
         MakProto.prototype.number = 1;
+        
+        object5 = new MakProto();
+        object6 = new MakProto();
+
+        MakProto.prototype.number = 3;
+        object6.number = 9;
+        MakProto.prototype.number = 10;
+        
+        console.log(object5.number);   //10
+        console.log(object6.number);   //9
 ````
 
-通
+通过原型创建的对象会共享所有的
 
 
 
