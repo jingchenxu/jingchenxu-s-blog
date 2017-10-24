@@ -144,6 +144,25 @@
 
 通过原型创建的对象会共享所有的属性，但是单个对象属性的修改不会影响到其他的对象。
 
+- 构造函数与原型方式组合创建对象
+
+````javascript
+function Mixin(name, start, end){
+  this.name = name;
+  this.start = start;
+  this.end = end;
+}
+ 
+Mixin.prototype = {
+  constructor : Mixin,
+  testFu : function(){
+    alert(this.name);
+  }
+}
+````
+
+通过此方式很好的结合构造函数和原型模式，这与java类的思想有点类型，其中放在原型中的属性可以看做是静态属性或是静态方法，是共享的。(这种创建对象是最常见的)
+
 
 
 
