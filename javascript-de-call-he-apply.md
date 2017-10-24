@@ -28,17 +28,23 @@
         function add(a, b) {
             console.log(arguments);
             var slice = Array.prototype.slice;
-            var defaultArray = slice.call(arguments);
+            var defaultArray = slice.call(arguments, 1);
             console.log(defaultArray);
             console.log(defaultArray.slice());
+            // apply 会自动的将第二个参数（必须是数组、伪数组）转化为调用函数的参数对象（arguments）
             console.log(returnArg.apply(this, defaultArray));
+            console.log(returnArg.apply(this, 123));
             console.log(returnArg());
+            console.log(returnArg(defaultArray));
         }
         add(5, 7);
         var test = [5, 7];
         console.log(test);
-    }
 ````
+
+以上代码中需要注意apply的第二个参数必须为数组或是伪数组，不然则会出现以下的报错：
+
+![applyerror](/img/javascript/applyerror.png)
 
 call的用法：A对象拥有b方法，C对象想使用b方法，A.prototype.b.call(C),这里是以C对象替换A对象的位置，所以C对象就拥有了b方法。
 
