@@ -136,6 +136,7 @@
   * [docker 安装MySQL](docker-xue-xi-ji-lu/docker-an-zhuang-mysql.md)
   * [win10下docker切换虚拟磁盘存储位置](docker-xue-xi-ji-lu/win10xia-docker-qie-huan-xu-ni-ci-pan-cun-chu-wei-zhi.md)
   * [docker安装redis](docker-xue-xi-ji-lu/dockeran-zhuang-redis.md)
+  * [docker 安装nginx](docker-xue-xi-ji-lu/docker-an-zhuang-nginx.md)
 * [在线支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti.md)
   * [微信支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti/wei-xin-zhi-fu-kai-fa-wen-ti.md)
 * [Maven](maven.md)
