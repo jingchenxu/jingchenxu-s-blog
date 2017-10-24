@@ -36,6 +36,7 @@
             console.log(returnArg.apply(this, 123));
             console.log(returnArg());
             console.log(returnArg(defaultArray));
+            
         }
         add(5, 7);
         var test = [5, 7];
@@ -48,6 +49,7 @@
 
 call的用法：A对象拥有b方法，C对象想使用b方法，A.prototype.b.call(C),这里是以C对象替换A对象的位置，所以C对象就拥有了b方法。
 
+apply的用法：apply的用法与call类似，需要注意的是apply的第二个参数为数组或是伪数组。
 
 
 
