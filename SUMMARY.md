@@ -150,4 +150,6 @@
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
+* javascript 设计模式
+  * [模板模式](mo-ban-mo-shi.md)
 
