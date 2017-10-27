@@ -75,6 +75,10 @@
             console.dir(demo2);
 ````
 
+- \_\_proto__与prototype
+
+
+
 
 - 相关文档
 
