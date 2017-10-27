@@ -18,6 +18,10 @@
             console.dir(common2);
 ````
 
+![此处显示的是如何设置的图片](/img/javascript/result1.png)
+
+
+
 - 相关文档
 
 [深入理解javascript构造函数和原型对象](http://www.jb51.net/article/55539.htm#card_1508137382789_9336)
