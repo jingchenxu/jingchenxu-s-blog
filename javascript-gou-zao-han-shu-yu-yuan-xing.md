@@ -32,7 +32,48 @@
 
 构造的主要作用是创建对象，但是构造函数本身也是一个对象，因为在javascript中函数也是对象，
 
+````javascript
+            // Demo构造函数的的父构造函数微Function（）
+            // 所以对比通过Object（）构造函数创建对象，本质上通过自定义构造函数创建对象与Object()构造函数创建对象本质上是一样的
+            // 通过观察 constructor 对应的父级构造函数可以看到其是由谁继承而来的
+            // 构造函数本身也是对象 也是有__proto__的，构造函数对象的原型为
 
+
+            log.log_title('构造函数与对象');
+
+            // 创建构造函数
+            var Demo = function(a,b){
+                this.a = a;
+                this.b = b;
+            }
+
+            // 指定原型
+            Demo.prototype = (function(){
+                var add = function(){
+                    return this.a + this.b;
+                };
+
+                var sub = function(){
+                    return this.a - this.b;
+                };
+                return {
+                    add: add,
+                    sub: sub
+                }
+            }());
+
+            console.dir(Demo);
+
+            var demo1 = new Demo(1,2);
+            // 对象中只有__proto__ 指向的是该对象的构造函数的原型 prototype
+            console.dir(demo1);
+            // 使用字面量创建对象 本质上还是通过Object()构造函数创建对象
+            var demo2 = {
+                a: 1,
+                b: 2
+            };
+            console.dir(demo2);
+````
 
 
 - 相关文档
