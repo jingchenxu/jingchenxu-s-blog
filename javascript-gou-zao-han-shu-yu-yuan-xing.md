@@ -88,6 +88,13 @@
 综上：所有的对象（构造函数、普通对象）都有\_\_proto\_\_属性，原型链中的原型指的是\_\_proto\_\_,prototype是构造函数独有的属性，可以认为指定也可以自动创建，通过构造函数创建的对象的\_\_proto\_\_都指向创建该对象的构造函数的prototype。
 
 
+- 最后这张图总算看懂了
+
+![applyerror](/img/javascript/prototype.jpg)
+
+
+
+
 - 相关文档
 
 [深入理解javascript构造函数和原型对象](http://www.jb51.net/article/55539.htm#card_1508137382789_9336)
