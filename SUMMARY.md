@@ -12,6 +12,7 @@
   * [Promise 什么鬼](promise-shi-yao-gui.md)
   * [ES6 中class的实现](es6-zhong-class-de-shi-xian.md)
   * [let and const](let-and-const.md)
+  * [浏览器如何兼容ES6](liu-lan-qi-ru-he-jian-rong-es6.md)
 * [Linux 命令](linux-命令.md)
 * [eclipse 使用手册](eclipse-使用手册.md)
   * [tomcat使用问题](设置tomcat的启动时长.md)
