@@ -44,6 +44,38 @@ http.get('solve.php').then(function(data) {
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ````
 
+Promise是一个构造函数，此构造函数传入一个匿名函数作为参数，此函数传入2个函数作为此匿名函数的参数，这俩个函数是浏览器部署好的，异步操作则封装在此匿名函数当中，通过匿名函数的执行情况，分别执行resolve、reject函数，通知下一步继续进行操作。
+
+下一步进行操作时，通过promise对象的then属性，执行需要进行的操作，then属性调用传入的2个函数，第一个函数在resolve被触发后执行，第二个函数在reject被触发后执行，这2个函数如果需要接受参数，可在执行resolve、reject时传入。
+
+如果在调用了第一个then后还需要继续对数据进行处理，可以继续调用then，此时then中函数接收的参数需要上一个then中的函数返回。
+
+- fetch中的promise
+
+fetch请求会返回一个promise，用户可以在then中处理对应的情况,下方代码中的A和B的执行效果是一样的，但是B方案看起来更加的清晰。
+
+````javascript
+        var result = fetch('/demojson/demo.json');
+        // A
+        result.then(function(response){
+            // 返回成功的结果
+            console.dir(response);
+        },function(response){
+            // 返回失败的结果
+            console.dir(response);
+        });
+
+        // B
+        result.then(function(response){
+            // 执行返回成功是的结果
+            console.dir(response);
+        }).catch(function(error){
+            // 执行失败时的代码
+            console.dir(error);
+        });
+````
+
+
 
 
 
