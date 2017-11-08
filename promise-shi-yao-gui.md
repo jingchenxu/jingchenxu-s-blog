@@ -75,7 +75,11 @@ fetch请求会返回一个promise，用户可以在then中处理对应的情况,
         });
 ````
 
+- promise注意事项
 
+1. promise 中then方法中执行的代码是异步的；
+2. promise 中的状态分为 padding success fail，状态的转换过程为 padding->success 或 padding->fail,且状态的转换不可逆转；
+3. promise 采用的是链式调用，但是每次调用返回的是上一次调用产生的新的promise。
 
 
 
