@@ -90,6 +90,8 @@ var OriginalPage = Vue.extend({
 });
 ````
 
+在render函数中有一个默认的默认方法作为参数，通过该函数渲染组件的各个几点，将每个对象抽象为一个对象，{tagName, tagAttrs, children},可以看到该对象主要有以上的三个属性，第一个属相为标签名称，第二个属组件的一些具体属性，该属性也是一个对象，可以具体的细分，第三个属性为当前标签的子标签，概属性为一个数组，因此当前标签可以拥有多个字标签，每个字标签与当前标签一样都是一个h函数，通过一层又一次的嵌套形成一个完成的dom树。
+
 - 参考文档
 
 [Vue.js 中，7种定义组件模板的方法 | Codementor](http://www.zcfy.cc/article/7-ways-to-define-a-component-template-in-vue-js-codementor-3644.html)
