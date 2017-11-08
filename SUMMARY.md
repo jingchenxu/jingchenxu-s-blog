@@ -77,6 +77,8 @@
   * [vue的v指令](vue-xue-xi-bi-ji/vuede-v-zhi-ling.md)
   * [vue 数据双向绑定原理](vue-xue-xi-bi-ji/vue-shu-ju-shuang-xiang-bang-ding-yuan-li.md)
   * [如果Vue遇上Ext\(一\)](vue-xue-xi-bi-ji/ru-guo-vue-yu-shang-ext-4e0029.md)
+  * [vue render 方法](vue-xue-xi-bi-ji/vue-render-fang-fa.md)
+  * [vue 自定义指令](vue-xue-xi-bi-ji/vue-zi-ding-yi-zhi-ling.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
