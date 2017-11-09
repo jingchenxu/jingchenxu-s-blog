@@ -18,7 +18,7 @@ blackbone使用的是发布订阅模式，视图订阅了数据改变的事件�
 
 vue利用了javascript对象的一个属性，该属性IE8不支持，这也是vue不支持IE8的原因，我们在数据发生变化的时候，要能够通知别人，也就是说在obj.attr1=1,这个操作执行的时候能够主动的通知别人，而defineProperty可以在对对象数据修改时做一层拦截，有点类似拦截器的思想，
 
-![](./img/VUE/define.png)
+![](/img/VUE/define.png)
 
 - 参考文档
 
