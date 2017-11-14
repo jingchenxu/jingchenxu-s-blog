@@ -13,8 +13,97 @@
 项目虽然没有工程化，但是还是会使用到vue的全家桶：Vue + Vue-router + Vuex,我们会使用requirejs加载编译后的版本，而不是使用node_modules,你可以使用CDN获取这些js标签，可以使用一下的方式引入到html当中，当然你可以选用相对来说比较新的版本：
 
 ````html
+<script type="text/javascript" src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
+<script type="text/javascript" src="require.config.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vuex/dist/vuex.js"></script>
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 ````
+
+以上引入的js为项目基础的js，但是我们使用了requirejs,所以在html当中只需要引入requirejs就可以了，其他的js文件可以通过requirejs来加载，接下来我们完成一个最基本的配置。
+
+````html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>require</title>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script type="text/javascript" src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
+<script type="text/javascript" src="require.config.js"></script>
+<script type="text/javascript">
+    // require 不会阻塞页面的渲染 页面入口
+    require(["Vue", "routes", "VueRouter", "App"],function (Vue, routes, VueRouter, App) {
+    	var router = new VueRouter({
+            routes: routes
+        });
+    	Vue.use(VueRouter);
+    	var app = new Vue({
+            el: "#app",
+            router: router,
+            render: function (h) {
+                return h(App);
+            },
+            created: function () {
+               console.log('首页组件加载完成',routes, App);
+            }
+        })
+    });
+</script>
+</html>
+````
+
+需要注意的是这里的vue-router需要全局注册，不然在使用router-view时会提示组件未注册的问题。
+
+我们看一下requirejs的配置文件：
+
+````javascript
+require.config({
+	paths: {
+		"jquery": ["https://cdn.bootcss.com/jquery/3.2.1/jquery"],
+		"Vue": ["js/vue"],
+		"Vuex": ["js/vuex"],
+		"VueRouter": ["js/vue-router"],
+		"Vtest1": ["require/Vtest1"],
+		"Vtest2": ["require/Vtest2"],
+		"Vtest3": ["require/Vtest3"],
+		"routes": ["router/router"],
+		"App": ["require/app"],
+		"Config": ["config/SeedConfig"],
+		"Utils": ["config/SeedUtils"],
+		"Axios": ["js/axios.min"]
+	}
+});
+````
+
+在此文件中，我们可以配置各个js文件对应的名称，相当于为每个js起了一个别名，我们可以在require和define中通过此别名来获取对应的js作为依赖。
+
+因为所有的js是通过requirejs来管理的，所以我们书写的js需要符合requirejs的规范，下面我们创建一个Vue组件模块：
+
+````javascript
+define(["Vue"], function (Vue) {
+	var Vtest1;
+	Vtest1 = Vue.extend({
+		name: 'Vtest1',
+		template: '<div>Vtest1<router-view></router-view></div>',
+		data: function () {
+			return {
+
+			};
+		},
+		created: function () {
+			alert('Vtest1组件创建完成');
+		}
+	});
+
+	return Vtest1;
+});
+````
+
+我们可以看到，可以在define的第一个参数中申明当前组件的依赖，申明后则可以在组件模块内使用，以上我们基本完成了一个项目的骨架。
+
+
