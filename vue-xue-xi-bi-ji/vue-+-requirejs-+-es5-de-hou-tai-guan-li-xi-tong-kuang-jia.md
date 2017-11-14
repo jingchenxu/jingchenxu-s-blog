@@ -10,4 +10,11 @@
 
 - Vue
 
-项目虽然没有工程化，但是还是会使用到vue的全家桶：Vue + Vue-router + Vuex,我们会使用requirejs加载编译后的版本，而不是使用node_modules,
+项目虽然没有工程化，但是还是会使用到vue的全家桶：Vue + Vue-router + Vuex,我们会使用requirejs加载编译后的版本，而不是使用node_modules,你可以使用CDN获取这些js标签，可以使用一下的方式引入到html当中，当然你可以选用相对来说比较新的版本：
+
+````html
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vuex/dist/vuex.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+````
