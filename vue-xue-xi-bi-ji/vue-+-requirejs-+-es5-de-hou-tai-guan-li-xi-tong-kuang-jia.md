@@ -37,11 +37,12 @@
 <script type="text/javascript" src="require.config.js"></script>
 <script type="text/javascript">
     // require 不会阻塞页面的渲染 页面入口
-    require(["Vue", "routes", "VueRouter", "App"],function (Vue, routes, VueRouter, App) {
+    require(["Vue", "routes", "VueRouter", "App", "iview"],function (Vue, routes, VueRouter, App, iview) {
     	var router = new VueRouter({
             routes: routes
         });
     	Vue.use(VueRouter);
+       Vue.use(iview);
     	var app = new Vue({
             el: "#app",
             router: router,
@@ -107,6 +108,11 @@ define(["Vue"], function (Vue) {
 我们可以看到，可以在define的第一个参数中申明当前组件的依赖，申明后则可以在组件模块内使用，以上我们基本完成了一个项目的骨架。
 
 - UI库集成（iview）
+
+项目使用的是iview组件库，但是需要注意的是，如果使用requirejs,无法直接使用其官网提供的的unpkg上提供的CDN链接，因为其实按照UMD标准打包编译的，需要修改编译标准，修改为AMD,此外编译打包后的文件中会发现其依赖的为Vue为["vue"],其首字母为小写，如果你在require.config中paths配置的vue的首字母为大写，则可能会导致iview模块加载其vue依赖失败。
+
+修改iview打包最后模块规范可以在其的webpack配置文件中修改，可以分别在build目录下的webpack.dist.dev.config.js、webpack.dist.locale.config.js、webpack.dist.prod.config.js中修改libraryTarget参数中修改为amd,然后通过Vue.use(iview)全局注册iview组件。
+
 
 
 
