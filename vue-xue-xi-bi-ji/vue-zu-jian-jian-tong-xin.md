@@ -74,3 +74,5 @@ define(["Vue"],function (Vue) {
 	return CallParent;
 });
 ````
+
+原谅我任性的使用ES5。
