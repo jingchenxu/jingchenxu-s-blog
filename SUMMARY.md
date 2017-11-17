@@ -76,7 +76,7 @@
   * [vue中的数据双向绑定](vue-xue-xi-bi-ji/vuezhong-de-shu-ju-shuang-xiang-bang-ding.md)
   * [vue的v指令](vue-xue-xi-bi-ji/vuede-v-zhi-ling.md)
   * [vue 数据双向绑定原理](vue-xue-xi-bi-ji/vue-shu-ju-shuang-xiang-bang-ding-yuan-li.md)
-  * [如果Vue遇上Ext\(一\)](vue-xue-xi-bi-ji/ru-guo-vue-yu-shang-ext-4e0029.md)
+  * [如何把vue写出ext的感觉](vue-xue-xi-bi-ji/ru-guo-vue-yu-shang-ext-4e0029.md)
   * [vue render 方法](vue-xue-xi-bi-ji/vue-render-fang-fa.md)
   * [vue 自定义指令](vue-xue-xi-bi-ji/vue-zi-ding-yi-zhi-ling.md)
   * [vue 组件间通信](vue-xue-xi-bi-ji/vue-zu-jian-jian-tong-xin.md)
