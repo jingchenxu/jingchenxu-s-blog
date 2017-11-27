@@ -122,6 +122,7 @@
   * [windows](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/windows.md)
   * [ubuntu](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/ubuntu.md)
   * [macos](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/macos.md)
+  * [vscode 插件相关](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/vscode-cha-jian-xiang-guan.md)
 * [java对象序列化](dui-xiang-xu-lie-hua.md)
 * [Linux配置相关](linuxpei-zhi-xiang-guan.md)
   * [开启Linux的root远程登录](linuxpei-zhi-xiang-guan/kai-qi-linux-de-root-yuan-cheng-deng-lu.md)
