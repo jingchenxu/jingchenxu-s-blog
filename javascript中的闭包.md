@@ -11,13 +11,13 @@ closure 百度了一下，闭包的英文是这样的，至于中文为什么翻
 ````javascript
 		for(var j=0; j<RouterList.length; j++) {
 			var temp = RouterList[j];
-			RouterList[j] = function(temp){
+			RouterList[j] = function(){
 				return {
 					path: temp.path, name: temp.name, component: function(resolve) {
 						console.log('js地址为'+temp.jsUrl);
 						return require([temp.jsUrl], resolve);
 					}
 				}
-			}(temp);
+			}();
 		}
 ````
