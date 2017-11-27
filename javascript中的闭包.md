@@ -114,3 +114,9 @@ planA与planB没有本质的区别，都是通过向立即执行函数中传入�
 
 我们分别在planA与planB的情况下查看 target1与target2：
 
+![planA](/img/javascript/planA.png)
+
+![planB](/img/javascript/planB.png)
+
+
+
