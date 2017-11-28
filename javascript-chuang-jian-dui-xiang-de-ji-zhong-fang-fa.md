@@ -186,7 +186,9 @@ Mixin.prototype = {
         console.log(test2.param3);
 ````
 
-以上代码就是通过Object.create 方法来创建对象，通过打印对象，我们会发现test2 的原型是指向 test1，
+![](img/javascript/objectcreate.png)
+
+以上代码就是通过Object.create 方法来创建对象，通过打印对象，我们会发现test2 的原型是指向 test1，在test2中没有发现新的属性，也就是说test2中所有的属性都是test1当中的，
 
 
 
