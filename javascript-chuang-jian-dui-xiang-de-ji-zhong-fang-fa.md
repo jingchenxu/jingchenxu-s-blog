@@ -164,6 +164,30 @@ Mixin.prototype = {
 
 通过此方式很好的结合构造函数和原型模式，这与java类的思想有点类型，其中放在原型中的属性可以看做是静态属性或是静态方法，是共享的。(这种创建对象是最常见的)
 
+- 使用clone方法创建对象
+
+在javascript这样的基于原型设计的语言中，几乎所有的对象都是基于对象复制与克隆产生的，所以我们创建一个对象的时候也可以使用clone的方法，javascript中可以使用Object.create 方法来创建对象。
+
+````javascript
+        var test1 = {
+            param1: 'xu',
+            param2: 'jing',
+            param3: 'chen'
+        }
+
+        var test2 = Object.create(test1);
+
+        console.dir(test2);
+        console.log(test2.param3);
+        test2.param3 = 'dandan';
+        console.dir(test1);
+        console.log(test1.param3);
+        console.dir(test2);
+        console.log(test2.param3);
+````
+
+以上代码就是通过Object.create 方法来创建对象，通过打印对象，我们会发现test2 的原型是指向 test1，
+
 
 
 
