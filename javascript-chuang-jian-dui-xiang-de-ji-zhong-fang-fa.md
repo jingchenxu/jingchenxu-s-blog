@@ -179,7 +179,7 @@ Mixin.prototype = {
 
         console.dir(test2);
         console.log(test2.param3);
-        test2.param3 = 'dandan';
+        // test2.param3 = 'dandan';
         console.dir(test1);
         console.log(test1.param3);
         console.dir(test2);
@@ -188,7 +188,9 @@ Mixin.prototype = {
 
 ![](img/javascript/objectcreate.png)
 
-以上代码就是通过Object.create 方法来创建对象，通过打印对象，我们会发现test2 的原型是指向 test1，在test2中没有发现新的属性，也就是说test2中所有的属性都是test1当中的，
+以上代码就是通过Object.create 方法来创建对象，通过打印对象，我们会发现test2 的原型是指向 test1，在test2中没有发现新的属性，也就是说test2中所有的属性都是test1当中的，这里实现的方式是通过创建一个空对象，然后将该对象的原型指向test1，从而实现对象的克隆。
+
+其实这里与通过字面量创建对象的方式类似，我们可以看到创建的对象的原型指向的是object这个对象，那么object的原型指向谁呢？指向的是null。
 
 
 
