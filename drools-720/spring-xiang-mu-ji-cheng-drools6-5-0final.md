@@ -19,6 +19,35 @@
 如图图中的JUnit 4library是会被添加到最终发布的war包的WEB-INF的lib文件夹中的。
 当然你也可以将drools相关的jar包都存放到WEB-INF的lib文件夹当中，其实使用drools就是引入drools相关的jar包然后进行调用，这只是最简单的用法。
 
+- Drools执行的流程
+
+如果项目中集成了drools,关于drools的相关的配置XML文件存放的位置默认是在src/main/resources/META-INF/kmodule.xml文件当中，我们可以看下配置文件的内容：
+
+````xml
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="rules" packages="nestlerules">
+        <ksession name="ksession-rules"/>
+    </kbase>
+    <kbase name="rules2" packages="nestlerules">
+        <ksession type="stateless" name="ksession-rules-stateless"/>
+    </kbase>
+    <!--  订单确认页规则 -->
+    <kbase name="rules1" packages="checkrules">
+        <ksession name="ksession-rules1"/>
+    </kbase>
+    <!--  计算订单中每个商品的realprice -->
+    <kbase name="countrealpricerule" packages="countrealprice">
+        <ksession name="ksession-countrealprice"/>
+    </kbase>
+    <!-- 订单保存时间的价格校验规则 -->
+    <kbase name="ordconfirmrules" packages="orderconfirmrules">
+        <ksession name="ksession-orderconfirm"/>
+    </kbase>
+</kmodule>
+````
+
+目前我只使用drl格式的规则文件，在配置文件中我们指定了好几个规则，每个规则有独自的name,package(对应的规则文件包名)，每个规则对应的session名称，session作为你的程序调用规则的通道，第一次调用的时候比较的缓慢，但是之后的速度就比较快了。
 
 
 - 出现中文乱码怎么办
