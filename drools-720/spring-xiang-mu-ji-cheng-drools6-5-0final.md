@@ -17,6 +17,9 @@
 其实最简单的方法可以是将Drools相关放到WEB-INF的lib文件夹当中，当然也是可以添加一个jar library,但是需要注意的是，在打包为war包是，需要将该library添加到最后发布的war包当中，具体设置如下：
 ![图片](/img/Drools/class.png)
 如图图中的JUnit 4library是会被添加到最终发布的war包的WEB-INF的lib文件夹中的。
+当然你也可以将drools相关的jar包都存放到WEB-INF的lib文件夹当中，其实使用drools就是引入drools相关的jar包然后进行调用，这只是最简单的用法。
+
+
 
 - 出现中文乱码怎么办
 
