@@ -8,7 +8,7 @@
 
 - 关于servlet
 
-
+我们现在都在间接的使用servlet,但是不管如何开发web程序我们都在使用servlet,
 
 - 还原一下问题
 
