@@ -59,7 +59,6 @@
   * [Linux 下安装多个版本MySQL](mysql-bi-ji/linux-xia-an-zhuang-duo-ge-ban-ben-mysql.md)
   * [MySQL 存储过程的写法](mysql-bi-ji/mysql-cun-chu-guo-cheng-de-xie-fa.md)
   * [MySQL 常用命令行语句](mysql-bi-ji/mysql-chang-yong-ming-ling-xing-yu-ju.md)
-* [css Tips](css-tips.md)
 * [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 * [为什么我们需要 redux && vues](wei-shi-yao-wo-men-xu-yao-redux-andand-vues.md)
 * [express 踩坑指南](express-cai-keng-zhi-nan.md)
@@ -163,6 +162,9 @@
   * [electron-vue](electron-vue.md)
 * [javascript 设计模式](javascript-she-ji-mo-shi.md)
   * [模板模式](mo-ban-mo-shi.md)
-* Ext6.2.0 start
+* [Ext6.2.0 start](ext620-start.md)
   * [环境搭建](huan-jing-da-jian.md)
+* [css 基础](css-ji-chu.md)
+  * [Flexbox 🎌 Grid](flexbox-d83c-df8c-grid.md)
+  * [css Tips](css-tips.md)
 
