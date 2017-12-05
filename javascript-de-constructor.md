@@ -58,3 +58,13 @@
         var newTest1 = new newTest.constructor();
         console.dir(newTest1);
 ````
+
+通过上面的代码并配合注释，我们可以理解以下的知识：
+
+1. javascript对象constructor指向其构造函数，及其的一些基本用法；
+
+2. constructor较多的应用场景是在构造函数在闭包函数中（多见于框架封装为模块），无法直接访问时，通过修改构造函数的显式原型，可以为构造函数创建的对象添加属性；同时也可以直接使用对象的构造函数创建对象。
+
+- TODO
+
+在写这篇文章的时候发现这里的constructor与java中AOP，反射等方面有一定的类似，以后在详细的对比下。
