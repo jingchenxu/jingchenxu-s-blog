@@ -80,6 +80,7 @@
   * [vue 自定义指令](vue-xue-xi-bi-ji/vue-zi-ding-yi-zhi-ling.md)
   * [vue 组件间通信](vue-xue-xi-bi-ji/vue-zu-jian-jian-tong-xin.md)
   * [vue + requirejs + ES5 的后台管理系统框架](vue-xue-xi-bi-ji/vue-+-requirejs-+-es5-de-hou-tai-guan-li-xi-tong-kuang-jia.md)
+  * [vue 通过动态路由实现权限控制](vue-xue-xi-bi-ji/vue-tong-guo-dong-tai-lu-you-shi-xian-quan-xian-kong-zhi.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
