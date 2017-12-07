@@ -16,4 +16,13 @@
 
 - 安装tomcat
 
-我们
+我们这里选择的tomcat的版本为7.0.82->core->32-bit Windows zip(pgp,md5,sha1),注意要使用32为版本，因为64位版本在启动时会发生报错。
+
+tomcat下载解压完成后，我们通过cmd命令进入到tomcat根目录下，执行如下图的操作：
+
+![tomcatinstall](img/eclipse/tomcatinstall.png)
+
+以上操作为将tomcat安装为windows服务，我们还需要设置tomcat开机自动启动设置，具体设置如下：
+
+![tomcatsetting](img/eclipse/tomcatsetting.png)
+
