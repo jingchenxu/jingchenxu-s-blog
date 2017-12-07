@@ -13,3 +13,7 @@
 以上配置成功后，我们需要通过命令查看下java环境是否配置成功
 
 ![javaversion](/img/eclipse/javaversion.png)
+
+- 安装tomcat
+
+我们
