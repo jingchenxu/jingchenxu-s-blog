@@ -159,6 +159,7 @@
   * [javascript 创建对象的几种方法](javascript-chuang-jian-dui-xiang-de-ji-zhong-fang-fa.md)
   * [javascript 的继承](javascript-de-ji-cheng.md)
   * [javascript 的constructor](javascript-de-constructor.md)
+  * [链式调用](lian-shi-diao-yong.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
