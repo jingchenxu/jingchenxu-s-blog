@@ -51,6 +51,10 @@ call的用法：A对象拥有b方法，C对象想使用b方法，A.prototype.b.c
 
 apply的用法：apply的用法与call类似，需要注意的是apply的第二个参数为数组或是伪数组。
 
+- 相关文章
+
+1. [apply与call的区别](https://www.cnblogs.com/lengyuehuahun/p/5643625.html)
+
 
 
 
