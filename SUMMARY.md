@@ -165,6 +165,7 @@
   * [electron-vue](electron-vue.md)
 * [javascript 设计模式](javascript-she-ji-mo-shi.md)
   * [模板模式](mo-ban-mo-shi.md)
+  * [职责链模式](zhi-ze-lian-mo-shi.md)
 * [Ext6.2.0 start](ext620-start.md)
   * [环境搭建](huan-jing-da-jian.md)
 * [css 基础](css-ji-chu.md)
