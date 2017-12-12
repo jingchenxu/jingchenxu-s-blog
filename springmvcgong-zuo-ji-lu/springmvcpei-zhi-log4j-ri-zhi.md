@@ -9,6 +9,14 @@
 配置文件的配置如下：
 
 ```java
+### 屏蔽框架低等级日志  ###
+
+log4j.logger.org.springframework=ERROR
+log4j.logger.org.apache.ibatis=ERROR
+log4j.logger.org.apache.cxf=ERROR
+log4j.logger.org.mybatis.spring=ERROR
+
+
 ### 设置日志等级 ###
 
 log4j.rootLogger = DEBUG,stdout
