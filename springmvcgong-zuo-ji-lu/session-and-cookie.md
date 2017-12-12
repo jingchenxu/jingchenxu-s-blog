@@ -17,3 +17,7 @@ session也存在一些问题，session在做负载均衡的时候处理起来比
 - 总结
 
 session 与 cookie都是为了保存状态，方便访问，减少不必要的数据库操作，session 和 cookie 基本都可以全局访问，使用方便。
+
+- 相关文档
+
+[log4j.properties配置详解与实例-全部测试通过](http://blog.sina.com.cn/s/blog_5ed94d710101go3u.html)
