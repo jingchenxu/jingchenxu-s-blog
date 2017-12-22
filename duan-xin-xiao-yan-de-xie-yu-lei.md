@@ -193,5 +193,52 @@ public class ValidateCode {
 -Djava.awt.headless=true \
 ````
 
+编写图片接口
+
+````java
+	@RequestMapping(value="/validateCode")  
+	public String validateCode(HttpServletRequest request,HttpServletResponse response) throws Exception{  
+	    // 设置响应的类型格式为图片格式  
+	    response.setContentType("image/jpeg");  
+	    //禁止图像缓存。  
+	    response.setHeader("Pragma", "no-cache");  
+	    response.setHeader("Cache-Control", "no-cache");  
+	    response.setDateHeader("Expires", 0);  
+	  
+	    HttpSession session = request.getSession();  
+	  
+	    ValidateCode vCode = new ValidateCode(120,40,5,100);  
+	    session.setAttribute("code", vCode.getCode());  
+	    vCode.write(response.getOutputStream());  
+	    return null;  
+	} 
+````
+
+进行图片验证码的校验接口
+
+````java
+	@RequestMapping(value = "/getRegisterCode")
+	@ResponseBody
+	public ReturnValue GetRegisterCode(String phone,String code,HttpServletRequest request, HttpServletResponse response) {
+		ReturnValue rtv = new ReturnValue();
+		String sessioncode = (String) request.getSession().getAttribute("code");
+		if(sessioncode.equals("used")){
+			rtv.setSuccess(false);
+			rtv.setMsg("请点击切换新的校验码");
+			return rtv;
+		}
+		System.out.println("穿过来的："+code+"session中的："+sessioncode);
+		if(!(sessioncode.toUpperCase().equals(code.toUpperCase()))){
+			rtv.setSuccess(false);
+			rtv.setMsg("校验码错误");
+		}
+		else {
+			request.getSession().setAttribute("code", "used");
+                       // 你的业务逻辑
+		}
+		return rtv;
+	}
+````
+
 
 
