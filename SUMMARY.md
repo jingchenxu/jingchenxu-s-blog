@@ -97,6 +97,7 @@
   * [springboot application.properties 配置说明](springbootxue-xi-bi-ji/springboot-applicationproperties-pei-zhi-shuo-ming.md)
   * [springboot 集成 mybatis](springbootxue-xi-bi-ji/springboot-ji-cheng-mybatis.md)
   * [springboot 通过注解实现权限控制](springbootxue-xi-bi-ji/springboot-tong-guo-zhu-jie-shi-xian-quan-xian-kong-zhi.md)
+  * springboot 使用mybatis-generator 插件
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
 * [前端工具整合](qian-duan-gong-ju-zheng-he.md)
