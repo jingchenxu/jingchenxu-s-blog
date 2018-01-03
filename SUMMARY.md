@@ -62,6 +62,7 @@
   * [MySQL 存储过程的写法](mysql-bi-ji/mysql-cun-chu-guo-cheng-de-xie-fa.md)
   * [MySQL 常用命令行语句](mysql-bi-ji/mysql-chang-yong-ming-ling-xing-yu-ju.md)
   * [Mybatis 如何获取存储过程返回值](mysql-bi-ji/mybatis-ru-he-huo-qu-cun-chu-guo-cheng-fan-hui-zhi.md)
+  * [MySQL 的乐观锁及悲观锁](mysql-bi-ji/mysql-de-le-guan-suo-ji-bei-guan-suo.md)
 * [React 开发注意事项](react-kai-fa-zhu-yi-shi-xiang.md)
 * [为什么我们需要 redux && vues](wei-shi-yao-wo-men-xu-yao-redux-andand-vues.md)
 * [express 踩坑指南](express-cai-keng-zhi-nan.md)
