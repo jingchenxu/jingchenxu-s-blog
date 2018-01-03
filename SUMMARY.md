@@ -100,6 +100,7 @@
   * [springboot 集成 mybatis](springbootxue-xi-bi-ji/springboot-ji-cheng-mybatis.md)
   * [springboot 通过注解实现权限控制](springbootxue-xi-bi-ji/springboot-tong-guo-zhu-jie-shi-xian-quan-xian-kong-zhi.md)
   * [springboot 使用 mybatis-generator](springbootxue-xi-bi-ji/springboot-shi-yong-mybatis-generator.md)
+  * [springboot 项目注意事项](springbootxue-xi-bi-ji/springboot-xiang-mu-zhu-yi-shi-xiang.md)
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
 * [前端工具整合](qian-duan-gong-ju-zheng-he.md)
