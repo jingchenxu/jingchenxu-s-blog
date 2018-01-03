@@ -179,6 +179,7 @@
 * [javaweb 基础](javaweb-ji-chu.md)
   * [eclipse 创建项目](javaweb-ji-chu/eclipse-chuang-jian-xiang-mu.md)
   * [线程安全](javaweb-ji-chu/xian-cheng-an-quan.md)
+  * [public static final 变量的编译之旅](javaweb-ji-chu/public-static-final-bian-liang-de-bian-yi-zhi-lv.md)
 * [码农的狗血日志](ma-nong-de-gou-xie-ri-zhi.md)
   * [短信校验的血与泪](duan-xin-xiao-yan-de-xie-yu-lei.md)
 
