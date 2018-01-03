@@ -43,3 +43,17 @@ management.context-path=/manager
                 </configuration>
             </plugin>
 ````
+
+- 后台启动项目jar包
+
+启动命令如下：
+
+````shell
+nohup java -Xms10m -Xmx40m -jar lottery.jar >lottery.log &
+````
+
+nohup 表示窗口关闭后系统继续运行
+-Xms10m 表示springboot内置tomcat最小内存为10M
+-Xmx40m 表示springboot内置tomcat最大内存为40M
+>lottery.log 表示指定日志输出文件为lottery.log
+& 表示后台运行
