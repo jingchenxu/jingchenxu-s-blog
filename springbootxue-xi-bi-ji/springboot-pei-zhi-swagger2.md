@@ -56,3 +56,7 @@ security.basic.path=/manager,/swagger-ui.html
 - @ApiImplicitParam：一个请求参数
 - @ApiImplicitParams：多个请求参数
 
+
+- 相关文档
+
+https://www.cnblogs.com/fengli9998/p/7921601.html
