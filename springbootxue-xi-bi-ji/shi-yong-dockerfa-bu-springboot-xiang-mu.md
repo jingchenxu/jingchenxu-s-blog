@@ -39,5 +39,11 @@
 docker run --name daisy -p 5000:4000 -d daisy
 ````
 
+本地可以正常运行后通过命令导出镜像
+
+````bash
+docker export daisy > E:/daisy.tar
+````
+
 
 
