@@ -29,3 +29,15 @@
 
 ![](/img/springboot/docker.png)
 
+端口开启后，你会看到应该就没有问题了，镜像会顺利的被发布，看一下：
+
+![](/img/springboot/daisy.png)
+
+接下来运行并创建容器
+
+````bash
+docker run --name daisy -p 5000:4000 -d daisy
+````
+
+
+
