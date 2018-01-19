@@ -45,5 +45,17 @@ docker run --name daisy -p 5000:4000 -d daisy
 docker export daisy > E:/daisy.tar
 ````
 
+开始将导出的镜像进行导入
+
+````bash
+docker import - daisy < daisy.tar
+````
+
+注意运行的时候要添加上commond
+
+````bash
+docker run --name daisy -p 6000:4000 -d daisy java -jar daisy.jar
+````
+
 
 
