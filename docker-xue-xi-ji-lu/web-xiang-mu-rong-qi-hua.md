@@ -10,6 +10,44 @@
 
 下面是最根本的，你需要在你的本地安装一下docker软件，不然怎么制作docker镜像呢！
 
-下面是需要准备的文件，
+下面是需要准备的文件，文件的目录如下：
 
-- 
+![](/img/docker/javadocker.png)
+
+发布一个打包为jar的javaweb 项目需要准备额就是以上的原料。
+
+- 创建发布镜像
+
+在上图中我们可以看到一个dockerfile文件，该文件是创建docker镜像的基础，dockerfile可以说是一个配置文件，改配置文件中说明了这个镜像的各个配置项我们可以大致的参观下：
+
+````dockerfile
+# 版本信息
+FROM mysql:5.7
+MAINTAINER daisy "jingchenxu2015@gmail.com"
+
+# 创建与daisy相关的文件夹
+RUN mkdir /daisy
+
+# 设置mysql免密码登录
+ENV MYSQL-ALLOW_EMPTY_PASSWORD yes
+
+# 初始化mysql 参考http://www.jb51.net/article/115422.htm
+COPY setup.sh /daisy/setup.sh
+COPY daisy.sh /daisy/daisy.sh
+COPY daisy.sql /daisy/daisy.sql
+COPY privileges.sql /daisy/privileges.sql
+#CMD ["sh", "/daisy/setup.sh"]
+
+# 安装jdk环境
+ADD jdk-8u162-linux-x64.tar.gz /daisy/
+ENV JAVA_HOME=/daisy/jdk1.8.0_162
+ENV PATH $PATH:$JAVA_HOME/bin
+
+# 对外暴露端口号
+EXPOSE 4000
+
+# 启动daisy
+ADD /daisy-0.0.1-SNAPSHOT.jar //
+#ENTRYPOINT ["java", "-jar", "/daisy-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["sh", "/daisy/setup.sh"]
+````
