@@ -31,9 +31,8 @@ RUN mkdir /daisy
 # 设置mysql免密码登录
 ENV MYSQL-ALLOW_EMPTY_PASSWORD yes
 
-# 初始化mysql 参考http://www.jb51.net/article/115422.htm
+# 初始化mysql
 COPY setup.sh /daisy/setup.sh
-COPY daisy.sh /daisy/daisy.sh
 COPY daisy.sql /daisy/daisy.sql
 COPY privileges.sql /daisy/privileges.sql
 #CMD ["sh", "/daisy/setup.sh"]
@@ -51,3 +50,75 @@ ADD /daisy-0.0.1-SNAPSHOT.jar //
 #ENTRYPOINT ["java", "-jar", "/daisy-0.0.1-SNAPSHOT.jar"]
 ENTRYPOINT ["sh", "/daisy/setup.sh"]
 ````
+
+系统的初始化主要使用````setup.sh````这个脚本来初始化的，该脚本在镜像制作进行的过程中不会执行，而是在容器启动的时候执行，而dockerfile文件中指定的操作是在镜像创建过程中执行的。
+
+准备好daisy.sql和privileges.sql数据库初始化文件，daisy.sql主要是数据库表结构和一些配置参数，privileges主要是数据库的用户权限信息。
+
+接下来需要注意的是````setup.sh````脚本,该bash脚本用于初始化系统，可以参考如下：
+
+````bash
+#!/bin/bash
+set -e
+
+#查看mysql服务的状态，方便调试，这条语句可以删除
+echo `service mysql status`
+
+echo '1.启动mysql....'
+#启动mysql
+
+service mysql start
+sleep 20
+
+echo `service mysql status`
+
+echo '2.开始导入数据....'
+#导入数据
+mysql < /daisy/daisy.sql
+echo '3.导入数据完毕....'
+
+sleep 3
+echo `service mysql status`
+
+#重新设置mysql密码
+echo '4.开始修改密码....'
+mysql < /daisy/privileges.sql
+echo '5.修改密码完毕....'
+
+#sleep 3
+echo `service mysql status`
+echo `mysql容器启动完毕,且数据导入成功`
+
+java -jar /daisy-0.0.1-SNAPSHOT.jar
+
+tail -f /dev/null
+````
+
+- 镜像发布流程
+
+1. 将所有准备文件放置到同一根目录下；
+2. 在确认docker软件启动后,在根目录下打开命令行运行以下命令：
+````bash
+docker build -t daisy:latest .
+````
+3. 在命令运行完成后，查看镜像是否生成：
+````bash
+docker images
+````
+4. 在确认镜像生成后，创建容器并运行：
+````bash
+docker run --name daisyc -p 3310:3306 -p 4000:4000 -d daisy
+````
+5. 在容器的创建或启动过程中可通过以下命令查看容器日志：
+````bash
+docker logs -f daisyc
+````
+
+- 注意事项
+
+在dockerfile中如果你既使用了````CMD````命令又使用了````ENTRYPOINT````,那么只会执行一个命令，所以我们只用一个就可以了。
+
+在数据库进行数据初始化时，数据库初始化是有时间的，数据库的初始化要等待数据库启动完成，可以在脚本执行数据库启动后延迟几分钟再进行数据库的初始化工作。
+
+````ENTRYPOINT````在正常情况下，是会在每次容器启动的时候执行的，所以这里你需要注意的是，你的数据库初始化sql语句是否添加了数据库是否已被初始化的判断，不然的话容器重启的时候会出现sql执行报错的问题。
+
