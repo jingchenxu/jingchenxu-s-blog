@@ -37,7 +37,7 @@ COPY daisy.sql /daisy/daisy.sql
 COPY privileges.sql /daisy/privileges.sql
 #CMD ["sh", "/daisy/setup.sh"]
 
-# 安装jdk环境
+# 安装jdk环境 这里会自动解压安装包
 ADD jdk-8u162-linux-x64.tar.gz /daisy/
 ENV JAVA_HOME=/daisy/jdk1.8.0_162
 ENV PATH $PATH:$JAVA_HOME/bin
