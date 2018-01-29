@@ -8,4 +8,21 @@
 
 准备资源如下：
 
-![](img/docker/dockerimage.png)
+![](/img/docker/dockerimage.png)
+
+相关的资源可见地址[ideareegister](https://github.com/jingchenxu/idearegister),在该地址下载相关的资源后，便可进行镜像的制作工作。
+
+- 镜像制作过程
+
+````bash
+docker build -t idearegister:latest .
+docker run --name idea -p 2048:2048 -d idearegister
+docker commit idea deepwater2017/idearegister
+docker login
+docker push deepwater2017/idearegister:latest
+docker pull deepwater2017/idearegister
+docker run --name idearegister -p 2048:2048 -d idearegister
+
+
+````
+
