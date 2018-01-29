@@ -155,6 +155,7 @@
   * [docker 安装nginx](docker-xue-xi-ji-lu/docker-an-zhuang-nginx.md)
   * [hyper-V 中如何在虚拟机中配置FTP服务器](docker-xue-xi-ji-lu/hyper-v-zhong-ru-he-zai-xu-ni-ji-zhong-pei-zhi-ftp-fu-wu-qi.md)
   * [web 项目容器化](docker-xue-xi-ji-lu/web-xiang-mu-rong-qi-hua.md)
+  * [如何使用docker创建并发布一个服务镜像](docker-xue-xi-ji-lu/ru-he-shi-yong-docker-chuang-jian-bing-fa-bu-yi-ge-fu-wu-jing-xiang.md)
 * [在线支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti.md)
   * [微信支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti/wei-xin-zhi-fu-kai-fa-wen-ti.md)
 * [Maven](maven.md)
