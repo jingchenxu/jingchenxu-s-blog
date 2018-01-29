@@ -15,14 +15,24 @@
 - 镜像制作过程
 
 ````bash
+# 创建镜像
 docker build -t idearegister:latest .
+# 本地试运行镜像
 docker run --name idea -p 2048:2048 -d idearegister
+# 为本地容器创建一个快照，用于上传到dockerhub
 docker commit idea deepwater2017/idearegister
+# 登录dockerhub
 docker login
+# 推送镜像到dockerhub
 docker push deepwater2017/idearegister:latest
+# 获取dockerhub上的镜像
 docker pull deepwater2017/idearegister
+# 运行从dockerhub获取到的镜像
 docker run --name idearegister -p 2048:2048 -d idearegister
 
-
 ````
+
+- 最后开发一个我的idea注册地址
+
+````http://idearegister.jingchenxu.xin````
 
