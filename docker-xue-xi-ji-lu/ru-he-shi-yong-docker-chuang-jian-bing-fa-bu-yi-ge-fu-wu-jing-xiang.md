@@ -32,7 +32,7 @@ docker run --name idearegister -p 2048:2048 -d idearegister
 
 ````
 
-- 最后开发一个我的idea注册地址
+- 最后发一个我的idea注册地址
 
 ````http://idearegister.jingchenxu.xin````
 
