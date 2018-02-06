@@ -191,4 +191,5 @@
   * [js框架间的爱恨情仇](jskuang-jia-jian-de-ai-hen-qing-chou.md)
 * [nginx 相关](nginx-pei-zhi-xiang-guan.md)
   * [nginx 配置图片加载出错](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-tu-pian-jia-zai-chu-cuo.md)
+  * [nginx 配置history路由](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-history-lu-you.md)
 
