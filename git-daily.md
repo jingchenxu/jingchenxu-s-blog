@@ -62,3 +62,10 @@
    git merge origin/master
    ````
    
+- 一些可以自己尝试的问题
+
+ 1. git merge 冲突如何解决？
+ 2. 如何规范的编写git commit？
+ 3. git如何回退版本？
+ 
+ 尝试的时候不要用正式项目啊！
