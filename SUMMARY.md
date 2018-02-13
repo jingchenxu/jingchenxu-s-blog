@@ -42,6 +42,7 @@
   * [git 修改ssh 为 http](git-xiu-gai-ssh-wei-http.md)
   * [git救命有三宝](gitjiu-ming-you-san-bao.md)
   * [如何写好gitcommit](ru-he-xie-hao-gitcommit.md)
+  * [git daily](git-daily.md)
 * [Echarts](echarts.md)
   * [在react中使用echarts](reactecharts.md)
 * [react-native学习笔记](react-native.md)
