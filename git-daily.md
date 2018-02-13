@@ -6,9 +6,9 @@
 
  1. 获取你的项目（基本上项目周期里只要一次）
 
-    ````bash
-    git clone git@xxx.xxx.xxx.xxx:jcxu/County.git
-    ````
+   ````bash
+   git clone git@xxx.xxx.xxx.xxx:jcxu/County.git
+   ````
 
  2. 进入项目目录
 
@@ -68,4 +68,4 @@
  2. 如何规范的编写git commit？
  3. git如何回退版本？
  
- 尝试的时候不要用正式项目啊！
+ 尝试的时候不要用正式项目
