@@ -37,4 +37,4 @@
 
 - 你可能还需要
 
-[](./)
+[nginx配置history路由](./nginx/nginx/nginx-pei-zhi-qing-qiu-tou-ip-xin-xi.md)
