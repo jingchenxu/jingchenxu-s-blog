@@ -37,4 +37,4 @@
 
 - 你可能还需要
 
-[nginx配置history路由](./nginx-pei-zhi-xiang-guan.md)
+[nginx配置history路由](./nginx-pei-zhi-xiang-guan/nginx-pei-zhi-history-lu-you.md)
