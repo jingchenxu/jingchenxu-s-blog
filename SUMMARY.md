@@ -193,4 +193,5 @@
 * [nginx 相关](nginx-pei-zhi-xiang-guan.md)
   * [nginx 配置图片加载出错](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-tu-pian-jia-zai-chu-cuo.md)
   * [nginx 配置history路由](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-history-lu-you.md)
+  * [搭建自己的内网穿透服务器](nginx-pei-zhi-xiang-guan/da-jian-zi-ji-de-nei-wang-chuan-tou-fu-wu-qi.md)
 
