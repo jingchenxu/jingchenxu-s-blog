@@ -57,7 +57,7 @@ const RouterConfig = {
         access_log  /jingchenxu/log/www/daisy.access.log;
         error_log   /jingchenxu/log/www/daisy.error.log;
 
-        #lottery
+        #设置域名访问直接跳转到根目录下
         location / {
            proxy_set_header x-forwarded-for $remote_addr;
            proxy_pass http://www.jingchenxu.xin;
@@ -80,3 +80,5 @@ const RouterConfig = {
     }
 
 ````
+
+通过以上配置基本上可以解决history在开发及生产环境使用中遇到的问题，使用history路由后单页应用在也不用担心微信支付目录的配置问题。
