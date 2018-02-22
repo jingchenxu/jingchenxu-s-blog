@@ -6,4 +6,19 @@
 
 - 如何使用history路由进行开发
 
-如果使用history路由，是需要做一些开发配置的，在开发
+如果使用history路由，是需要做一些开发配置的，在本地进行开发时需要配置webpack的配置，在部署到了生产环境之后，需要对nginx进行配置，在开发模式下对于webpack的配置如下：
+
+````js
+    devServer: {
+        historyApiFallback: true,
+        noInfo: false,
+        overlay: true,
+        proxy: {
+            '/daisy/*': {
+                target: 'http://localhost:4000',
+                secure: false, //接受 运行在 https 上的服务
+                changeOrigin: true
+            }
+        }
+    },
+````
