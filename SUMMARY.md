@@ -195,6 +195,7 @@
   * [nginx 配置图片加载出错](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-tu-pian-jia-zai-chu-cuo.md)
   * [nginx 配置history路由](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-history-lu-you.md)
   * [搭建自己的内网穿透服务器](nginx-pei-zhi-xiang-guan/da-jian-zi-ji-de-nei-wang-chuan-tou-fu-wu-qi.md)
+  * [nginx 代理MySQL端口](nginx-pei-zhi-xiang-guan/nginx-dai-li-mysql-duan-kou.md)
 * [golang 笔记](golang-bi-ji.md)
   * [先创建一个hello word](golang-bi-ji/xian-chuang-jian-yi-ge-hello-word.md)
   * [golang tips](golang-bi-ji/golang-tips.md)
