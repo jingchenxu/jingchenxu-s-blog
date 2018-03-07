@@ -8,6 +8,19 @@
 sudo passwd
 ````
 
+- 更新Linux
+
+更新源：
+````bash
+sudo apt-get update
+````
+
+更新Linux
+````bash
+sudo apt-get upgrade
+````
+注意更新Linux可以自动更新内核，下一步的升级内核可以不用操作了。
+
 - 升级Linux内核
 
 通过 :
@@ -38,4 +51,5 @@ sysctl -p
 ````bash
 lsmod | grep bbr
 ````
+
 
