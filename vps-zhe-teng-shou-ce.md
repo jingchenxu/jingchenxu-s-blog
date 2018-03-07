@@ -18,3 +18,24 @@ uname -sr
 ````bash
 sudo dpkg -i *.deb
 ````
+
+- 开启BBR
+
+修改系统变量
+
+````bash
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.confecho "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+````
+
+保存生效
+
+````bash
+sysctl -p
+````
+
+检测是否生效
+
+````bash
+lsmod | grep bbr
+````
+
