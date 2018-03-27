@@ -202,4 +202,5 @@
   * [先创建一个hello word](golang-bi-ji/xian-chuang-jian-yi-ge-hello-word.md)
   * [golang tips](golang-bi-ji/golang-tips.md)
 * [VPS 折腾手册](vps-zhe-teng-shou-ce.md)
+  * [wordpress 安装](vps-zhe-teng-shou-ce/wordpress-an-zhuang.md)
 
