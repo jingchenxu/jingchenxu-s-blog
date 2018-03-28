@@ -50,3 +50,15 @@ define("FS_CHMOD_DIR", 0777);
 
 define("FS_CHMOD_FILE", 0777);
 ````
+
+- wordpress开启全站https
+
+百度了那么多的结果，都有一点问题，我是通过nginx进行反向代理的，通过nginx开启的ssh,只需要设置一下、wordpress 下的wp-config.php中就可以了。
+
+````php
+$_SERVER['HTTPS'] = 'on';
+
+define('FORCE_SSL_LOGIN', true);
+
+define('FORCE_SSL_ADMIN', true);
+````
