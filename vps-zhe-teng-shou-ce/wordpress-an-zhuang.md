@@ -38,3 +38,15 @@ phpinfo
 - wordpress安装
 
 以上安装完成后，需要在apache2跟目下部署wordpress源码即可。
+
+- 更新wordpress插件
+
+在更新wordpress插件的时候会发现需要ftp账号信息的什么的，name能不能不要要配置这些就可以更新呢？只需要在wp-config.php文件中添加如下代码即可：
+
+````php
+define("FS_METHOD","direct");
+
+define("FS_CHMOD_DIR", 0777);
+
+define("FS_CHMOD_FILE", 0777);
+````
