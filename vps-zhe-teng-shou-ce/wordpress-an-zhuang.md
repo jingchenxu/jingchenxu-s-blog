@@ -62,3 +62,9 @@ define('FORCE_SSL_LOGIN', true);
 
 define('FORCE_SSL_ADMIN', true);
 ````
+
+- 修复wordpress图片编辑异常问题
+
+````bash
+sudo apt-get install php7.0-gd
+````
