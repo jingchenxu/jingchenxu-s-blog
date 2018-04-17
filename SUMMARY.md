@@ -203,4 +203,6 @@
   * [golang tips](golang-bi-ji/golang-tips.md)
 * [VPS 折腾手册](vps-zhe-teng-shou-ce.md)
   * [wordpress 安装](vps-zhe-teng-shou-ce/wordpress-an-zhuang.md)
+* 管理
+  * [前端开发章程](qian-duan-kai-fa-zhang-cheng.md)
 
