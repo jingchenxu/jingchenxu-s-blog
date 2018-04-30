@@ -89,6 +89,7 @@
   * [Vue Tips](vue-xue-xi-bi-ji/vue-tips.md)
   * [vue 页面开发模式](vue-xue-xi-bi-ji/vue-ye-mian-kai-fa-mo-shi.md)
   * [vue 计算属性](vue-xue-xi-bi-ji/vue-ji-suan-shu-xing.md)
+  * [vue动态组件](vue-xue-xi-bi-ji/vuedong-tai-zu-jian.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
