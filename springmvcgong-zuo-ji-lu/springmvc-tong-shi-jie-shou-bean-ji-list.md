@@ -13,10 +13,10 @@
             detail.append('factshort', '1');
             detail.append('linkman', '测试联系人');
             let list = new URLSearchParams();
-            detail.append('faclist.[0].factid', '02');
-            detail.append('faclist.[0].factname', '测试1');
-            detail.append('faclist.[0].factshort', '1');
-            detail.append('faclist.[0].linkman', '测试联系人');
+            detail.append('faclist[0].factid', '02');
+            detail.append('faclist[0].factname', '测试1');
+            detail.append('faclist[0].factshort', '1');
+            detail.append('faclist[0].linkman', '测试联系人');
             this.$axios.post('/pestiot.web/smo/savedetailandlist.do',detail)
                 .then(function (res) {
                     console.dir(res);
@@ -53,6 +53,7 @@ public class SmoparkController extends BaseController {
         System.out.println(list.getFaclist().get(0).getFactid());
         return rtv;
     };
+
 }
 ```
 
@@ -67,10 +68,10 @@ public class SmoparkController extends BaseController {
             detail.append('smo.factshort', '1');
             detail.append('smo.linkman', '测试联系人');
             let list = new URLSearchParams();
-            detail.append('smolist.[0].factid', '02');
-            detail.append('smolist.[0].factname', '测试1');
-            detail.append('smolist.[0].factshort', '1');
-            detail.append('smolist.[0].linkman', '测试联系人');
+            detail.append('smolist.faclist[0].factid', '02');
+            detail.append('smolist.faclist[0].factname', '测试1');
+            detail.append('smolist.faclist[0].factshort', '1');
+            detail.append('smolist.faclist[0].linkman', '测试联系人');
             this.$axios.post('/pestiot.web/smo/savedetailandlist.do',detail)
                 .then(function (res) {
                     console.dir(res);
@@ -101,10 +102,10 @@ public class SmoparkController extends BaseController {
 
     @RequestMapping(value = "/savedetailandlist", method = RequestMethod.POST)
     @ResponseBody
-    public ReturnValue SaveDetailAndList (@ModelAttribute("smo") BasFactory detail, @ModelAttribute("smolist") List<BasFactory> list) {
+    public ReturnValue SaveDetailAndList (@ModelAttribute("smo") BasFactory detail, @ModelAttribute("smolist") BasFactoryList list) {
         ReturnValue rtv = new ReturnValue();
         System.out.println(detail.getFactid());
-        System.out.println(list.get(0).getFactid());
+        System.out.println(list.getFaclist().get(0).getFactid());
         return rtv;
     };
 
