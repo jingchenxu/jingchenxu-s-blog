@@ -50,7 +50,73 @@
 
 ### v2.0
 
-在2.0版本当中开始着手解决此问题，
+在2.0版本当中开始着手解决此问题，其实第一个想到的是使用promise来解决此问题，但是最后还是决定使用generator，原因以后再说，这里需要注意的是，generator通过执行next\(\)方法进入到函数的下一个状态，但是next\(\)方法只能在异步代码中执行，如果实在同步代码中执行，则会导致[`Generator is already running`](https://oss.so/article/82)问题，具体的实现代码如下：
 
+```js
+    getDataList () {
+      // 通过generator使得getDataList的执行顺序按照getDataListBefore、_getDataList、getDataListAfter执行
+      // 初始化generater
+      let me = this
+      function * dataGenerator () {
+        me.getDataListBefore()
+        if (me._getDataListBefore) {
+          yield me._getDataListBefore()
+        }
+        yield me._getDataList()
+        me.getDataListAfter()
+        if (me._getDataListAfter) {
+          yield me._getDataListAfter()
+        }
+        return 'ending'
+      }
+      me.datag = dataGenerator()
+      me.datag.next()
+    },
+    getDataListBefore () {
+      console.log('before======start======》')
+      console.log('before======end======》')
+    },
+    // _getDataListBefore () {
+    //   let me = this;
+    //   console.log('_before======start======》')
+    //   me.$axios.get(`${me.pmtUrl}`, {
+    //     params: {
+    //       name: 'userstatus'
+    //     }
+    //   }).then(function (res) {
+    //     console.log('_before======end======》')
+    //     me.datag.next()
+    //   })
+    // },
+    _getDataList () {
+      let me = this;
+      console.log('pending======start======》')
+      me.$axios.get(`${me.pmtUrl}`, {
+        params: {
+          name: 'userstatus'
+        }
+      }).then(function (res) {
+        console.log('pending======end======》')
+        me.datag.next()
+      })
+    },
+    getDataListAfter () {
+      console.log('after======start======》')
+      console.log('after======end======》')
+    },
+    // _getDataListAfter () {
+    //   let me = this;
+    //   console.log('_after======start======》')
+    //   me.$axios.get(`${me.pmtUrl}`, {
+    //     params: {
+    //       name: 'userstatus'
+    //     }
+    //   }).then(function (res) {
+    //     console.log('_after======end======》')
+    //     me.datag.next()
+    //   })
+    // }
+```
 
+其实上面的代码创建了一个列表数据获取的生命周期，
 
