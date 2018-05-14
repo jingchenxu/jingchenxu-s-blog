@@ -214,4 +214,5 @@
 * [项目总结](xiang-mu-zong-jie.md)
 * React 回忆录
   * Vue 写了有段时间了 开始想念React
+* [javascript 常看常知道](javascript-chang-kan-chang-zhi-dao.md)
 
