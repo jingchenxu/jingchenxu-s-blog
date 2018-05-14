@@ -121,5 +121,28 @@ public class SmoparkController extends BaseController {
 }
 ```
 
+### pojo模式下前端的json转化函数
+
+```js
+utils.addPreParams = function (params, pre) {
+  let result = new URLSearchParams()
+  for (let key in params) {
+    // TODO 判断对象属性是否为数组，如果是数组需要特殊处理
+    if (_.isArray(params[key])) {
+      let _tempList = params[key]
+      for (let i = 0; i < _tempList.length; i++) {
+        let item = _tempList[i]
+        for (let k in item) {
+          result.append(`${pre}.${key}[${i}].${k}`, item[k])
+        }
+      }
+    } else {
+      result.append(`${pre}.${key}`, params[key]);
+    }
+  }
+  return result;
+};
+```
+
 
 
