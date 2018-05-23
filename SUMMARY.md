@@ -93,6 +93,7 @@
   * [vue 动态组件](vue-xue-xi-bi-ji/vuedong-tai-zu-jian.md)
   * [vue 路由相关](vue-xue-xi-bi-ji/vue-lu-you-xiang-guan.md)
   * [vue-cli项目集成pdfjs进行pdf文件流预览](vue-xue-xi-bi-ji/vue-clixiang-mu-ji-cheng-pdfjs-jin-xing-pdf-wen-jian-liu-yu-lan.md)
+  * [vue 的nextTick](vue-xue-xi-bi-ji/vue-de-nexttick.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
