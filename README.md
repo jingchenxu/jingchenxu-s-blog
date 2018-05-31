@@ -14,10 +14,11 @@ springboot: [https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/
 
 **todo**
 
-- [ ] 熟悉spring测试框架
-- [ ] java注解
-- [ ] java各种集合类
-- [ ] java多线程编程
-- [ ] 翻译drools技术书籍
-- [ ] servlet
-- [ ] java8
+* [ ] 熟悉spring测试框架
+* [x] java注解
+* [ ] java各种集合类
+* [ ] java多线程编程
+* [ ] 翻译drools技术书籍
+* [ ] servlet
+* [ ] java8
+
