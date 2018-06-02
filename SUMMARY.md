@@ -202,6 +202,7 @@
 * [码农的狗血日志](ma-nong-de-gou-xie-ri-zhi.md)
   * [短信校验的血与泪](duan-xin-xiao-yan-de-xie-yu-lei.md)
   * [js框架间的爱恨情仇](jskuang-jia-jian-de-ai-hen-qing-chou.md)
+  * [前端框架解决了什么](qian-duan-kuang-jia-jie-jue-le-shi-yao.md)
 * [nginx 相关](nginx-pei-zhi-xiang-guan.md)
   * [nginx 配置图片加载出错](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-tu-pian-jia-zai-chu-cuo.md)
   * [nginx 配置history路由](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-history-lu-you.md)
@@ -215,7 +216,7 @@
 * [管理](guan-li.md)
   * [前端开发章程](qian-duan-kai-fa-zhang-cheng.md)
 * [项目总结](xiang-mu-zong-jie.md)
-* React 回忆录
+* [React 回忆录](react-hui-yi-lu.md)
   * Vue 写了有段时间了 开始想念React
 * [javascript 常看常知道](javascript-chang-kan-chang-zhi-dao.md)
 * [sketch UI 库开发日志](sketch-ui-ku-kai-fa-ri-zhi.md)
