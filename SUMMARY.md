@@ -216,6 +216,7 @@
   * [wordpress 安装](vps-zhe-teng-shou-ce/wordpress-an-zhuang.md)
 * [管理](guan-li.md)
   * [前端开发章程](qian-duan-kai-fa-zhang-cheng.md)
+  * [项目开发规范](xiang-mu-kai-fa-gui-fan.md)
 * [项目总结](xiang-mu-zong-jie.md)
 * [React 回忆录](react-hui-yi-lu.md)
   * Vue 写了有段时间了 开始想念React
