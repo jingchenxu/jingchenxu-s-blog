@@ -95,7 +95,7 @@
   * [vue-cli项目集成pdfjs进行pdf文件流预览](vue-xue-xi-bi-ji/vue-clixiang-mu-ji-cheng-pdfjs-jin-xing-pdf-wen-jian-liu-yu-lan.md)
   * [vue 的nextTick](vue-xue-xi-bi-ji/vue-de-nexttick.md)
   * [vue 实现根据接口数据动态生成表单页面](vue-xue-xi-bi-ji/vue-shi-xian-gen-ju-jie-kou-shu-ju-dong-tai-sheng-cheng-biao-dan-ye-mian.md)
-  * [vue 后台管理类项目阶段性总结](vue-xue-xi-bi-ji/vue-hou-tai-guan-li-lei-xiang-mu-jie-duan-xing-zong-jie.md)
+  * [vue 后台管理类项目阶段性总结（1）](vue-xue-xi-bi-ji/vue-hou-tai-guan-li-lei-xiang-mu-jie-duan-xing-zong-jie.md)
   * [iview Tabs 组件开发问题汇总](vue-xue-xi-bi-ji/iview-tabs-zu-jian-kai-fa-wen-ti-hui-zong.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
