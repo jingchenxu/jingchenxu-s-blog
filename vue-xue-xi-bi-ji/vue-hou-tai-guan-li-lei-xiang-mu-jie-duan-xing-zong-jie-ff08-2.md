@@ -12,7 +12,7 @@ iview在日常的试用过程中体验还是非常好的，但是随着项目复
 
 下面我们修复Tabs组件的问题：
 
-```
+```javascript
 <script>
 /* eslint-disable */
 import {Tabs} from 'iview'
