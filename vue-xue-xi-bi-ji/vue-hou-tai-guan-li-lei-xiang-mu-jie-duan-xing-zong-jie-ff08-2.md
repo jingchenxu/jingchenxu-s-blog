@@ -180,4 +180,32 @@ export default (options = {}) => config => {
 }
 
 ```
+请求时需要如下设置：
+
+```javascript
+    _getPmt (name) {
+      // 通用的参数请求方法
+      let me = this;
+      if (!(me[name] && me[name].length > 0)) {
+        me.$axios.get(`${me.pmtUrl}`, {
+          params: {
+            id: name
+          },
+          adapter: cache({
+            local: false
+          })
+        }).then(function (res) {
+          let all = [{
+            id: '',
+            name: '全部'
+          }]
+          if (me[name]) {
+            me[name] = all.concat(res)
+          } else {
+            me.$set(me, name, all.concat(res))
+          }
+        })
+      }
+    },
+```
 
