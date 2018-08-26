@@ -56,6 +56,8 @@
 | :--- | :--- |
 | 所用技术栈 | vue、iview、webpack、springMVC、maven |
 
+- 项目总结
+
 ### 个人博客daisy
 
 |  |  |
