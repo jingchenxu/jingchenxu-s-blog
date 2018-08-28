@@ -5,6 +5,8 @@
 | Ctrl+Backspace | 删除光标左侧的代码 |
 | Ctrl+Shift+K | 删除整行代码 |
 | Ctrl+End,Ctrl+Home | 滚动到底部及滚动到顶部 |
+| Ctrl+Shift+Space,Ctrl+Space | 触发参数提示及触发建议 |
+| Ctrl+G | 转到某行 |
 
 
 
