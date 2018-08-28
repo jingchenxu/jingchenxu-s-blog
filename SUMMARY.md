@@ -228,5 +228,5 @@
   * [环境搭建](sketch-ui-ku-kai-fa-ri-zhi/huan-jing-da-jian.md)
   * [LESS 简介](sketch-ui-ku-kai-fa-ri-zhi/less-jian-jie.md)
 * [python 学习记录](python-xue-xi-ji-lu.md)
-  * python 对象概念
+  * [python 对象概念](python-xue-xi-ji-lu/python-dui-xiang-gai-nian.md)
 
