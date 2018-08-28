@@ -10,6 +10,8 @@
 | Shift+Enter | 运行选中的python代码 |
 | Alt+Arrow | 前进或是后退 |
 | Shift+Alt+UpArrow,Shift+Alt+DownArrow | 复制上一行或是下一行 |
+| Shift+PageUp,Shif+PageDowm | 向上滚动或是向下滚动 |
+| Ctrl+Tab | 切换tab页的可见性 |
 
 
 
