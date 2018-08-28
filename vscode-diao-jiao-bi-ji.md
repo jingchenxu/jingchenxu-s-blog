@@ -12,6 +12,7 @@
 | Shift+Alt+UpArrow,Shift+Alt+DownArrow | 复制上一行或是下一行 |
 | Shift+PageUp,Shif+PageDowm | 向上滚动或是向下滚动 |
 | Ctrl+Tab | 切换tab页的可见性 |
+| Ctrl+Shift+P | 打开控制面板 |
 
 
 
