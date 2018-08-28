@@ -8,6 +8,8 @@
 | Ctrl+Shift+Space,Ctrl+Space | 触发参数提示及触发建议 |
 | Ctrl+G | 转到某行 |
 | Shift+Enter | 运行选中的python代码 |
+| Alt+Arrow | 前进或是后退 |
+| Shift+Alt+UpArrow,Shift+Alt+DownArrow | 复制上一行或是下一行 |
 
 
 
