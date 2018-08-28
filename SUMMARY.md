@@ -229,4 +229,6 @@
   * [LESS 简介](sketch-ui-ku-kai-fa-ri-zhi/less-jian-jie.md)
 * [python 学习记录](python-xue-xi-ji-lu.md)
   * [python 对象概念](python-xue-xi-ji-lu/python-dui-xiang-gai-nian.md)
+* [vscode 调教笔记](vscode-diao-jiao-bi-ji.md)
+  * [快速添加console.log输出代码](vscode-diao-jiao-bi-ji/kuai-su-tian-jia-console-log-shu-chu-dai-ma.md)
 
