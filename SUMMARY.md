@@ -191,6 +191,7 @@
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
+  * [从零开始搭建vue + electron基础项目](cong-ling-kai-shi-da-jian-vue-+-electron-ji-chu-xiang-mu.md)
 * [javascript 设计模式](javascript-she-ji-mo-shi.md)
   * [模板模式](mo-ban-mo-shi.md)
   * [职责链模式](zhi-ze-lian-mo-shi.md)
