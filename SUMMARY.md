@@ -134,6 +134,7 @@
   * [前端与后端交互的几种方式](springmvcgong-zuo-ji-lu/qian-duan-yu-hou-duan-jiao-hu-de-ji-zhong-fang-shi.md)
   * [springMVC 同时接收bean及List](springmvcgong-zuo-ji-lu/springmvc-tong-shi-jie-shou-bean-ji-list.md)
   * [文件上传相关问题](springmvcgong-zuo-ji-lu/wen-jian-shang-chuan-xiang-guan-wen-ti.md)
+  * [文件预览下载问题相关](springmvcgong-zuo-ji-lu/wen-jian-yu-lan-xia-zai-wen-ti-xiang-guan.md)
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
 * [nginx](nginx.md)
