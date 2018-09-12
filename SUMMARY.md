@@ -235,5 +235,5 @@
 * [vscode 调教笔记](vscode-diao-jiao-bi-ji.md)
   * [快速添加console.log输出代码](vscode-diao-jiao-bi-ji/kuai-su-tian-jia-console-log-shu-chu-dai-ma.md)
 * html 常见布局
-  * 居中布局
+  * [居中布局](ju-zhong-bu-ju.md)
 
