@@ -232,4 +232,6 @@
   * [python 对象概念](python-xue-xi-ji-lu/python-dui-xiang-gai-nian.md)
 * [vscode 调教笔记](vscode-diao-jiao-bi-ji.md)
   * [快速添加console.log输出代码](vscode-diao-jiao-bi-ji/kuai-su-tian-jia-console-log-shu-chu-dai-ma.md)
+* [html 常见页面布局](html-chang-jian-ye-mian-bu-ju.md)
+  * 居中布局
 
