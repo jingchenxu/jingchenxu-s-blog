@@ -4,6 +4,67 @@
 
 ### 下载
 
+````java
+	@SuppressWarnings("rawtypes")
+	@RequestMapping(value = "/downattach")
+	public ResponseEntity DownFileAttach(@ModelAttribute("file") FileAttach file, HttpServletResponse response) {
+		ReturnValue rtv = new ReturnValue();
+
+		try {
+			FileAttach item = PubDao.GetFileAttach(file);
+
+			String path = FileUtils.GetFileBasePath();
+
+			File df = new File(path + item.getAttachurl());
+			HttpHeaders headers = new HttpHeaders();
+			
+			if (file.getDowntype().equals("attach")) {
+				headers.setContentDispositionFormData("attachment", new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+				headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+			}
+			else {
+				switch (FileUtils.GetFileType(item.getAttachurl())) {
+					case WORD:
+						headers.add("Content-Disposition", "inline;filename=" + new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+						headers.add("Content-Type", "application/vnd.ms-word");
+						break;
+						
+					case EXCEL:
+						headers.add("Content-Disposition", "inline;filename=" + new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+						headers.add("Content-Type", "application/vnd.ms-excel");
+						break;
+						
+					case PPT:
+						headers.add("Content-Disposition", "inline;filename=" + new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+						headers.add("Content-Type", "application/vnd.ms-powerpoint");
+						break;
+	
+					case PDF:
+						headers.add("Content-Disposition", "inline;filename=" + new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+						headers.add("Content-Type", "application/pdf");
+						break;
+						
+					case IMAGE:
+						headers.add("Content-Disposition", "inline;filename=" + new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+						headers.add("Content-Type", "image/jpeg");
+						break;
+						
+					default:
+						headers.setContentDispositionFormData("attachment", new String(item.getAttachname().getBytes("UTF-8"), "iso-8859-1"));
+						headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+						break;
+				}
+			}
+			
+			return new ResponseEntity<byte[]>(org.apache.commons.io.FileUtils.readFileToByteArray(df), headers,	HttpStatus.OK);
+		} catch (Exception e) {
+			rtv.setMsg("未能获取到资源");
+		}
+
+		return this.OutReturnBean(rtv);
+	}
+````
+
 ### 预览
 
 
