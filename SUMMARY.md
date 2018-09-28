@@ -14,6 +14,7 @@
   * [浏览器如何兼容ES6](liu-lan-qi-ru-he-jian-rong-es6.md)
   * [通过generator制作一个业务操作的生命周期](tong-guo-generator-zhi-zuo-yi-ge-ye-wu-cao-zuo-de-sheng-ming-zhou-qi.md)
   * [ES6箭头函数](es6jian-tou-han-shu.md)
+  * [数组操作大全](shu-zu-cao-zuo-da-quan.md)
 * [Linux 命令](linux-命令.md)
 * [eclipse 使用手册](eclipse-使用手册.md)
   * [tomcat使用问题](设置tomcat的启动时长.md)
