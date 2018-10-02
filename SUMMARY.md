@@ -192,6 +192,7 @@
   * [javascript 的constructor](javascript-de-constructor.md)
   * [链式调用](lian-shi-diao-yong.md)
   * [javascript 短路原理](javascript-duan-lu-yuan-li.md)
+  * [词法作用域与动态作用域](ci-fa-zuo-yong-yu-yu-dong-tai-zuo-yong-yu.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
