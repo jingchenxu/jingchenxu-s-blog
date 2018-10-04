@@ -140,6 +140,7 @@
   * [文件预览下载问题相关](springmvcgong-zuo-ji-lu/wen-jian-yu-lan-xia-zai-wen-ti-xiang-guan.md)
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
+  * [使用Anaconda搭建python开发环境](python/shi-yong-anaconda-da-jian-python-kai-fa-huan-jing.md)
 * [nginx](nginx.md)
   * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
   * [nginx 配置请求头ip信息](nginx/nginx-pei-zhi-qing-qiu-tou-ip-xin-xi.md)
