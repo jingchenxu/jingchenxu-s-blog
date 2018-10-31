@@ -242,7 +242,7 @@
   * [快速添加console.log输出代码](vscode-diao-jiao-bi-ji/kuai-su-tian-jia-console-log-shu-chu-dai-ma.md)
 * [html 常见布局](html-chang-jian-bu-ju.md)
   * [居中布局](ju-zhong-bu-ju.md)
-  * 弹出框实现
+  * [弹出框实现](dan-chu-kuang-shi-xian.md)
 * Rosa 项目相关
   * [ubuntu mongodb 安装](ubuntu-mongodb-an-zhuang.md)
 
