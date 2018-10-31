@@ -25,4 +25,6 @@ date: 2018-10-31
 
 1. 确定项目结构：
 
-![](img/chonggou.png)
+![zhelishitupain](/img/chonggou.png)
+
+
