@@ -33,3 +33,7 @@ public class test {
 	}
 }
 ````
+
+- 简单的介绍以下枚举类
+
+1. 枚举类 enum 和class、interface的地位是一样的，
