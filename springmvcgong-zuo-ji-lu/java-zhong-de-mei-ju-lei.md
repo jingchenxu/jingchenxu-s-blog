@@ -6,7 +6,6 @@
 
 ````java
 public class test {
-	
 	public enum OrderSatus {
 		NOPAY("01", "未支付"), PAYED("02", "已支付"), JUDGED("03", "已评价");
 		
