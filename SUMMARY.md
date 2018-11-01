@@ -139,6 +139,7 @@
   * [文件上传相关问题](springmvcgong-zuo-ji-lu/wen-jian-shang-chuan-xiang-guan-wen-ti.md)
   * [文件预览下载问题相关](springmvcgong-zuo-ji-lu/wen-jian-yu-lan-xia-zai-wen-ti-xiang-guan.md)
   * 乐观锁与悲观锁
+  * [Java 中的枚举类](springmvcgong-zuo-ji-lu/java-zhong-de-mei-ju-lei.md)
 * [python](python.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
   * [使用Anaconda搭建python开发环境](python/shi-yong-anaconda-da-jian-python-kai-fa-huan-jing.md)
