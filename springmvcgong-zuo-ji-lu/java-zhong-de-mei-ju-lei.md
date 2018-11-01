@@ -36,4 +36,8 @@ public class test {
 
 - 简单的介绍以下枚举类
 
-1. 枚举类 enum 和class、interface的地位是一样的，
+ 1. 枚举类 enum 和class、interface的地位是一样的，
+ 2. 使用enum定义的枚举类默认继承了java.lang.Enum, 而不是继承Object类。枚举类可以实现一个或多个接口。
+ 3. 枚举类的所有实例都必须放在第一行展示，不需要使用new关键字，不需要显示调用构造器。自动添加public static final 修饰。
+ 4. 使用enum定义、非抽象的枚举类默认使用final修复，不可以被继承。
+ 5. 枚举类的构造器只能是私有的。
