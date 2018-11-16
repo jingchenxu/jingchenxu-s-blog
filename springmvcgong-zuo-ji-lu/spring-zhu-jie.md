@@ -219,4 +219,31 @@ public class SysMenu {
 ····
 
 ····java
+@RestController
+@RequestMapping("/test")
+public class TestController {
+
+    private final SysService sysService;
+
+    private SysMenu sysMenu;
+
+    public TestController(SysService sysService, SysMenu sysMenu) {
+        this.sysService = sysService;
+        this.sysMenu = sysMenu;
+    }
+
+    @RequestMapping("/gettest")
+    @ResponseBody
+    public ReturnValue getTest () {
+        ReturnValue rtv = new ReturnValue();
+        return rtv;
+    }
+
+    @RequestMapping("/getsysmenu")
+    @ResponseBody
+    public List<SysMenu> getSysMenu () {
+        System.out.println("看看自动装配的bean"+sysMenu.getMgid());
+        return sysService.getSysMenuList();
+    }
+}
 ````
