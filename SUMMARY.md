@@ -215,6 +215,7 @@
   * [线程安全](javaweb-ji-chu/xian-cheng-an-quan.md)
   * [public static final 变量的编译之旅](javaweb-ji-chu/public-static-final-bian-liang-de-bian-yi-zhi-lv.md)
   * [Java builder 模式](javaweb-ji-chu/java-builder-mo-shi.md)
+  * Java 单列模式
 * [码农的狗血日志](ma-nong-de-gou-xie-ri-zhi.md)
   * [短信校验的血与泪](duan-xin-xiao-yan-de-xie-yu-lei.md)
   * [js框架间的爱恨情仇](jskuang-jia-jian-de-ai-hen-qing-chou.md)
