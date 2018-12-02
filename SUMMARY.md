@@ -151,6 +151,7 @@
 * [关于电商平台的设计](guan-yu-dian-shang-ping-tai-de-she-ji.md)
   * [电商应用开发常见技术问题FAQ](guan-yu-dian-shang-ping-tai-de-she-ji/dian-shang-ying-yong-kai-fa-chang-jian-ji-zhu-wen-ti-faq.md)
   * [电商平台的拆单保存及拆单](guan-yu-dian-shang-ping-tai-de-she-ji/dian-shang-ping-tai-de-chai-dan.md)
+  * [电商活动管理系统设计](guan-yu-dian-shang-ping-tai-de-she-ji/dian-shang-huo-dong-guan-li-xi-tong-she-ji.md)
 * [个人开发环境配置说明](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming.md)
   * [windows](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/windows.md)
   * [ubuntu](ge-ren-kai-fa-huan-jing-pei-zhi-shuo-ming/ubuntu.md)
