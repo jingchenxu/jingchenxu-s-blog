@@ -16,6 +16,7 @@
   * [ES6箭头函数](es6jian-tou-han-shu.md)
   * [数组操作大全](shu-zu-cao-zuo-da-quan.md)
   * [对象合并大全](dui-xiang-he-bing-da-quan.md)
+  * [Set and Map](set-and-map.md)
 * [Linux 命令](linux-命令.md)
 * [eclipse 使用手册](eclipse-使用手册.md)
   * [tomcat使用问题](设置tomcat的启动时长.md)
