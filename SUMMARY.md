@@ -224,6 +224,7 @@
   * [前端框架解决了什么](qian-duan-kuang-jia-jie-jue-le-shi-yao.md)
   * [微信商城重构体验](wei-xin-shang-cheng-zhong-gou-ti-yan.md)
   * [似乎很难天生强大](si-hu-hen-nan-tian-sheng-qiang-da.md)
+  * [如何心态平和的学习新的框架或语言](ru-he-xin-tai-ping-he-de-xue-xi-xin-de-kuang-jia-huo-yu-yan.md)
 * [nginx 相关](nginx-pei-zhi-xiang-guan.md)
   * [nginx 配置图片加载出错](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-tu-pian-jia-zai-chu-cuo.md)
   * [nginx 配置history路由](nginx-pei-zhi-xiang-guan/nginx-pei-zhi-history-lu-you.md)
