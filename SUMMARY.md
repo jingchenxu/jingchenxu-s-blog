@@ -122,6 +122,7 @@
   * [springboot 项目注意事项](springbootxue-xi-bi-ji/springboot-xiang-mu-zhu-yi-shi-xiang.md)
   * [springboot 配置swagger2](springbootxue-xi-bi-ji/springboot-pei-zhi-swagger2.md)
   * [使用 docker 发布springboot项目](springbootxue-xi-bi-ji/shi-yong-dockerfa-bu-springboot-xiang-mu.md)
+  * [springboot 配置druid](springbootxue-xi-bi-ji/springboot-pei-zhi-druid.md)
 * [前后端分离情况下图片资源管理问题](qian-hou-duan-fen-li-qing-kuang-xia-tu-pian-zi-yuan-guan-li-wen-ti.md)
 * [jQuery](jquery.md)
 * [前端工具整合](qian-duan-gong-ju-zheng-he.md)
