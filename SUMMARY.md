@@ -253,6 +253,7 @@
   * [with 关键字](python-xue-xi-ji-lu/with-guan-jian-zi.md)
   * [python 速查](python-xue-xi-ji-lu/python-su-cha.md)
   * [LOCUST 压测实战](python-xue-xi-ji-lu/locust-ya-ce-shi-zhan.md)
+  * [python lambada 函数](python-xue-xi-ji-lu/python-lambada-han-shu.md)
 * [vscode 调教笔记](vscode-diao-jiao-bi-ji.md)
   * [快速添加console.log输出代码](vscode-diao-jiao-bi-ji/kuai-su-tian-jia-console-log-shu-chu-dai-ma.md)
   * [vscode 配置java开发环境](vscode-diao-jiao-bi-ji/vscode-pei-zhi-java-kai-fa-huan-jing.md)
