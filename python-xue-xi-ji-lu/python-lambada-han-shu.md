@@ -8,3 +8,14 @@
 list = [3, 5, -4, -1, 0, -2, -6]
 sorted(list, key=lambda x: abs(x))
 ````
+
+- lambda应用在闭包当中
+
+这个在JavaScript编程中比较常见，参考如下代码：
+
+````python
+def get_y(a, b):
+    return lambda x: a*x+b
+y1 = get_y(1, 1)
+y1(1)
+````
