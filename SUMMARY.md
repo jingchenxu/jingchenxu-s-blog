@@ -255,6 +255,8 @@
   * [LOCUST 压测实战](python-xue-xi-ji-lu/locust-ya-ce-shi-zhan.md)
 * [vscode 调教笔记](vscode-diao-jiao-bi-ji.md)
   * [快速添加console.log输出代码](vscode-diao-jiao-bi-ji/kuai-su-tian-jia-console-log-shu-chu-dai-ma.md)
+  * [vscode 配置java开发环境](vscode-diao-jiao-bi-ji/vscode-pei-zhi-java-kai-fa-huan-jing.md)
+  * [vscode 配置 Flask 开发环境](vscode-diao-jiao-bi-ji/vscode-pei-zhi-flask-kai-fa-huan-jing.md)
 * [html 常见布局](html-chang-jian-bu-ju.md)
   * [居中布局](ju-zhong-bu-ju.md)
   * [弹出框实现](dan-chu-kuang-shi-xian.md)
