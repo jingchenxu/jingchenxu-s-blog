@@ -92,6 +92,11 @@ utils.exportFiles = (type = 'GET', url = null) => {
   xhr.send()
 }
 ````
+第四个问题同样还是一些webpack打包的问题，在vue-cli2.0生成的项目中，哪些js会使用babel-loader是这样配置的：
+![](/img/VUE/微信截图_20190117170160.png)
+我们可以看到，其针对3个文件加的js代码使用babel-loader，将需要使用babel-loader的npm包添加到其中即可。
+
+
 
 
 
