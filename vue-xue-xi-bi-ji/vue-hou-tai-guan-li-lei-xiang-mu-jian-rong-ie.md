@@ -36,7 +36,62 @@
       return
     }
 ````
-这里面的问题在于在IE浏览器中res.request.responseURL这个属性是不存在的，就算存在了，在进行文件下载时也会出现异常，后台看到很多人都出现了这样的问题，怎么办，我相信这个问题一定是可以解决的，虽然没有搜到合适的方案，但是一个网友提示可以
+这里面的问题在于在IE浏览器中res.request.responseURL这个属性是不存在的，就算存在了，在进行文件下载时也会出现异常，后台看到很多人都出现了这样的问题，怎么办，我相信这个问题一定是可以解决的，虽然没有搜到合适的方案，但是一个网友提示这一切的问题都是使用了第三方封装的ajax请求，那为什么不自己手写一个原生的ajax请求呢？切换思路后发现，果然是可以的，ajax下载文件流可以使用以下代码：
+````javascript
+utils.exportFiles = (type = 'GET', url = null) => {
+  var xhr = null
+  if (window.XMLHttpRequest) { // Mozilla 浏览器
+    xhr = new XMLHttpRequest()
+  } else {
+    if (window.ActiveXObject) {
+      try {
+        xhr = new ActiveXObject('Microsoft.XMLHTTP')
+      } catch (e) {
+        try {
+          xhr = new ActiveXObject('Msxml2.XMLHTTP')
+        } catch (e) {
+
+        }
+      }
+    }
+  }
+
+  xhr.open(type, url, true)
+  xhr.responseType = 'blob'
+  if (type === 'POST') {
+    xhr.setRequestHeader('Content-type', 'application/json')
+  }
+  xhr.onload = function (res) {
+    var contentDisposition = xhr.getResponseHeader('content-disposition')
+    var contentType = xhr.getResponseHeader('content-type')
+    var filename = contentDisposition.split(';')[2]
+    // eslint-disable-next-line no-eval
+    eval(filename)
+    filename = decodeURI(filename)
+    if (this.status === 201) {
+      var blob = this.response
+      if (typeof window.navigator.msSaveBlob !== 'undefined') {
+        // IE 浏览器进行下载
+        window.navigator.msSaveBlob(blob, filename)
+      } else {
+        // 非浏览器进行下载
+        var downloadUrl = document.createElement('a')
+        downloadUrl.download = filename
+        downloadUrl.style.display = 'none'
+        downloadUrl.href = URL.createObjectURL(blob)
+        document.body.appendChild(downloadUrl)
+        downloadUrl.click()
+        URL.revokeObjectURL(downloadUrl.href)
+        document.body.removeChild(downloadUrl)
+      }
+    } else {
+      console.log('导出错误')
+    }
+  }
+
+  xhr.send()
+}
+````
 
 
 
