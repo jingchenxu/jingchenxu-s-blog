@@ -110,6 +110,7 @@
   * [vim开发常用操作对照表](vim/vimkai-fa-chang-yong-cao-zuo-dui-zhao-biao.md)
 * [mybatis](mybatis.md)
   * [关联对象mapper.xml的写法](mybatis/guan-lian-dui-xiang-mapper-xml-de-xie-fa.md)
+  * mybatis 开启二级缓存
 * [springBoot学习笔记](springbootxue-xi-bi-ji.md)
   * [创建数据库表](springbootxue-xi-bi-ji/chuang-jian-shu-ju-ku-biao.md)
   * [intellij 创建一个springboot项目](springbootxue-xi-bi-ji/intellij-chuang-jian-yi-ge-springboot-xiang-mu.md)
