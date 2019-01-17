@@ -16,3 +16,8 @@
 
 ## 如何解决这些问题
 
+1. 解决第一个问题需要在项目中引入babel-polyfill， 我的处理方式时在build->webpack.base.config.js文件中的添加一下的配置：
+
+
+
+
