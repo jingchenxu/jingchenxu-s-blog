@@ -95,6 +95,35 @@ utils.exportFiles = (type = 'GET', url = null) => {
 第四个问题同样还是一些webpack打包的问题，在vue-cli2.0生成的项目中，哪些js会使用babel-loader是这样配置的：
 ![](/img/VUE/微信截图_20190117170160.png)
 我们可以看到，其针对3个文件加的js代码使用babel-loader，将需要使用babel-loader的npm包添加到其中即可。
+第五个问题百度可以搜到，其中我比较推荐的解决方案如下：
+````javascript
+const IE11RouterFix = {
+  methods: {
+    hashChangeHandler: function () {
+      this.$router.push(window.location.hash.substring(1, window.location.hash.length)); 
+    },
+    isIE11: function () { return !!window.MSInputMethodContext && !!document.documentMode; }
+  },
+  mounted: function () { if (this.isIE11()) { window.addEventListener('hashchange', this.hashChangeHandler); } },
+  destroyed: function () { if (this.isIE11()) { window.removeEventListener('hashchange', this.hashChangeHandler); } }
+}
+
+export default IE11RouterFix
+
+var vm = new Vue({
+  el: '#app',
+  router,
+  store,
+  mixins: [IE11RouterFix],
+  components: {
+    App,
+  },
+  template: '<App/>'
+});
+````
+## 总结
+
+
 
 
 
