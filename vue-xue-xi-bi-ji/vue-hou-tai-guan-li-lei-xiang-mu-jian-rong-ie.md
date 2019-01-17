@@ -96,6 +96,7 @@ utils.exportFiles = (type = 'GET', url = null) => {
 ![](/img/VUE/微信截图_20190117170160.png)
 我们可以看到，其针对3个文件加的js代码使用babel-loader，将需要使用babel-loader的npm包添加到其中即可。
 第五个问题百度可以搜到，其中我比较推荐的解决方案如下：
+
 ````javascript
 const IE11RouterFix = {
   methods: {
@@ -123,7 +124,7 @@ var vm = new Vue({
 ````
 ## 总结
 
-以上耗时一天的
+以上耗时一天的IE兼容就完成了，目前只能兼容到IE11,IE10,其他的我已经放弃了。
 
 
 
