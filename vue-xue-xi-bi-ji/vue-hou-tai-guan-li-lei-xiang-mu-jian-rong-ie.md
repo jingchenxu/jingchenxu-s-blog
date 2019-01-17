@@ -17,7 +17,25 @@
 ## 如何解决这些问题
 
 1. 解决第一个问题需要在项目中引入babel-polyfill， 我的处理方式时在build->webpack.base.config.js文件中的添加一下的配置：
-
+![](/img/VUE/微信截图_20190117170159.png)
+2. 解决第二个问题则需要自己写一些兼容性比较好的样式，在这里我就不做过多的解释了。
+3. 第三个问题的解决过程比较的曲折，系统的下载是同过接口返回文件流的形式进行下载的，可以看下我原来的代码，原先通过axios的拦截器来获取响应内容的格式，然后进行下载，但是在IE的兼容测试过程中发现了一个问题，那就是axios在chrome和IE下的表现不一致，具体哪里一致可以简单的说下：
+````javascript
+  const downloadUrl = url => {
+    let iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = url;
+    iframe.onload = function () {
+      document.body.removeChild(iframe);
+    };
+    document.body.appendChild(iframe);
+  };
+    // 拦截二进制响应流
+    if (res.headers && (res.headers['content-type'] === 'application/vnd.ms-excel;charset=UTF-8' || res.headers['content-type'] === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || res.headers['content-type'] === 'application/octet-stream;charset=UTF-8')) {
+      downloadUrl(res.request.responseURL);
+      return
+    }
+````
 
 
 
