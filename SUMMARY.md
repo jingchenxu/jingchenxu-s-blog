@@ -101,6 +101,7 @@
   * [iview Tabs 组件开发问题汇总](vue-xue-xi-bi-ji/iview-tabs-zu-jian-kai-fa-wen-ti-hui-zong.md)
   * [vue 后台管理类项目阶段性总结（2）](vue-xue-xi-bi-ji/vue-hou-tai-guan-li-lei-xiang-mu-jie-duan-xing-zong-jie-ff08-2.md)
   * [对封装、继承、多态的理解](vue-xue-xi-bi-ji/dui-feng-zhuang-3001-ji-cheng-3001-duo-tai-de-li-jie.md)
+  * [vue 后台管理类项目兼容IE](vue-xue-xi-bi-ji/vue-hou-tai-guan-li-lei-xiang-mu-jian-rong-ie.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
