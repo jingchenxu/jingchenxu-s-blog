@@ -4,4 +4,6 @@
 
 ## 创建一个create-react-app项目
 
-create-re
+create-react-app是个类似vue-cli的项目创建工具，比2年前好用多了，以后升级也方便多了，再也没有一步步从webpack搭建一个工程化项目的痛苦，但却有点怀念。
+
+我们创建好一个
