@@ -6,4 +6,5 @@
 
 create-react-app是个类似vue-cli的项目创建工具，比2年前好用多了，以后升级也方便多了，再也没有一步步从webpack搭建一个工程化项目的痛苦，但却有点怀念。
 
-我们创建好一个
+我们创建好一个create-react-app项目后，开始通过yarn添加electron依赖，添加完成后，设置后端进程的代码入口，这里设置为main.js,通过create-react-app创建的项目的前端入口文件应该是index.js,electron项目中一般会有2个进程，这2个进程通过rpc进行通讯。
+
