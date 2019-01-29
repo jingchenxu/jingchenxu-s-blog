@@ -100,7 +100,13 @@ profiler_binary_host_mirror "https://npm.taobao.org/mirrors/node-inspector/"
 chromedriver_cdnurl "https://cdn.npm.taobao.org/dist/chromedriver"
 ````
 
-- 
+- 设置环境变量
+
+在脚本启动命令中需要设置环境变量，但是直接设置好像有问题，需要安装cross-env依赖。
+
+- 多个脚本同时运行
+
+在electron项目中需要同时运行渲染线程及后端线程，可以安装start-all这个依赖。
 
 
 
