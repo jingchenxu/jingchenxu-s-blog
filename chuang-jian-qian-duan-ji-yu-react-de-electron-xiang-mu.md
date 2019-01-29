@@ -81,8 +81,26 @@ SKIP_PREFLIGHT_CHECK=true
 
 - 国内环境下依赖下载缓慢
 
-公司电信的网络环境下还好，在住的地方的移动环境就有点问题了，electron这个依赖下载的速度十分的缓慢，将镜像地址注册为国内的地址还是不行，我觉得可能是electron的依赖指定了国外的下载地址，后来找到了一个好东西.npmrc
+公司电信的网络环境下还好，在住的地方的移动环境就有点问题了，electron这个依赖下载的速度十分的缓慢，将镜像地址注册为国内的地址还是不行，我觉得可能是electron的依赖指定了国外的下载地址，后来找到了一个好东西.npmrc，目前我主要使用yarn,想着那yarn应该也是有.yarnrc文件的，没有错，.yarnrc文件是存在的，.npmrc、.yarnrc文件配置如下，通过rc文件可以指定哪些依赖的下载到指定的下载源进行下载：
 
+````
+registry=https://registry.npm.taobao.org/
+disturl=https://npm.taobao.org/mirrors/node
+ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+````
+
+````
+registry "https://registry.npm.taobao.org"
+
+sass_binary_site "https://npm.taobao.org/mirrors/node-sass/"
+phantomjs_cdnurl "http://cnpmjs.org/downloads"
+electron_mirror "https://npm.taobao.org/mirrors/electron/"
+sqlite3_binary_host_mirror "https://foxgis.oss-cn-shanghai.aliyuncs.com/"
+profiler_binary_host_mirror "https://npm.taobao.org/mirrors/node-inspector/"
+chromedriver_cdnurl "https://cdn.npm.taobao.org/dist/chromedriver"
+````
+
+- 
 
 
 
