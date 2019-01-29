@@ -36,7 +36,17 @@ false
 
 - 严格模式与非严格模式下的this指向
 
-这个是个比较特殊的地方，
+这个是个比较特殊的地方，在同步代码下，非严格模式下，this是指向window的，但是在严格模式下，this为undefined:
+
+````javascript
+function f1() {
+    console.dir(this)// window对象
+}
+function f2() {
+    "use strict";
+    console.dir(this)// undefined
+}
+````
 
 
 
