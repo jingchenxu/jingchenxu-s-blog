@@ -58,6 +58,38 @@ this.$axios.get('url', function () {
 })
 ````
 
+以前我们是怎样解决这个问题的呢？主要是通过bind(this)和将this赋值给一个可访问的变量，这2中方法都是为了能让我们找到this：
+
+````javascript
+let me = this
+this.$axios.get('url', function () {
+    console.dir(this)// vue实例
+})
+````
+
+````javascript
+this.$axios.get('url',function () {
+     console.dir(this)// vue实例
+}.bind(this))
+````
+
+````javascript
+this.$axios.get('url',() => {
+     console.dir(this)// vue实例
+}.bind(this))
+````
+
+上面三段代码的效果都是一样的，箭头函数的自动绑定this的功能，或许就是为了解决我们无法找到的this和无处安放的灵魂。
+
+
+
+
+
+
+
+
+
+
 
 
 
