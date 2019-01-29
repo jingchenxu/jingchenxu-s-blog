@@ -48,6 +48,17 @@ function f2() {
 }
 ````
 
+- 异步代码中的this指向
+
+在vue中，ajax请求数据完成后，将返回数据赋值给组件状态，在ajax的回调函数中我们需要找到组件实例，及this,如果我们使用非箭头函数，会发现我们无法找到组件实例，在回调函数的内部this是指向window的：
+
+````javascrit
+this.$axios.get('url', function () {
+    console.log(this)// window
+})
+````
+
+
 
 
 
