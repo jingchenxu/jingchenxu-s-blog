@@ -12,7 +12,8 @@
 2. 在涉及到flex,fixed,absolute定位时，IE浏览器的显示效果有较大的区别；
 3. excel表单导出异常；
 4. 部分使用的npm包中的代码未经编译会有一些ES6的语法；
-5. vue-router路由失效。
+5. vue-router路由失效；
+6. IE自动缓存ajax请求结果。
 
 ## 如何解决这些问题
 
