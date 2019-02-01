@@ -102,4 +102,6 @@ public class BaseEntity implements Serializable {
 
 ````
 
+为什么要实现序列化，因为负载均衡，mybatis开启缓存之类的功能，都需要Javabean实现序列化接口，所以要实现，一个通常的Javabean通常就是实现builder模式，重写toString方法，重写toString是为了日志输出方便，builder模式可以少些一些代码。
+
 
