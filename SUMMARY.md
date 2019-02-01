@@ -204,6 +204,7 @@
   * [javascript 短路原理](javascript-duan-lu-yuan-li.md)
   * [词法作用域与动态作用域](ci-fa-zuo-yong-yu-yu-dong-tai-zuo-yong-yu.md)
   * [原生JavaScript  DOM操作](yuan-sheng-javascript-dom-cao-zuo.md)
+  * [JavaScript 防抖函数、节流函数](javascript-fang-dou-han-shu-3001-jie-liu-han-shu.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
