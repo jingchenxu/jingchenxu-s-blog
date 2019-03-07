@@ -125,6 +125,41 @@ var vm = new Vue({
 ````
 
 第6个问题是过了一段时候发现的，IE会自动的缓存请求的结果，那么对系统中的一些操作是有影响的，比如说是在数据保存完成之后回到列表页的刷新，取到的数据是缓存中的数据。怎么办，我们可以在axios的请求拦截器中自动为请求地址添加时间戳，保证每次的请求的地址是不一样的。
+
+## 关于二进制流下载的补充
+
+````javascript
+     axios(true, false).get(`${this.searchUrl}`, {
+        params: searchParams,
+        responseType: 'blob',
+        emulateJSON: true
+      }).then(res => {
+        this.isExporting = false
+        let blob = res.data
+        let filename
+        eval(res.headers['content-disposition'].split(';')[2]);
+        filename = decodeURI(filename)
+        if (typeof window.navigator.msSaveBlob !== 'undefined') {
+          // IE 浏览器进行下载
+          window.navigator.msSaveBlob(blob, filename)
+        } else {
+          // 非浏览器进行下载
+          var downloadUrl = document.createElement('a')
+          downloadUrl.download = filename
+          downloadUrl.style.display = 'none'
+          downloadUrl.href = URL.createObjectURL(blob)
+          document.body.appendChild(downloadUrl)
+          downloadUrl.click()
+          URL.revokeObjectURL(downloadUrl.href)
+          document.body.removeChild(downloadUrl)
+        }
+      }).catch(err => {
+        console.error(err)
+        this.$Message.error('导出异常')
+        this.isExporting = false
+      })
+````
+
 ## 总结
 
 以上耗时一天的IE兼容就完成了，目前只能兼容到IE11,IE10,其他的我已经放弃了。
