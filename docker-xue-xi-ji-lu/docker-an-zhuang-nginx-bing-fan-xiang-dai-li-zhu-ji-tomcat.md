@@ -4,9 +4,84 @@
 
 ## 服务器部署示意图
 
+![](/img/docker/docker.png)
 
 ## docker 安装nginx
 
+1. 拉取官方镜像
+
+````bash
+docker pull nginx
+````
+
+2. 运行容器
+
+````bash
+docker run -p 80:80 --name nginx -d nginx
+````
+
+3. 将容器内部的配置文件复制到宿主机
+
+````bash
+docker cp -a nginx:/etc/nginx/ /srv/nginx/conf
+````
+
+4. 停止容器并删除
+
+````bash
+docker stop nginx
+docker rm nginx
+````
+
+5. 重新运行容器，挂载在第三部中复制出的配置文件
+
+````bash
+docker run -p 80:80 --restart always --name nginx -v /srv/nginx/www:/www -v /srv/nginx/conf/:/etc/nginx/ -v /srv/nginx/logs:/var/log/nginx -v /srv/nginx/wwwlogs:/wwwlogs -d nginx
+````
+
+6. 重启容器
+
+````bash
+docker restart nginx
+````
+
+7. 查看在docker虚拟网络中配置的ip
+
+````bash
+docker inspect containerid
+````
+
+此时我们可以看到宿主机在docker虚拟网络内的ip为： ````172.17.0.1````
+编辑 /conf/conf.d/default.conf 文件，配置如下：
+
+````
+upstream projectname {
+  server 172.17.0.1:8080;
+  server 172.17.0.1:8081;
+}
+server {
+    listen       80;
+    server_name  www.xxx.com;
+
+    #charset koi8-r;
+    access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        proxy_set_header  Host  $http_host;
+        proxy_set_header  X-Real-IP  $remote_addr;
+        proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass  http://projectname;
+        rewrite "^/+$" /smoec/index.html redirect;
+        root /smoec/;
+
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+````
 
 ## docker 安装redis
 
@@ -20,6 +95,8 @@ docker run -d -p 6379:6379 --name myredis registry.docker-cn.com/library/redis
 
 
 ## tomcat 配置负载均衡
+
+
 
 
 
