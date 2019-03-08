@@ -96,6 +96,48 @@ docker run -d -p 6379:6379 --name myredis registry.docker-cn.com/library/redis
 
 ## tomcat 配置负载均衡
 
+这里使用 [redisson](https://github.com/redisson/redisson)用于负载均衡，使用此方式进行负载均衡配置，只需要添加3个文件，以及修改context.xml文件：
+
+这里我使用的是tomcat8.5,则下载对应的jar包，[下载地址](https://github.com/redisson/redisson/tree/master/redisson-tomcat)需要下载redisson-all、redisson-tomcat-8 这2个jar包添加到tomcat的lib包下。
+
+修改context.xml需要在文件的根目录下添加如下内容：
+````xml
+    <Manager className="org.redisson.tomcat.RedissonSessionManager"
+          configPath="${catalina.base}/conf/mySession.json" readMode="REDIS" updateMode="DEFAULT"/>
+````
+需要创建mySession.json文件，文件内容如下：
+
+````json
+{
+  "singleServerConfig":{
+     "idleConnectionTimeout":10000,
+     "pingTimeout":1000,
+     "connectTimeout":10000,
+     "timeout":3000,
+     "retryAttempts":3,
+     "retryInterval":1500,
+     "reconnectionTimeout":3000,
+     "failedAttempts":3,
+     "subscriptionsPerConnection":5,
+     "clientName":null,
+     "address": "redis://172.18.0.3:6379",
+     "subscriptionConnectionMinimumIdleSize":1,
+     "subscriptionConnectionPoolSize":50,
+     "connectionMinimumIdleSize":32,
+     "connectionPoolSize":64,
+     "database":0
+  },
+  "threads":0,
+  "nettyThreads":0,
+  "codec":{
+     "class":"org.redisson.codec.JsonJacksonCodec"
+  },
+  "transportMode":"NIO"
+}
+````
+
+该文件需要防止到tomcat的conf文件夹下，注意文件中的address即为redis的地址。
+
 
 
 
