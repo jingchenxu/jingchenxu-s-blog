@@ -60,5 +60,7 @@ create user "baseuser"@"%" identified by "password";
 
 ````sql
 grant all privileges on basename.* to "baseuser"@"%" identified by "password";
+## 如果是8.0的版本
+grant all privileges on basename.* to "baseuser"@"%" with grant option;
 flush privileges;
 ````
