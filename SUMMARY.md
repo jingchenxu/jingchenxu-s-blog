@@ -132,7 +132,6 @@
 * [项目管理](xiang-mu-guan-li.md)
 * [bootstrap](bootstrap.md)
 * [springMVC工作记录](springmvcgong-zuo-ji-lu.md)
-  * [关于cookie的问题](springmvcgong-zuo-ji-lu/guan-yu-cookie-de-wen-ti.md)
   * [关于java调用http请求的问题](springmvcgong-zuo-ji-lu/guan-yu-java-diao-yong-http-qing-qiu-de-wen-ti.md)
   * [session & cookie](springmvcgong-zuo-ji-lu/session-and-cookie.md)
   * [springMVC配置log4j日志](springmvcgong-zuo-ji-lu/springmvcpei-zhi-log4j-ri-zhi.md)
