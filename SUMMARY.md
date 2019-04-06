@@ -103,6 +103,7 @@
   * [对封装、继承、多态的理解](vue-xue-xi-bi-ji/dui-feng-zhuang-3001-ji-cheng-3001-duo-tai-de-li-jie.md)
   * [vue 后台管理类项目兼容IE](vue-xue-xi-bi-ji/vue-hou-tai-guan-li-lei-xiang-mu-jian-rong-ie.md)
   * [v-model 指令](vue-xue-xi-bi-ji/v-model-zhi-ling.md)
+  * [vue 组件生命周期](vue-xue-xi-bi-ji/vue-zu-jian-sheng-ming-zhou-qi.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
 * [vim](vim.md)
