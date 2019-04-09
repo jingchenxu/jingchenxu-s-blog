@@ -209,6 +209,7 @@
   * [JavaScript 防抖函数、节流函数](javascript-fang-dou-han-shu-3001-jie-liu-han-shu.md)
   * [javascript 前端计算之精度问题](javascript-qian-duan-ji-suan-zhi-jing-du-wen-ti.md)
   * [javascript 类型判断](javascript-lei-xing-pan-duan.md)
+  * [从玄幻小说的套路理解闭包](cong-xuan-huan-xiao-shuo-de-tao-lu-li-jie-bi-bao.md)
 * [electron 学习记录](electron-xue-xi-ji-lu.md)
   * [electron 资料汇总](electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-vue.md)
