@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [SPA中微信支付授权目录设置](spa中微信支付授权目录设置.md)
 * [sublime前端开发环境配置](sublime前端开发环境配置.md)
 * [常用命令合集](常用命令合集.md)
 * [react全家桶历险记](react全家桶历险记.md)
@@ -276,4 +275,7 @@
   * [ubuntu mongodb 安装](ubuntu-mongodb-an-zhuang.md)
   * [创建前端基于react的electron项目](chuang-jian-qian-duan-ji-yu-react-de-electron-xiang-mu.md)
 * [Chrome DevTools 使用 Tips](chrome-devtools-shi-yong-tips.md)
+* [前端开发技巧](qian-duan-kai-fa-ji-qiao.md)
+  * 移动端web开发总结
+* [SPA中微信支付授权目录设置](spa中微信支付授权目录设置.md)
 
