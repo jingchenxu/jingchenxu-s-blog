@@ -277,5 +277,6 @@
 * [Chrome DevTools 使用 Tips](chrome-devtools-shi-yong-tips.md)
 * [前端开发技巧](qian-duan-kai-fa-ji-qiao.md)
   * 移动端web开发总结
+  * [单页应用中微信授权页面遇到的坑](qian-duan-kai-fa-ji-qiao/dan-ye-ying-yong-zhong-wei-xin-shou-quan-ye-mian-yu-dao-de-keng.md)
 * [SPA中微信支付授权目录设置](spa中微信支付授权目录设置.md)
 
