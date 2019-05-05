@@ -1,9 +1,10 @@
-## windows开发环境配置
+# windows
 
-- 常用工具
+* 常用工具
 
 [Sourcetree](https://www.sourcetreeapp.com/)
 
 [GitHub Desktop](https://desktop.github.com/)
 
 [cacher](https://www.cacher.io/)
+

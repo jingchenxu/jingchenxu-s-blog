@@ -1,23 +1,24 @@
-## 开启Linux的root远程登录
+# 开启Linux的root远程登录
 
-- 设置root密码
+* 设置root密码
 
-首先需要设置你的root密码：````sudo passwd root````
+首先需要设置你的root密码：`sudo passwd root`
 
-- 设置允许root账户ssh
+* 设置允许root账户ssh
 
-````shell
+```text
 vi /etc/ssh/sshd_config
-````
+```
 
 注释掉下面的这段话
 
-````PermitRootLogin without-password````
+`PermitRootLogin without-password`
 
 添加下面这段话
 
-````PermitRootLogin yes````
+`PermitRootLogin yes`
 
-- 重启ssh
+* 重启ssh
 
-````service ssh restart````
+`service ssh restart`
+

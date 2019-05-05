@@ -1,4 +1,4 @@
-# javascript  常看常知道
+# javascript 常看常知道
 
 1. javascript的内置类型有哪些？
 2. 什么是闭包，闭包有什么用户？
@@ -13,5 +13,3 @@
 11. css常见布局实现方式？
 12. http、https、websocket概念及区别？
 13. 
-
-

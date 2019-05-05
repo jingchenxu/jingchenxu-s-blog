@@ -1,10 +1,11 @@
-## react listView组件实现
+# react实现listView组件
 
-### 如何实现移动端的滑动分页加载？
+## 如何实现移动端的滑动分页加载？
 
 如何实现这是个问题，将这个问题进行转化，如何判断页面滑动到底部，触发分页数据的请求是解决问题的关键，得益于react封装了在数据更新情况下对dom的操作，我们只需要改变页面数据，即可完成对页面的重新渲染。
 
-### 分页数据的处理
+## 分页数据的处理
+
 ```javascript
 //通过ajax请求获取到最新一次请求的分页数据
 var _dataList = response.data.list;
@@ -16,7 +17,7 @@ this.setState({
 })
 ```
 
-### 如何判断滑动到页面底部
+## 如何判断滑动到页面底部
 
 首先我们获取客户端高度，即可视高度，我们所能看到的屏幕高度,这个一般是滑动列表外部滑块的所在的container的高度；
 
@@ -42,7 +43,7 @@ var scrollTop = document.documentElement.scrollTop || window.pageYOffset || docu
 scrollTop + clientHeight == scrollHeight
 ```
 
-### 完整组件代码
+## 完整组件代码
 
 ```javascript
 /**
@@ -53,38 +54,38 @@ let OrderStatus = require('../OrderStatus');
 
 let HistoryItem = React.createClass({
 
-	displayName: 'HistoryItem',
+    displayName: 'HistoryItem',
 
-	render: function () {
-		return (
-			<div className="history-container">
-				<div className="status">
-					<span className={this.props.orderstatus=='02'?'order-status':'order-status-noBackground'}>{OrderStatus[this.props.orderstatus]}</span><span className="right">订单号：{this.props.orderid}</span>
-				</div>
-				<div className="description" onClick={this.linkTo}>
-					<div className="ins">
-						<div>收货人： {this.props.addcontact} {this.props.contactsex=='01'?'先生':'女士'}</div>
-						<div>手机号： {this.props.addmobile}</div>
-						<div>订单时间： {formatDataNow(this.props.createdate)}</div>
-						<div style={{height: 40}}>收货地址： {this.props.addprov+' '+
-						this.props.addcity+' '+
-						this.props.addcounty+' '+
-						this.props.addroad+' '+
-						this.props.adddetail}</div>
-					</div>
-					<div className="more">
-						<a href={'#/historyDetail/'+this.props.orderid}>
-							<img style={{width: 10,margin: '9px 0 0 3px'}} src="img/right-arrow.png" alt=""/>
-						</a>
-					</div>
-				</div>
-			</div>
-		)
-	},
+    render: function () {
+        return (
+            <div className="history-container">
+                <div className="status">
+                    <span className={this.props.orderstatus=='02'?'order-status':'order-status-noBackground'}>{OrderStatus[this.props.orderstatus]}</span><span className="right">订单号：{this.props.orderid}</span>
+                </div>
+                <div className="description" onClick={this.linkTo}>
+                    <div className="ins">
+                        <div>收货人： {this.props.addcontact} {this.props.contactsex=='01'?'先生':'女士'}</div>
+                        <div>手机号： {this.props.addmobile}</div>
+                        <div>订单时间： {formatDataNow(this.props.createdate)}</div>
+                        <div style={{height: 40}}>收货地址： {this.props.addprov+' '+
+                        this.props.addcity+' '+
+                        this.props.addcounty+' '+
+                        this.props.addroad+' '+
+                        this.props.adddetail}</div>
+                    </div>
+                    <div className="more">
+                        <a href={'#/historyDetail/'+this.props.orderid}>
+                            <img style={{width: 10,margin: '9px 0 0 3px'}} src="img/right-arrow.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        )
+    },
 
-	linkTo: function () {
-		location.href='#/historyDetail/'+this.props.orderid
-	}
+    linkTo: function () {
+        location.href='#/historyDetail/'+this.props.orderid
+    }
 
 });
 
@@ -189,8 +190,5 @@ let HistoryMore = {
 
 
 module.exports = React.createClass(HistoryMore);
-
 ```
-
-
 

@@ -1,10 +1,10 @@
-# jingchenxu-s-blog
+# Introduction
 
 这个是我的个人博客
 
 for 知其所以然
 
-目录： [link start](SUMMARY.md)
+目录： [link start](https://github.com/jingchenxu/jingchenxu-s-blog/tree/3105bf781ba8996d9e379cd278e4c506cc78b117/SUMMARY.md)
 
 博客地址：[https://jingchenxu.gitbooks.io/jingchenxu-s-blog/content/](https://jingchenxu.gitbooks.io/jingchenxu-s-blog/content/)
 

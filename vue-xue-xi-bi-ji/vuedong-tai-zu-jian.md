@@ -1,14 +1,14 @@
-## vue动态组件
+# vue 动态组件
 
-### 为什么需要动态组件
+## 为什么需要动态组件
 
 存在这样的需求，需要制作一个搜索栏，这个搜索栏中的字段可能是input输入框，可能是select选择框，如果是通过template模板这样的需求肯定是可以完成的，但是我们在很多的地方上需要这样的组件，能否通过传递配置数组，就能够自动的生成搜索栏成为我的探索。
 
-### 通过v-if条件判断制作动态组件
+## 通过v-if条件判断制作动态组件
 
 我们需要创建一个通用的组件，通过配置文件传过来的组件类型，在v-if的判断需要选择的组件，代码如下，这里编写的是一个通用的表单输入组件：
 
-```js
+```javascript
 <template>
     <span class="searchitem">
         <FormItem v-if="searchdetail.type === 'text'" :label="searchdetail.label" prop="user">
@@ -67,13 +67,13 @@
 
 可以看到，这里主要做的工作就是，将多个表单输入组件，汇总到一个组件当中，通过v-if进行条件判断，左右的组件对外的表现通过封装来保持一致，这里基本实现了动态组件的需求，但是如果在未来需要的表单输入组件的类型增多了之后，需要手动修改此组件才能实现组件功能的扩展。
 
-### vue提供动态组件功能
+## vue提供动态组件功能
 
 说实在的vue提供的api实在是太多了，现在想来react提供的api就相对较少了，大量的功能需要引入第三发npm包来实现，所以可能学习路线比较的陡峭，好了，让我们说说vue的动态组件功能，该功能配合ES6的 import 及 对象自展开功能，可以完成一个灵活的动态组件。
 
 首先我们还是来看下代码：
 
-```js
+```javascript
 <template>
   <Card :bordered="false" :dis-hover="true" class="searchbar-comtainer">
     <Form :model="searchbar" inline :label-width="80">
@@ -134,7 +134,7 @@ export default {
 </script>
 ```
 
-```js
+```javascript
 <template>
   <FormItem :label-width="labelwidth" :label="itemConfig.label">
     <DatePicker @on-change="rangeChange" type="datetimerange" :placeholder="placeholder" style="width: 300px"></DatePicker>
@@ -171,10 +171,7 @@ export default {
   }
 }
 </script>
-
 ```
 
 所有的组件按照第二段代码来实现，当需要新增一个类型的组件时，只需要在formcomponents文件下创建，并引入到index.js当中即可，在不改变已有代码的情况下，实现了动态组件的扩展。
-
-
 

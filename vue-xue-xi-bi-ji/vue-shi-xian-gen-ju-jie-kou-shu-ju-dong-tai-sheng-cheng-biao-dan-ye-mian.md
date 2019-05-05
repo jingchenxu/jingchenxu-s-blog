@@ -1,16 +1,16 @@
-# vue实现根据接口数据动态生成表单页面
+# vue 实现根据接口数据动态生成表单页面
 
 > 相信这样的需求在很多实用vue的后台管理型项目中都会遇到，后台管理型应用中出现最多的是列表与详情页，详情页就是这里的表单页面，如果通过手动的编写模板的方式来实现列表页是在是太费劲了，主要是要花费较多的时间来写页面，如何简化呢，这里就想到了vue的动态组件（该实现基于iview UI组件库）。
 
-### 具体需求
+## 具体需求
 
-在详情页我们常常还会遇到子表的需求，一个主表可能会有多个子表，所以在详情页，我们在展示完主表信息之后，还需要列表展示子表的信息，这些信息需要可以新增、删除、修改，具体最后的效果如下：![](/img/VUE/sublistdetail.gif)该组件计划的属性有哪些呢？该组件主要有3个属性，其中2个是数据，一个是回调方法，2个数据属性为columns（表头）、data（表单数据），回调方法的作用在于每次table数据发生变化时调用，用于保持组件内部的数据与外部数据的一致性。
+在详情页我们常常还会遇到子表的需求，一个主表可能会有多个子表，所以在详情页，我们在展示完主表信息之后，还需要列表展示子表的信息，这些信息需要可以新增、删除、修改，具体最后的效果如下：![](../.gitbook/assets/sublistdetail.gif)该组件计划的属性有哪些呢？该组件主要有3个属性，其中2个是数据，一个是回调方法，2个数据属性为columns（表头）、data（表单数据），回调方法的作用在于每次table数据发生变化时调用，用于保持组件内部的数据与外部数据的一致性。
 
-### 组件设计
+## 组件设计
 
 该组件的设计需要使用到iview组件库中的 Table、Modal、Form、Button这4个组件，重点需要设计组件属性为columns属性，该属性不仅最为该组件中列表页的表头，同时还作为动态生成表单页面的数据，具体的设计可以参考如下：
 
-```js
+```javascript
 import moment from 'moment'
 export const columns = [{
   type: 'selection',
@@ -123,18 +123,17 @@ export const data = [{
   test5: 'asdfas sagfdsgfdhgfhdhg'
 },
 ]
-
 ```
 
 接下来设计的关键是，form表单内动态组件的设计，基于vue的动态组件实现，我们需要准备还可能用到的动态组件，保证这些组件接收参数，和对外回调的一直性，即对外对内都表现一致。
 
 组件的源码文件目录如下：
 
-![](/img/VUE/5Y~{M%8@4IC%R8AFV5$FA@7.png)
+![](../.gitbook/assets/5y-m-8-4ic-r8afv5usdfa-7.png)
 
 data中的为测试数据，formcomponents中的为进行表现一致封装的form表单组件，sublistdetail.vue 则为组件的主体，主体组件中包含了Table、Modal,没有拆分，主要考虑到降低组件的复杂性，具体的代码实现如下：
 
-```js
+```javascript
 <template>
   <div class="sublistdetail">
     <h1>sublistdetail</h1>
@@ -271,12 +270,11 @@ export default {
 
 <style scoped>
 </style>
-
 ```
 
 这里面有个有意思的地方，让我对vue中的数据双向绑定有了更进一步的认识，下面的这段代码：
 
-```js
+```javascript
 if (me.listData[i]._index === formValidate._index) {
 for (let key in formValidate) {
 me.listData[i][key] = formValidate[key]
@@ -286,7 +284,7 @@ me.listData[i][key] = formValidate[key]
 
 如果使用下面的这段代码会怎样：
 
-```js
+```javascript
 if (me.listData[i]._index === formValidate._index) {
 
 me.listData[i] = formValidate
@@ -298,7 +296,7 @@ me.listData[i] = formValidate
 
 下面以input输入框为例进行动态组件的封装：
 
-```js
+```javascript
 <template>
   <FormItem :label="itemconfig.label" :prop="itemconfig.prop" :labelWidth="100">
     <Input @on-change="valueChange" v-model="value" :placeholder="itemconfig.placeholder"></Input>
@@ -343,7 +341,6 @@ export default {
   }
 }
 </script>
-
 ```
 
 所有组件输入一致，输出一致，以上则是表单页面动态生成的思路。

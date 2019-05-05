@@ -1,2 +1,2 @@
-## 先创建一个hello world
+# 先创建一个hello word
 

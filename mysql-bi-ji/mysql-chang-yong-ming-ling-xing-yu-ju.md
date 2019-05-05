@@ -1,22 +1,20 @@
-## MySQL 常用命令行语句
+# MySQL 常用命令行语句
 
-- 登陆mysql
+* 登陆mysql
 
-````shell
+```text
 mysql -uroot -p
-````
+```
 
-- 列出数据库
+* 列出数据库
 
-````sql
+```sql
 show databases;
-````
+```
 
-- 查看数据库使用引擎
+* 查看数据库使用引擎
 
-````sql
+```sql
 show variables like '%storage_engine%';
-````
-
-
+```
 

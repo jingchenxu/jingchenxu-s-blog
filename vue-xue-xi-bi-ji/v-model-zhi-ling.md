@@ -8,11 +8,12 @@
 
 v-model的本质
 
-````javascript
+```javascript
 <custom-input
   :value="something"
   @input="value => { something = value }">
 </custom-input>
-````
+```
 
 所以如果我们自己编写的组件当中使用了v-model指令，如何将组件内部中值返回到组件内部呢？则需要在组件内部触发input 回调函数。
+

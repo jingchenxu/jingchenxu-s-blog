@@ -1,7 +1,8 @@
-## golang tips
+# golang tips
 
-- 本地查看golang相关文档
+* 本地查看golang相关文档
 
-````bash
+```bash
 godoc -http=:6060
-````
+```
+

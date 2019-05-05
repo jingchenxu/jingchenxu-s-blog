@@ -1,4 +1,4 @@
-## vue 的 v指令
+# vue的v指令
 
 很多人喜欢vue的时候回提到一个原因就是，html模板与js的分离，在react中你可以通过jsx实现在页面中写代码的小心思，有人说这是因为facebook php起家的原因导致的，作为一个react、vue都是用的人来说，俩者各有各的好，俩个我都喜欢。
 
@@ -6,7 +6,7 @@ react中的页面组件的循环加载使用过map函数来实现的，那么在
 
 下面我们来一一探讨vue的v-xxx指令：
 
-- v-bind && v-for
+* v-bind && v-for
 
 首先说一下v-bind的作用，我们在使用一个vue组件时，需要向组件的内部传入一些属性，这时候就需要用到v-bind命令，需要注意的是在较新的vue版本中，v-bind的指令可以简写为 ：；
 
@@ -14,7 +14,7 @@ react中的页面组件的循环加载使用过map函数来实现的，那么在
 
 具体使用示例如下：
 
-````vue
+```text
 <template>
   <div>
     <VbindItem
@@ -25,7 +25,7 @@ react中的页面组件的循环加载使用过map函数来实现的，那么在
 </template>
 
 <style lang="css" scoped>
-  
+
 </style>
 
 <script>
@@ -47,9 +47,9 @@ export default{
   }
 }
 </script>
-````
+```
 
-````vue
+```text
 <template>
   <div class="vbinditem">
     {{item.name}}
@@ -77,24 +77,24 @@ export default{
     }
   }
 </script>
-````
+```
 
-- v-on
+* v-on
 
 v-on指令主要用于dom事件的监听作用，vue与react都对原生的dom事件进行了封装。
 
 v-bind 的指令需指明，监听的事件类型，是点击事件（click）,还是change事件，具体代码如下：
 
-````html
+```markup
 <template>
   <div v-on:click="itemclick(item.name)" class="vbinditem">
     {{item.name}}
     <el-input v-on:change="itemchange()"></el-input>
   </div>
 </template>
-````
+```
 
-````js
+```javascript
     methods: {
       itemclick (name) {
         console.log('被点击了' + name)
@@ -103,4 +103,5 @@ v-bind 的指令需指明，监听的事件类型，是点击事件（click）,�
         console.log('see')
       }
     }
-````
+```
+

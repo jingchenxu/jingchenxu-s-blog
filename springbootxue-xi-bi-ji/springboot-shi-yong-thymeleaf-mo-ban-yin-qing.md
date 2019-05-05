@@ -1,30 +1,31 @@
-## springboot 使用 thymeleaf 模板引擎
+# springboot 使用 thymeleaf 模板引擎
 
-- 配置pom
+* 配置pom
 
 在pom中配置一下代码：
-````xml
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-````
 
-- 配置application文件properties
+```markup
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+```
 
-````properties
+* 配置application文件properties
+
+```text
 # 禁用thymeleaf缓存
 spring.thymeleaf.cache=false
 # 其他配置
 spring.thymeleaf.prefix=classpath:/templates
 spring.thymeleaf.suffix=.html  
 spring.thymeleaf.mode=HTML5
-spring.thymeleaf.content-type=text/html  
-````
+spring.thymeleaf.content-type=text/html
+```
 
-- 添加一个简单的html模板
+* 添加一个简单的html模板
 
-````html
+```markup
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
     <title>hello world</title>
@@ -39,11 +40,11 @@ spring.thymeleaf.content-type=text/html
     </div>
   </body>
 </html>
-````
+```
 
-- controller层添加访问路径
+* controller层添加访问路径
 
-````java
+```java
 package com.jingchenxu.springboot.controller;
 
 import org.springframework.stereotype.Controller;
@@ -69,5 +70,5 @@ public class ThymeleafController {
         return "/hello";
     }
 }
+```
 
-````

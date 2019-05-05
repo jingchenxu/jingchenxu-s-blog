@@ -1,10 +1,10 @@
-## 一个vue组件的基本属性
+# 一个vue组件的基本属性
 
-- 组件构成
+* 组件构成
 
 一个vue组件主要包含三个部分，相比于react组件，vue组件的书写结构相对来说更为清晰，主要分为html模板，样式，javascript这三个部分。
 
-- 组件的生命周期
+* 组件的生命周期
 
 如果之前用过react的人都知道一个概念，那就是组件的生命周期，它将组件的的一生划分为多个阶段，在各个阶段，都设置了一个钩子函数，这样在组件的各个阶段可以触发一些动作。
 
@@ -12,7 +12,7 @@
 
 组件的生命周期主要可以分为以下部分：
 
-````javascript
+```javascript
     beforeCreate: function () {
       console.group('beforeCreate 组件准备创建=====》')
       console.log('%c%s', 'color:red', 'el:' + this.$el)
@@ -61,13 +61,7 @@
       console.log('%c%s', 'color:red', 'el:' + this.$data)
       console.log('%c%s', 'color:red', 'el:' + this.myname)
     }
-````
+```
 
 以上代码演示了组件的生命周期的各个部分。
-
-
-
-
-
-
 

@@ -1,12 +1,12 @@
-# springMCV 同时接收bean及List
+# springMVC 同时接收bean及List
 
 > 存在这样的业务需要，在一个表单详情页，比如说我们最常见的订单确认页，一般我们会在这个页面提交表单数据，以及商品的列表数据，那么如何做，才能是提交的过程最简单，最大程度上减少数据格式的转化。
 
-### 以表单提交的方式处理
+## 以表单提交的方式处理
 
 前端代码
 
-```js
+```javascript
             let detail = new URLSearchParams();
             detail.append('factid', '01');
             detail.append('factname', '测试1');
@@ -57,11 +57,11 @@ public class SmoparkController extends BaseController {
 }
 ```
 
-### 以pojo的方式处理
+## 以pojo的方式处理
 
 前端代码
 
-```js
+```javascript
             let detail = new URLSearchParams();
             detail.append('smo.factid', '01');
             detail.append('smo.factname', '测试1');
@@ -121,9 +121,9 @@ public class SmoparkController extends BaseController {
 }
 ```
 
-### pojo模式下前端的json转化函数
+## pojo模式下前端的json转化函数
 
-```js
+```javascript
 utils.addPreParams = function (params, pre) {
   let result = new URLSearchParams()
   for (let key in params) {
@@ -143,6 +143,4 @@ utils.addPreParams = function (params, pre) {
   return result;
 };
 ```
-
-
 

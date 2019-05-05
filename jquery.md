@@ -1,8 +1,8 @@
-## e.target && e.currentTarget
+# jQuery
 
 在jQuery中我们常常会使用这样的代码：
 
-````javascript
+```javascript
 var addressList = $(".address-item");
 //为每个item添加监听事件
 function choiceAddress(e) {
@@ -25,6 +25,7 @@ for (var i = 0; i < addressList.length; i++) {
   var addressItem = addressList[i];
   $(addressItem).bind("click", choiceAddress);
 }
-````
+```
 
 在上面代码的标注位置，如果我们使用的是e.target,会发现我们去到的元素对象不是我们添加事件监听时的那个对象，因为e.target指的是收到点击的那个对象，而使用e.currentTarget则是当初设置监听的那个对象。
+

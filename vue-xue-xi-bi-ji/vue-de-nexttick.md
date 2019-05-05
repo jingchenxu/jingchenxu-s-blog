@@ -1,6 +1,2 @@
-# vue的nextTick
-
-
-
-
+# vue 的nextTick
 

@@ -1,14 +1,14 @@
-## nginx配置请求头IP信息
+# nginx 配置请求头ip信息
 
-- 出现的问题
+* 出现的问题
 
 最近在进行微信h5支付功能的开发是，在调用微信的统一支付接口的时候，需要支付发起客户端的ip地址，这个IP地址应该是外网的ip地址，但是日志中显示的是127.0.0.1，why?
 
-- 分析
+* 分析
 
-分析什么      直接百度，
+分析什么 直接百度，
 
-- 结论
+* 结论
 
 后台是如何获取到客户端额ip的，该项目后台使用的是java开发的，在controller层可以通过HttpServletRequest对象获取到客户端的ip,你的请求来自何方，请求中就会带来什么样的ip;
 
@@ -18,32 +18,34 @@
 
 配置如下：
 
-````conf
+```text
 location ~ ^/payapitest/  
 {  
 index index.action index.jsp;  
 proxy_set_header x-forwarded-for  $remote_addr;  
 proxy_pass http://localhost:8080;  
-}  
-````
-````java
-public String getIpAddr(HttpServletRequest request) {
-    	String ip = request.getHeader("x-forwarded-for");
-    	if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-    	ip = request.getHeader("Proxy-Client-IP");
-    	}
-    	if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-    	ip = request.getHeader("WL-Proxy-Client-IP");
-    	}
-    	if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-    	ip = request.getRemoteAddr();
-    	}
-    	return ip;
 }
-````
+```
+
+```java
+public String getIpAddr(HttpServletRequest request) {
+        String ip = request.getHeader("x-forwarded-for");
+        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        ip = request.getHeader("Proxy-Client-IP");
+        }
+        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        ip = request.getHeader("WL-Proxy-Client-IP");
+        }
+        if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+        ip = request.getRemoteAddr();
+        }
+        return ip;
+}
+```
 
 如果后台是java的话，可以采用此方法获取到正式的发出原始请求的ip,为什么这么说，因为要是做了多级反向代理怎么办（套路深），这个时候会在X-Forwarded-For 中出现多个ip地址，谁是我们想要的，他就是第一个非unknown的有效IP字符串。
 
-注意在微信的其它支付方式，如web、微信浏览器调用，应该是没有此问题的，虽然也有spbill_create_ip字段，但是微信那边好像是没有校验的，只有微信h5支付会出现此问题。
+注意在微信的其它支付方式，如web、微信浏览器调用，应该是没有此问题的，虽然也有spbill\_create\_ip字段，但是微信那边好像是没有校验的，只有微信h5支付会出现此问题。
 
 ~完
+

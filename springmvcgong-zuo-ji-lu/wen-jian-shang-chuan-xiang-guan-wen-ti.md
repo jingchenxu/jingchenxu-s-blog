@@ -1,14 +1,14 @@
-# 文件上传先关问题
+# 文件上传相关问题
 
-### 数据类型能否封装
+## 数据类型能否封装
 
 前端代码
 
-```
+```text
 <input type="file" @change="inputChange" name="fileUpload" />
 ```
 
-```js
+```javascript
         inputChange (e) {
             console.dir(e.target.files);
             let data = new FormData();
@@ -24,7 +24,7 @@
 
 后端代码
 
-```
+```text
 public class BasUploader {
     private MultipartFile multipartFile;
     private String fileName;
@@ -47,7 +47,7 @@ public class BasUploader {
 }
 ```
 
-```
+```text
 @Controller
 @RequestMapping("smo")
 public class TestUploadController {
@@ -60,6 +60,4 @@ public class TestUploadController {
     }
 }
 ```
-
-
 

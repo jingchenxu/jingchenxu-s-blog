@@ -1,8 +1,8 @@
-## modal
+# bootstrap
 
 在bootstrap的使用中modal是常使用的一个组件，如果是简单的弹出，使用非常的方便：
 
-```html
+```markup
  data-toggle="modal" data-target="#myModal"
 ```
 

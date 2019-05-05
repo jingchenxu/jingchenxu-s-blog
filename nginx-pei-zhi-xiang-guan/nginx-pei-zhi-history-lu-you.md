@@ -1,14 +1,14 @@
-## nginx 配置history路由
+# nginx 配置history路由
 
-- 为什么要使用history路由
+* 为什么要使用history路由
 
-我为什么要使用history路由，最直接的理由就是[单页应用中微信授权页面遇到的坑](/spa中微信支付授权目录设置.md),在遇到这样的问题后，我通过一些非常规的方法解决了此问题，但是我相信一定有一个常规的方法可解决此问题，那就是使用history路由，使用history路由后，地址链接中将不会再出现可恶的````#````,一切又会变得那么美好，但是美好都是有代价的。
+我为什么要使用history路由，最直接的理由就是[单页应用中微信授权页面遇到的坑](https://github.com/jingchenxu/jingchenxu-s-blog/tree/3105bf781ba8996d9e379cd278e4c506cc78b117/spa中微信支付授权目录设置.md),在遇到这样的问题后，我通过一些非常规的方法解决了此问题，但是我相信一定有一个常规的方法可解决此问题，那就是使用history路由，使用history路由后，地址链接中将不会再出现可恶的`#`,一切又会变得那么美好，但是美好都是有代价的。
 
-- 如何使用history路由进行开发
+* 如何使用history路由进行开发
 
 如果使用history路由，是需要做一些开发配置的，在本地进行开发时需要配置webpack的配置，在部署到了生产环境之后，需要对nginx进行配置，在开发模式下对于webpack的配置如下：
 
-````js
+```javascript
     devServer: {
         historyApiFallback: true,
         noInfo: false,
@@ -21,24 +21,24 @@
             }
         }
     },
-````
+```
 
 在使用vue-router时路由的配置如下：
 
-````js
+```javascript
 // 路由配置
 const RouterConfig = {
     mode: 'history',
     //base: '/daisyadmin',
     routes: routers
 };
-````
+```
 
 需要注意的是，如果一旦你在路由配置中添加了路由的根目录后，会导致一个问题，那就是目前的devserver配置在手动刷新浏览器后页面会出现404，具体的解决此问题的方法目前还没有找到。
 
 在开发模式下，所有的请求都会被webpack配置的devServer代理，通过代理，会将所有的404都转发到配置的html页面，那么在生产环境下，这些工作需要交由nginx来完成，关于nginx的配置可以参考如下的配置：
 
-````
+```text
     server {
         listen       80;
         listen       443 ssl http2; // http强制跳转到https
@@ -78,7 +78,7 @@ const RouterConfig = {
            }
         }
     }
-
-````
+```
 
 通过以上配置基本上可以解决history在开发及生产环境使用中遇到的问题，使用history路由后单页应用在也不用担心微信支付目录的配置问题。
+

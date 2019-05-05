@@ -120,8 +120,7 @@ render: function(h) {
 
 1. 在render函数的option属性当中，slot 属性与与props 属性是同级的；
 2. 局部注册的组件无法在render函数中使用，需要将该组件全局注册。
-
-* 参考文档
+3. 参考文档
 
 [Vue.js 中，7种定义组件模板的方法 \| Codementor](http://www.zcfy.cc/article/7-ways-to-define-a-component-template-in-vue-js-codementor-3644.html)
 

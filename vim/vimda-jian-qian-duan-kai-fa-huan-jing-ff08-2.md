@@ -1,8 +1,8 @@
 # vim搭建前端开发环境（2）
 
-### 通过nvm安装node
+## 通过nvm安装node
 
-nvm的开源地址为[https://github.com/creationix/nvm，](https://github.com/creationix/nvm)使用 
+nvm的开源地址为[https://github.com/creationix/nvm，](https://github.com/creationix/nvm)使用
 
 ```bash
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bashwget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -10,11 +10,11 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh |
 
 命令进行安装，键入nvm可以查看nvm相关的命令，荣国nvm install v8.00可以安装对应版本的node
 
-### git生成sshkey
+## git生成sshkey
 
 通过ssh-keygen 命令生成公钥，如果使用默认的设置，会在~/.ssh目录下找到 id\_rsa.pub，通过vim打开，键入v，通过键盘选择公钥，在命令行中输入“+y，将选中内容复制到系统粘贴板当中，将公钥保存到对应的gitlab账号当中。
 
-### 安装NERDTree插件
+## 安装NERDTree插件
 
 NERDTree插件的开源地址为[https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)， 通过
 
@@ -40,7 +40,7 @@ cp doc/NERD_tree.txt ~/.vim/doc/
 
 接下来需要知道的就是一些常见的命令：
 
-```
+```text
 ctrl + w + h    光标 focus 左侧树形目录
 ctrl + w + l    光标 focus 右侧文件显示窗口
 ctrl + w + w    光标自动在左右侧窗口切换
@@ -84,7 +84,7 @@ q       关闭 NerdTree 窗口
 
 一些常见的处理tab页的命令：
 
-```
+```text
 :tabnew [++opt选项] ［＋cmd］ 文件      建立对指定文件新的tab
 :tabc   关闭当前的 tab
 :tabo   关闭所有其他的 tab
@@ -92,6 +92,4 @@ q       关闭 NerdTree 窗口
 :tabp   前一个 tab
 :tabn   后一个 tab
 ```
-
-
 
