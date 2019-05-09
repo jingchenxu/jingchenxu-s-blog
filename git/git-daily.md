@@ -3,6 +3,7 @@
 > 本文主要作用为归纳一些常用的git开发操作，具体的学习查看[廖雪峰的教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)，日常开发中git使用的问题还不止于此，git merge 就会产生较多的问题，这些问题不包含在此教程当中，最好的学习方法还是自己多试几次，可以在[github](https://github.com/)上创建个项目进行这些测试，以下的教程是基于命令的教程，你也可以使用webstorm之类IDE自带的git管理工具，其操作更为方便快捷。
 
 * 加入项目
+
   1. 获取你的项目（基本上项目周期里只要一次）
 
      ```bash
@@ -21,11 +22,18 @@
      git branch jcxu
      ```
 
-  4. 将自己本地创建的分支推送到远程
+  4. 切换到自己的分支
 
-     ```bash
-     git push --set-upstream origin jcxu
-     ```
+  ```bash
+  git checkout jcxu
+  ```
+
+      5. 将自己本地创建的分支推送到远程
+
+  ```bash
+  git push --set-upstream origin jcxu
+  ```
+
 * 每天晚上下班前代码写好
   1. 保存代码
 
