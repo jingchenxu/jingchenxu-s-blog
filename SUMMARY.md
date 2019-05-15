@@ -79,6 +79,7 @@
 * [我们简单的说说javascript](wo-men-jian-dan-de-shuo-suo-javascript.md)
 * [javascript基础知识文章合集](javascriptji-chu-zhi-shi-wen-zhang-he-ji.md)
 * [VUE 学习笔记](vue-xue-xi-bi-ji/README.md)
+  * [vue 渲染函数与函数组件](vue-xue-xi-bi-ji/vue-ran-han-shu-yu-han-shu-zu-jian.md)
   * [一个vue组件的基本属性](vue-xue-xi-bi-ji/yi-gevue-zu-jian-de-ji-ben-shu-xing.md)
   * [vue中的数据双向绑定](vue-xue-xi-bi-ji/vuezhong-de-shu-ju-shuang-xiang-bang-ding.md)
   * [vue的v指令](vue-xue-xi-bi-ji/vuede-v-zhi-ling.md)
