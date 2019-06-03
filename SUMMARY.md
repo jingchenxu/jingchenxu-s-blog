@@ -194,6 +194,7 @@
 * [在线支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti/README.md)
   * [微信支付开发问题](zai-xian-zhi-fu-kai-fa-wen-ti/wei-xin-zhi-fu-kai-fa-wen-ti.md)
 * [Maven](maven/README.md)
+  * [maven 打包本地依赖](maven/maven-da-bao-ben-di-yi-lai.md)
   * [maven 简介](maven/maven-jian-jie.md)
 * [javascript 基础](javascript-ji-chu/README.md)
   * [javascript 构造函数与原型](javascript-ji-chu/javascript-gou-zao-han-shu-yu-yuan-xing.md)
