@@ -111,6 +111,7 @@
   * [vim 搭建前端开发环境（1）](vim/vim-da-jian-qian-duan-kai-fa-huan-jing.md)
   * [vim搭建前端开发环境（2）](vim/vimda-jian-qian-duan-kai-fa-huan-jing-ff08-2.md)
   * [vim开发常用操作对照表](vim/vimkai-fa-chang-yong-cao-zuo-dui-zhao-biao.md)
+  * [vim 使用配置](vim/vim-shi-yong-pei-zhi.md)
 * [mybatis](mybatis/README.md)
   * [关联对象mapper.xml的写法](mybatis/guan-lian-dui-xiang-mapper-xml-de-xie-fa.md)
   * [mybatis 开启二级缓存](mybatis/mybatis-kai-qi-er-ji-huan-cun.md)
