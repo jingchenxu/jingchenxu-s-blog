@@ -251,6 +251,7 @@
 * [golang 笔记](golang-bi-ji/README.md)
   * [先创建一个hello word](golang-bi-ji/xian-chuang-jian-yi-ge-hello-word.md)
   * [golang tips](golang-bi-ji/golang-tips.md)
+  * [golang 快速扫盲](golang-bi-ji/golang-kuai-su-sao-mang.md)
 * [VPS 折腾手册](vps-zhe-teng-shou-ce/README.md)
   * [wordpress 安装](vps-zhe-teng-shou-ce/wordpress-an-zhuang.md)
 * [管理](guan-li/README.md)
