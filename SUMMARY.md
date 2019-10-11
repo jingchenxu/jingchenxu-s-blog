@@ -110,6 +110,7 @@
   * [vue 组件生命周期](vue-xue-xi-bi-ji/vue-zu-jian-sheng-ming-zhou-qi.md)
 * [VUE CLI 踩坑指南](vue-cli-cai-keng-zhi-nan/README.md)
   * [使用vue-cli创建项目](vue-cli-cai-keng-zhi-nan/shi-yong-vue-cli-chuang-jian-xiang-mu.md)
+  * [升级vue-cli2.0创建项目的webpack的版本](vue-cli-cai-keng-zhi-nan/sheng-ji-vuecli2.0-chuang-jian-xiang-mu-de-webpack-de-ban-ben.md)
 * [vim](vim/README.md)
   * [vim 搭建前端开发环境（1）](vim/vim-da-jian-qian-duan-kai-fa-huan-jing.md)
   * [vim搭建前端开发环境（2）](vim/vimda-jian-qian-duan-kai-fa-huan-jing-ff08-2.md)
