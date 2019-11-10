@@ -238,6 +238,7 @@
   * [Java builder 模式](javaweb-ji-chu/java-builder-mo-shi.md)
   * [Java 单列模式](javaweb-ji-chu/java-dan-lie-mo-shi.md)
 * [码农的狗血日志](ma-nong-de-gou-xie-ri-zhi/README.md)
+  * [前端CRUD随想](ma-nong-de-gou-xie-ri-zhi/qian-duan-crud-sui-xiang.md)
   * [过度封装](ma-nong-de-gou-xie-ri-zhi/guo-du-feng-zhuang.md)
   * [短信校验的血与泪](ma-nong-de-gou-xie-ri-zhi/duan-xin-xiao-yan-de-xie-yu-lei.md)
   * [js框架间的爱恨情仇](ma-nong-de-gou-xie-ri-zhi/jskuang-jia-jian-de-ai-hen-qing-chou.md)
