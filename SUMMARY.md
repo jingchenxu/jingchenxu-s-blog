@@ -156,6 +156,7 @@
   * [Java 中的枚举类](springmvcgong-zuo-ji-lu/java-zhong-de-mei-ju-lei.md)
   * [spring 注解](springmvcgong-zuo-ji-lu/spring-zhu-jie.md)
 * [python](python/README.md)
+  * [python 运维协助（导出数据到EXCEL）](python/python-yun-wei-xie-zhu-dao-chu-shu-ju-dao-excel.md)
   * [python 制作简易爬虫](python/python-zhi-zuo-jian-yi-pa-chong.md)
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
   * [使用Anaconda搭建python开发环境](python/shi-yong-anaconda-da-jian-python-kai-fa-huan-jing.md)
