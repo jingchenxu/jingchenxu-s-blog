@@ -14,7 +14,7 @@
 
 表结构的设计可以通过navicat、powerdesign之类的软件进行设计，下面我通过navicat设计一张用户表如下\(用户表\)：
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%282%29.png)
 
 获取表结构字段，navicat中通过复制可获得表创建SQL语句，通过对表创建SQL语句的操作，可以获得想要的关键字段\(1. 按住 Alt + 左键 拖放光标 -&gt; Ctrl + d 选中单词 2. 按住 Alt+左键 拖放光标 按住向上键到指定位置可批量编写代码 \)：
 

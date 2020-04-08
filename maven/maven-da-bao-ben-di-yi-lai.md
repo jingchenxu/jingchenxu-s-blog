@@ -18,7 +18,7 @@ install:install-file
 
 现在我们通过idea创建一个本地库，这是海康威视的一个依赖jar包，以上设置完成后：
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
 以上执行完成后，可以看到本地仓库中已经有该jar包了，接下来，我们需要将该依赖添加到POM当中：
 
