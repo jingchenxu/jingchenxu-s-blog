@@ -79,5 +79,20 @@ description: 目前很多的安全扫描工具都会对应用环境进行扫描�
 
 ## 删除Tomcat下的非必须目录
 
-删除
+删除 `webapps/example` 及 `webapps/docs` 目录
+
+## 处理 Slow HTTP Denial of Service Attack
+
+利用 Tomcat 默认的响应时间比较长，通过同时发起大量长连接的post请求，从而快速耗尽服务器连接资源：
+
+以 Tomcat 为例，打开server.xml找到以下代码进行修改：
+
+```markup
+<Connector port="8080" protocol="HTTP/1.1"
+　　connectionTimeout="20000"
+　　redirectPort="8443" />
+
+```
+
+将其中的connectionTimeout="20000"改为connectionTimeout="8000"，其单位是毫秒。
 
