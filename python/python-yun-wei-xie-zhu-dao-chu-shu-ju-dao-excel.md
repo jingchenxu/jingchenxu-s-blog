@@ -14,5 +14,5 @@ description: 本文主要讲述如何使用python多快好省的完成一些日�
 
 创建一个purepython项目，因为我们只是用脚本处理一些日常事宜，没有必要一开始就引入比较多的外部依赖，依赖还是简单点比价好，如下图说是，需要创建一个与之对应的虚拟环境：
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 

@@ -225,6 +225,7 @@
   * [从玄幻小说的套路理解闭包](javascript-ji-chu/cong-xuan-huan-xiao-shuo-de-tao-lu-li-jie-bi-bao.md)
   * [javascript 中的数组操作](javascript-ji-chu/javascript-zhong-de-shu-zu-cao-zuo.md)
 * [electron 学习记录](electron-xue-xi-ji-lu/README.md)
+  * [create-react-app + electron 从零开始](electron-xue-xi-ji-lu/createreactapp-+-electron-cong-ling-kai-shi.md)
   * [electron 资料汇总](electron-xue-xi-ji-lu/electron-zi-liao-hui-zong.md)
   * [electron-vue](electron-xue-xi-ji-lu/electron-vue.md)
   * [从零开始搭建vue + electron基础项目](electron-xue-xi-ji-lu/cong-ling-kai-shi-da-jian-vue-+-electron-ji-chu-xiang-mu.md)
