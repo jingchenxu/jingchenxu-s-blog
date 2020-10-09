@@ -66,6 +66,7 @@
 * [input 文件传输](input-wen-jian-chuan-shu.md)
 * [图片惰性加载](tu-pian-duo-xing-jia-zai.md)
 * [MySQL 笔记](mysql-bi-ji/README.md)
+  * [Mysql 5.7（ubuntu） 在线安装及中文字符集设置](mysql-bi-ji/mysql-5.7ubuntu-zai-xian-an-zhuang-ji-zhong-wen-zi-fu-ji-she-zhi.md)
   * [Linux 下安装多个版本MySQL](mysql-bi-ji/linux-xia-an-zhuang-duo-ge-ban-ben-mysql.md)
   * [MySQL 存储过程的写法](mysql-bi-ji/mysql-cun-chu-guo-cheng-de-xie-fa.md)
   * [MySQL 常用命令行语句](mysql-bi-ji/mysql-chang-yong-ming-ling-xing-yu-ju.md)
@@ -319,4 +320,8 @@
 ## SWIFTUI 笔记
 
 * [swift 参考资料](swiftui-bi-ji/swift-can-kao-zi-liao.md)
+
+## MAVEN FAQ
+
+* [MAVEN FAQ](maven-faq/maven-faq.md)
 
