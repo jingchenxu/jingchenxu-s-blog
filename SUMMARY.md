@@ -246,6 +246,7 @@
   * [Java builder 模式](javaweb-ji-chu/java-builder-mo-shi.md)
   * [Java 单列模式](javaweb-ji-chu/java-dan-lie-mo-shi.md)
 * [码农的狗血日志](ma-nong-de-gou-xie-ri-zhi/README.md)
+  * [个人项目汇报PPT重点](ma-nong-de-gou-xie-ri-zhi/ge-ren-xiang-mu-hui-bao-ppt-zhong-dian.md)
   * [2019年年终总结](ma-nong-de-gou-xie-ri-zhi/2019-nian-nian-zhong-zong-jie.md)
   * [电商项目三年回顾](ma-nong-de-gou-xie-ri-zhi/dian-shang-xiang-mu-san-nian-hui-gu.md)
   * [前端CRUD随想](ma-nong-de-gou-xie-ri-zhi/qian-duan-crud-sui-xiang.md)
