@@ -163,6 +163,7 @@
   * [python 开发环境配置](python/python-kai-fa-huan-jing-pei-zhi.md)
   * [使用Anaconda搭建python开发环境](python/shi-yong-anaconda-da-jian-python-kai-fa-huan-jing.md)
 * [nginx](nginx/README.md)
+  * [win10上操作nginx记录](nginx/win10-shang-cao-zuo-nginx-ji-lu.md)
   * [nginx 屏蔽tomcat端口号](nginx/nginx-ping-bi-tomcat-duan-kou-hao.md)
   * [nginx 配置请求头ip信息](nginx/nginx-pei-zhi-qing-qiu-tou-ip-xin-xi.md)
   * [spring、nginx、tomcat、redis负载均衡](nginx/springnginxtomcatredisfu-zai-jun-heng.md)
