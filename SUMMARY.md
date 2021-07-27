@@ -237,6 +237,7 @@
 * [Ext6.2.0 start](ext620-start/README.md)
   * [环境搭建](ext620-start/huan-jing-da-jian.md)
 * [css 基础](css-ji-chu/README.md)
+  * [css 样式书写规范](css-ji-chu/css-yang-shi-shu-xie-gui-fan.md)
   * [Flexbox 🎌 Grid](css-ji-chu/flexbox-d83c-df8c-grid.md)
   * [css Tips](css-ji-chu/css-tips.md)
 * [javaweb 基础](javaweb-ji-chu/README.md)
@@ -330,4 +331,8 @@
 ## vue3.0
 
 * [Vue3.0中几种组件的写法](vue3.0/vue3.0-zhong-ji-zhong-zu-jian-de-xie-fa.md)
+
+## activiti7
+
+* [参考文章](activiti7/can-kao-wen-zhang.md)
 
